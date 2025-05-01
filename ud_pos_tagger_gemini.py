@@ -1,5 +1,6 @@
 # --- Imports ---
 import os
+from enum import Enum
 from google import genai
 from pydantic import BaseModel, Field
 from typing import List, Literal, Optional
@@ -7,16 +8,41 @@ from typing import List, Literal, Optional
 # 
 gemini_model = 'gemini-2.0-flash-lite'
 
-# --- Define Pydantic Models for Structured Output ---
 
 # --- Define the Universal Dependencies POS Tagset (17 core tags) as an enum ---
-# class UDPosTag(str, Enum):
-    # TODO
+class UDPosTag(str, Enum):
+    ADJ = "ADJ"  # Adjective
+    ADP = "ADP"  # Adposition
+    ADV = "ADV"  # Adverb
+    AUX = "AUX"  # Auxiliary verb
+    CCONJ = "CCONJ"  # Coordinating conjunction
+    DET = "DET"  # Determiner
+    INTJ = "INTJ"  # Interjection
+    NOUN = "NOUN"  # Noun
+    NUM = "NUM"  # Numeral
+    PART = "PART"  # Particle
+    PRON = "PRON"  # Pronoun
+    PROPN = "PROPN"  # Proper noun
+    PUNCT = "PUNCT"  # Punctuation
+    SCONJ = "SCONJ"  # Subordinating conjunction
+    SYM = "SYM"  # Symbol
+    VERB = "VERB"  # Verb
+    X = "X"  # Other
 
-# TODO Define more Pydantic models for structured output
+
+# --- Define Pydantic Models for Structured Output ---
+class TokenPOS(BaseModel):
+    """Represents a token with its part-of-speech (POS) tag."""
+    token: str = Field(description="The token itself.")
+    pos_tag: UDPosTag = Field(description="The part-of-speech tag for the token.")
+
+class SentencePOS(BaseModel):
+    """Represents a sentence with its tokens and their POS tags."""
+    sentence_tags: List[TokenPOS] = Field(description="A list of tokens with their POS tags.")
+
 class TaggedSentences(BaseModel):
     """Represents a list of sentences with their tagged tokens."""
-    # sentences: List[SentencePOS] = Field(description="A list of sentences, each containing tagged tokens.")
+    sentences: List[SentencePOS] = Field(description="A list of sentences, each containing tagged tokens.")
 
 # --- Configure the Gemini API ---
 # Get a key https://aistudio.google.com/plan_information 
