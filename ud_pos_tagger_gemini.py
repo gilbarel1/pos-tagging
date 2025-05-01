@@ -1,9 +1,17 @@
 # --- Imports ---
 import os
+import sys
 from enum import Enum
+from typing import List, Literal, Optional
+
+from dotenv import load_dotenv
 from google import genai
 from pydantic import BaseModel, Field
-from typing import List, Literal, Optional
+
+from pos_defs import ALL_DEFS
+
+
+load_dotenv()
 
 # 
 gemini_model = 'gemini-2.0-flash-lite'
@@ -59,26 +67,19 @@ try:
     # Attempt to get API key from environment variable
     api_key = os.environ.get("GOOGLE_API_KEY")
     if not api_key:
-        # Fallback or specific instruction for local setup
-        # Replace with your actual key if needed, but environment variables are safer
-        api_key = "YOUR_API_KEY"
-        if api_key == "YOUR_API_KEY":
-           print("⚠️ Warning: API key not found in environment variables. Using placeholder.")
-           print("   Please set the GOOGLE_API_KEY environment variable or replace 'YOUR_API_KEY' in the code.")
-
-    genai.configure(api_key=api_key)
+        print("⚠️ Warning: API key not found in environment variables. Using placeholder.")
+        print("   Please set the GOOGLE_API_KEY environment variable or replace 'YOUR_API_KEY' in the code.")
+        sys.exit(1)
 
 except Exception as e:
     print(f"Error configuring Gemini API: {e}")
     print("Please ensure you have a valid API key set.")
-    # Depending on the environment, you might want to exit here
-    # import sys
-    # sys.exit(1)
+    sys.exit(1)
 
 
 # --- Function to Perform POS Tagging ---
 
-def tag_sentences_ud(text_to_tag: str) -> Optional[TaggedSentences]:
+def tag_sentences_ud(texts_to_tag: List[str]) -> Optional[TaggedSentences]:
     """
     Performs POS tagging on the input text using the Gemini API and
     returns the result structured according to the SentencePOS Pydantic model.
@@ -90,7 +91,21 @@ def tag_sentences_ud(text_to_tag: str) -> Optional[TaggedSentences]:
         A TaggedSentences object containing the tagged tokens, or None if an error occurs.
     """
     # Construct the prompt
-    prompt = f"""TODO"""
+    prompt = f"""# Parts-of-Speech
+
+Below is a list of all 17 parts-of-speech along with their definitions.
+
+{"\n\n\n".join(ALL_DEFS)}
+
+
+# Your Task
+
+You are given a list of sentences. You should identify the parts-of-speech in the sentence and classify them.
+
+## Sentences
+
+{"\n\n".join(texts_to_tag)}
+"""
 
     client = genai.Client(api_key=api_key)
     response = client.models.generate_content(
@@ -112,21 +127,20 @@ def tag_sentences_ud(text_to_tag: str) -> Optional[TaggedSentences]:
 # --- Example Usage ---
 if __name__ == "__main__":
     # example_text = "The quick brown fox jumps over the lazy dog."
-    example_text = "What if Google expanded on its search-engine (and now e-mail) wares into a full-fledged operating system?"
+    example_texts = ["What if Google expanded on its search-engine (and now e-mail) wares into a full-fledged operating system?"]
     # example_text = "Google Search is a web search engine developed by Google LLC."
     # example_text = "החתול המהיר קופץ מעל הכלב העצלן." # Example in Hebrew
 
-    print(f"\nTagging text: \"{example_text}\"")
+    print(f"\nTagging texts: \"{example_texts}\"")
 
-    tagged_result = tag_sentences_ud(example_text)
+    tagged_result = tag_sentences_ud(example_texts)
 
     if tagged_result:
         print("\n--- Tagging Results ---")
         for s in tagged_result.sentences:
-            # TODO: Retrieve tokens and tags from each sentence:
-            # for ...
-                token = ""  # TODO
-                tag = ""    # TODO
+            for sentence_tag in s.sentence_tags:
+                token = sentence_tag.token
+                tag = sentence_tag.pos_tag
                 # Handle potential None for pos_tag if model couldn't assign one
                 ctag = tag if tag is not None else "UNKNOWN"
                 print(f"Token: {token:<15} {str(ctag)}")
