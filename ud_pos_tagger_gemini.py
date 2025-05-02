@@ -170,9 +170,13 @@ Alphabetical listing:
 
 # Your Task
 
-You are given a list of sentences and their corresponding tokenization below. You should classify all tokens in every sentence to its part-of-speech tag.
+You are given a list of sentences and their corresponding list of tokens below.
+In the list of tokensm, each token is between ' and ' tags, seperated by a comma - note that comma (','), the list brackers (']' and '['), and apostrophe (''') may also be a token by themselves, so you have to pay attention to the opening and closing apostrophes.
+In your response, the tokens should be written exactly as they are written in the input, not including the apostrophes that bounds them.
 
-{"\n\n".join(map(lambda txt_tokens: f"Sentence: {txt_tokens[0]}\nTokens: {txt_tokens}", zip(texts_to_tag, tokens_to_tag)))}
+{"\n\n".join(map(lambda txt_tokens: f"Sentence: {txt_tokens[0]}\nTokens: {txt_tokens[1]}", zip(texts_to_tag, tokens_to_tag)))}
+
+You should classify all tokens in every sentence to its part-of-speech tag.
 """
 
     # Send prompt to the Gemini API
@@ -194,50 +198,50 @@ You are given a list of sentences and their corresponding tokenization below. Yo
 # --- Example Usage ---
 if __name__ == "__main__":
     UD_ENGLISH_TEST = './UD_English-EWT/en_ewt-ud-test.conllu'
-    BATCH_SIZE = 2
+    BATCH_SIZE = 5
     OUTPUT_FILE = 'ud_pos_tagger_gemini_output.json'
 
     test_sentences, test_original = read_conllu(UD_ENGLISH_TEST)
 
     output = []
 
-    for i in tqdm(range(0, len(test_original[:4]), BATCH_SIZE)):
+    for i in tqdm(range(0, len(test_original), BATCH_SIZE), desc="Tagging sentences", unit="batch"):
         batch = test_original[i:i + BATCH_SIZE]
         batch_correct = TaggedSentences.from_2d_tuples(test_sentences[i:i + BATCH_SIZE])
-        batch_tokens = [[tags.token for tags in correct.sentence_tags] for correct in batch_correct.sentences]
-        batch_tagged = tag_sentences_ud(batch, batch_tokens)
+        batch_correct_tokens = [[tags.token for tags in correct.sentence_tags] for correct in batch_correct.sentences]
+        batch_predicted = tag_sentences_ud(batch, batch_correct_tokens)
 
-        if len(batch) != len(batch_tagged.sentences):
-            print(f"⚠️ Warning: Batch size mismatch for batch {i}. Expected {len(batch)}, got {len(batch_tagged.sentences)}.")
+        if len(batch) != len(batch_predicted.sentences):
+            print(f"⚠️ Warning: Batch size mismatch for batch {i}. Expected {len(batch)}, got {len(batch_predicted.sentences)}.")
 
-        for sentence, correct, tagged in zip(batch, batch_correct.sentences, batch_tagged.sentences):
-            # check that every word in correct is in tagged
+        for sentence, correct, predicted in zip(batch, batch_correct.sentences, batch_predicted.sentences):
+            # check that every word in correct is in predicted
             correct_tags = [sentence_tag for sentence_tag in correct.sentence_tags]
-            tagged_tags = [sentence_tag for sentence_tag in tagged.sentence_tags]
+            predicted_tags = [sentence_tag for sentence_tag in predicted.sentence_tags]
 
             correct_tokens = [ct.token for ct in correct_tags]
-            tagged_tokens = [tt.token for tt in tagged_tags]
+            predicted_tokens = [tt.token for tt in predicted_tags]
 
-            if correct_tokens != tagged_tokens:
+            if correct_tokens != predicted_tokens:
                 print(f"⚠️ Warning: Wrong tokenization for sentence: {sentence}. Alignning predicted tokens to correct tokens (with None for missing tokens).")
                 print(f"  Correct: {correct_tokens}")
-                print(f"  Tagged: {tagged_tokens}")
+                print(f"  predicted: {predicted_tokens}")
 
                 # align the tokens
-                aligned_tagged_tags = []
-                matcher = SequenceMatcher(a=correct_tokens, b=tagged_tokens, autojunk=False)
+                aligned_predicted_tags = []
+                matcher = SequenceMatcher(a=correct_tokens, b=predicted_tokens, autojunk=False)
                 for tag, i1, i2, j1, j2 in matcher.get_opcodes():
                     if tag == 'equal':
-                        aligned_tagged_tags.extend(correct_tags[i1:i2])
+                        aligned_predicted_tags.extend(correct_tags[i1:i2])
                     elif tag in ("delete", "replace"):
-                        aligned_tagged_tags.extend([TokenPOS(token=ct.token, pos_tag=None) for ct in correct_tags[i1:i2]])
+                        aligned_predicted_tags.extend([TokenPOS(token=ct.token, pos_tag=None) for ct in correct_tags[i1:i2]])
                 
-                tagged.sentence_tags = aligned_tagged_tags
+                predicted.sentence_tags = aligned_predicted_tags
             
             output.append({
                 "sentence": sentence,
                 "correct_tags": correct.model_dump(),
-                "tagged_tags": tagged.model_dump()
+                "tagged_tags": predicted.model_dump()
             })
     
     # Save the output to a JSON file
