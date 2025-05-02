@@ -11,6 +11,7 @@ from dotenv import load_dotenv
 from google import genai
 from pydantic import BaseModel, Field
 from tqdm import tqdm
+from ratelimiter import RateLimiter
 
 from pos_defs import ALL_DEFS, SHORT_DEFS
 from utils import read_conllu
@@ -127,11 +128,11 @@ except Exception as e:
 
 
 # --- Function to Perform POS Tagging ---
-
+@RateLimiter(max_calls=15, period=60)
 def tag_sentences_ud(
         texts_to_tag: Union[str, List[str]],
         tokens_to_tag: Optional[Union[List[str], List[List[str]]]] = None
-    ) -> TaggedSentences:
+    ) -> Optional[TaggedSentences]:
     """
     Performs POS tagging on the input text using the Gemini API and
     returns the result structured according to the SentencePOS Pydantic model.
@@ -170,14 +171,13 @@ Alphabetical listing:
 
 # Your Task
 
-You are given a list of sentences and their corresponding list of tokens below.
-In the list of tokensm, each token is between ' and ' tags, seperated by a comma - note that comma (','), the list brackers (']' and '['), and apostrophe (''') may also be a token by themselves, so you have to pay attention to the opening and closing apostrophes.
-In your response, the tokens should be written exactly as they are written in the input, not including the apostrophes that bounds them.
+You are a POS tagger. You are given a list of sentences and their corresponding list of tokens below.
+The list of tokens is in the format of a comma separated list (for example: ['tok1', 'tok2', 'tok3']) where each token is surrounded by apostrophes (or double quotes if the token contains an apostrophe).
 
 {"\n\n".join(map(lambda txt_tokens: f"Sentence: {txt_tokens[0]}\nTokens: {txt_tokens[1]}", zip(texts_to_tag, tokens_to_tag)))}
 
-You should classify all tokens in every sentence to its part-of-speech tag.
-"""
+You MUST classify all tokens in every sentence to its part-of-speech tag.
+In your response, the tokens should be EXACTLY the input tokens, **DO NOT change the given tokenization**. You MUST specify a tag for each token."""
 
     # Send prompt to the Gemini API
     client = genai.Client(api_key=api_key)
@@ -187,6 +187,8 @@ You should classify all tokens in every sentence to its part-of-speech tag.
         config={
             'response_mime_type': 'application/json',
             'response_schema': TaggedSentences,
+            'temperature': 0.0,
+            'top_k': 1,
         },
     )
 
@@ -209,10 +211,10 @@ if __name__ == "__main__":
         batch = test_original[i:i + BATCH_SIZE]
         batch_correct = TaggedSentences.from_2d_tuples(test_sentences[i:i + BATCH_SIZE])
         batch_correct_tokens = [[tags.token for tags in correct.sentence_tags] for correct in batch_correct.sentences]
-        batch_predicted = tag_sentences_ud(batch, batch_correct_tokens)
-
-        if len(batch) != len(batch_predicted.sentences):
-            print(f"⚠️ Warning: Batch size mismatch for batch {i}. Expected {len(batch)}, got {len(batch_predicted.sentences)}.")
+        
+        batch_predicted = None
+        while batch_predicted is None or len(batch) != len(batch_predicted.sentences):
+            batch_predicted = tag_sentences_ud(batch, batch_correct_tokens)
 
         for sentence, correct, predicted in zip(batch, batch_correct.sentences, batch_predicted.sentences):
             # check that every word in correct is in predicted
@@ -224,7 +226,7 @@ if __name__ == "__main__":
 
             if correct_tokens != predicted_tokens:
                 print(f"⚠️ Warning: Wrong tokenization for sentence: {sentence}. Alignning predicted tokens to correct tokens (with None for missing tokens).")
-                print(f"  Correct: {correct_tokens}")
+                print(f"  Correct  : {correct_tokens}")
                 print(f"  predicted: {predicted_tokens}")
 
                 # align the tokens
@@ -232,16 +234,26 @@ if __name__ == "__main__":
                 matcher = SequenceMatcher(a=correct_tokens, b=predicted_tokens, autojunk=False)
                 for tag, i1, i2, j1, j2 in matcher.get_opcodes():
                     if tag == 'equal':
-                        aligned_predicted_tags.extend(correct_tags[i1:i2])
-                    elif tag in ("delete", "replace"):
+                        aligned_predicted_tags.extend(predicted_tags[i1:i2])
+                    elif tag == "delete":
                         aligned_predicted_tags.extend([TokenPOS(token=ct.token, pos_tag=None) for ct in correct_tags[i1:i2]])
+                    elif tag == "replace":
+                        # TODO: handle this case
+                        aligned_predicted_tags.extend(predicted_tags[i1:i2])
                 
                 predicted.sentence_tags = aligned_predicted_tags
             
             output.append({
                 "sentence": sentence,
-                "correct_tags": correct.model_dump(),
-                "tagged_tags": predicted.model_dump()
+                "tags": [
+                    {
+                        **({"correct_token": ct.token} if ct.token != pt.token else {}),
+                        **({"predicted_token": pt.token}),
+                        **({"correct_tag": ct.pos_tag} if ct.pos_tag != pt.pos_tag else {}),
+                        **({"predicted_tag": pt.pos_tag}),
+                    }
+                    for ct, pt in zip(correct.sentence_tags, predicted.sentence_tags)
+                ]
             })
     
     # Save the output to a JSON file
