@@ -225,9 +225,7 @@ if __name__ == "__main__":
             predicted_tokens = [tt.token for tt in predicted_tags]
 
             if correct_tokens != predicted_tokens:
-                print(f"⚠️ Warning: Wrong tokenization for sentence: {sentence}. Alignning predicted tokens to correct tokens (with None for missing tokens).")
-                print(f"  Correct  : {correct_tokens}")
-                print(f"  predicted: {predicted_tokens}")
+                print(f"⚠️ Warning: Wrong tokenization. Alignning predicted tokens to correct tokens (with POS None for missing tokens).")
 
                 # align the tokens
                 aligned_predicted_tags = []
@@ -240,6 +238,10 @@ if __name__ == "__main__":
                     elif tag == "replace":
                         # TODO: handle this case
                         aligned_predicted_tags.extend(predicted_tags[i1:i2])
+                        
+                print(f"  Correct  : {correct_tokens}")
+                print(f"  predicted: {predicted_tokens}")
+                print(f"  Aligned  : {[tag.token for tag in aligned_predicted_tags]}")
                 
                 predicted.sentence_tags = aligned_predicted_tags
             
