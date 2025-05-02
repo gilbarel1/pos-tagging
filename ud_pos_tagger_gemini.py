@@ -201,11 +201,19 @@ In your response, the tokens should be EXACTLY the input tokens, **DO NOT change
 if __name__ == "__main__":
     UD_ENGLISH_TEST = './UD_English-EWT/en_ewt-ud-test.conllu'
     BATCH_SIZE = 5
-    OUTPUT_FILE = 'ud_pos_tagger_gemini_output.json'
+    INPUT_FILE = 'hard_sentences.json'
+    OUTPUT_FILE = 'hard_sentences_gemini.json'
 
-    test_sentences, test_original = read_conllu(UD_ENGLISH_TEST)
+    # test_sentences, test_original = read_conllu(UD_ENGLISH_TEST)
+    with open(INPUT_FILE, 'r') as f:
+        input_data = json.load(f)
+    
+    test_sentences = [inp['tags'] for inp in input_data]
+    test_original = [inp['original'] for inp in input_data]
 
     output = []
+
+    tok_err_count = 0
 
     for i in tqdm(range(0, len(test_original), BATCH_SIZE), desc="Tagging sentences", unit="batch"):
         batch = test_original[i:i + BATCH_SIZE]
@@ -227,6 +235,8 @@ if __name__ == "__main__":
             if correct_tokens != predicted_tokens:
                 print(f"⚠️ Warning: Wrong tokenization. Alignning predicted tokens to correct tokens (with POS None for missing tokens).")
 
+                tok_err_count += 1
+
                 # align the tokens
                 aligned_predicted_tags = []
                 matcher = SequenceMatcher(a=correct_tokens, b=predicted_tokens, autojunk=False)
@@ -236,8 +246,10 @@ if __name__ == "__main__":
                     elif tag == "delete":
                         aligned_predicted_tags.extend([TokenPOS(token=ct.token, pos_tag=None) for ct in correct_tags[i1:i2]])
                     elif tag == "replace":
-                        # TODO: handle this case
-                        aligned_predicted_tags.extend(predicted_tags[i1:i2])
+                        for ct, pt in zip(correct_tags[i1:i2], predicted_tags[i1:i2]):
+                            if pt.token.strip() == ct.token:
+                                pt.token = pt.token.strip()
+                            aligned_predicted_tags.append(pt)
                         
                 print(f"  Correct  : {correct_tokens}")
                 print(f"  predicted: {predicted_tokens}")
@@ -261,3 +273,8 @@ if __name__ == "__main__":
     # Save the output to a JSON file
     with open(OUTPUT_FILE, 'w') as f:
         json.dump(output, f, indent=2)
+
+    if tok_err_count > 0:
+        print(f"⚠️ Warning: {tok_err_count} sentences had tokenization errors.")
+    print(f"✅ Successfully tagged {len(test_original)} sentences.")
+    print(f"✅ Successfully saved output to {OUTPUT_FILE}.")
