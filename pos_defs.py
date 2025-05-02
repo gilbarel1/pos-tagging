@@ -379,3 +379,5 @@ ALL_DEFS = [
     INTJ, NOUN, NUM, PART, PRON, PROPN, 
     PUNCT, SCONJ, SYM, VERB, X
 ]
+
+SHORT_DEFS = [pos.split('\n')[0].replace('## ', '') for pos in ALL_DEFS]
