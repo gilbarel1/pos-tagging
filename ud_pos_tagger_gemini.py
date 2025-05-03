@@ -222,7 +222,7 @@ if __name__ == "__main__":
     if sent_tok_err_count > 0:
         print(f"❌ Error: {sent_tok_err_count} sentences had tokenization errors.")
         print(f"❌ Error: {total_tok_err_count} tokens had tokenization errors: ")
-        print(f"          ✅ {fixed_tok_err_count} of them were fixed")
+        print(f"          ✅ {total_tok_err_count - fixed_tok_err_count} of them were not fixed") if fixed_tok_err_count > 0 else None
         print(f"          ❌ {missing_tok_err_count} of the tokens are not provided by the LLM.")
     if batch_mismatch > 0:
         print(f"❌ Error: {batch_mismatch} batches had a batch size mismatch (the number of response sentences was different than the number of input sentences).")
