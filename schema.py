@@ -81,3 +81,11 @@ class TaggedSentences(BaseModel):
         """
         sentences = [SentencePOS.from_tuples(tuples) for tuples in tuples_matrix]
         return cls(sentences=sentences)
+    
+
+class TaggerErrorExplanation(BaseModel):
+    token: str = Field(description="The token that was tagged incorrectly. MUST be exactly the same as the input token.")
+    predicted_tag: UDPosTag = Field(description="The predicted part-of-speech tag.")
+    correct_tag: UDPosTag = Field(description="The correct part-of-speech tag.")
+    explanation: str = Field(description="A possible explanation of why the tagger predicted the wrong label instead of the correct label.")
+    category: str = Field(description="Category of the error.")
