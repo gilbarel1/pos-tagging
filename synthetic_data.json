@@ -1,0 +1,5616 @@
+[
+  {
+    "row": {
+      "sentence": "Zarqawi is a Jordanian, and his Monotheism and Holy War group in Afghanistan probably had a distinctive coloration as mainly Jordanian, Palestinian and Syrian.",
+      "tags": [
+        {
+          "predicted_token": "Zarqawi",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "is",
+          "predicted_tag": "AUX"
+        },
+        {
+          "predicted_token": "a",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "Jordanian",
+          "correct_tag": "PROPN",
+          "predicted_tag": "ADJ"
+        },
+        {
+          "predicted_token": ",",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "and",
+          "predicted_tag": "CCONJ"
+        },
+        {
+          "predicted_token": "his",
+          "predicted_tag": "PRON"
+        },
+        {
+          "predicted_token": "Monotheism",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "and",
+          "predicted_tag": "CCONJ"
+        },
+        {
+          "predicted_token": "Holy",
+          "correct_tag": "ADJ",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "War",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "group",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "in",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "Afghanistan",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "probably",
+          "predicted_tag": "ADV"
+        },
+        {
+          "predicted_token": "had",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "a",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "distinctive",
+          "predicted_tag": "ADJ"
+        },
+        {
+          "predicted_token": "coloration",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "as",
+          "correct_tag": "ADP",
+          "predicted_tag": "SCONJ"
+        },
+        {
+          "predicted_token": "mainly",
+          "predicted_tag": "ADV"
+        },
+        {
+          "predicted_token": "Jordanian",
+          "predicted_tag": "ADJ"
+        },
+        {
+          "predicted_token": ",",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "Palestinian",
+          "predicted_tag": "ADJ"
+        },
+        {
+          "predicted_token": "and",
+          "predicted_tag": "CCONJ"
+        },
+        {
+          "predicted_token": "Syrian",
+          "predicted_tag": "ADJ"
+        },
+        {
+          "predicted_token": ".",
+          "predicted_tag": "PUNCT"
+        }
+      ]
+    },
+    "explanation": [
+      {
+        "token": "Jordanian",
+        "predicted_tag": "ADJ",
+        "correct_tag": "PROPN",
+        "explanation": "The word \"Jordanian\" is used as a proper noun here, referring to a nationality. The tagger incorrectly identified it as an adjective, which is its more common usage.",
+        "category": "Proper Noun vs. Adjective"
+      },
+      {
+        "token": "Holy",
+        "predicted_tag": "PROPN",
+        "correct_tag": "ADJ",
+        "explanation": "The word \"Holy\" is used as an adjective modifying \"War\". The tagger incorrectly identified it as a proper noun, possibly due to its frequent association with religious or significant entities.",
+        "category": "Adjective vs. Proper Noun"
+      },
+      {
+        "token": "as",
+        "predicted_tag": "SCONJ",
+        "correct_tag": "ADP",
+        "explanation": "The word \"as\" functions as an adposition in this context, introducing a prepositional phrase. The tagger incorrectly identified it as a subordinating conjunction, which is another possible function of the word.",
+        "category": "Adposition vs. Subordinating Conjunction"
+      }
+    ]
+  },
+  {
+    "row": {
+      "sentence": "Wolfowitz contradicted counter-terrorism czar Richard Clarke when the latter spoke of the al-Qaeda threat, insisting that the preeminent threat of terrorism against the US came from Iraq, and indicating he accepted Laurie Mylroie's crackpot conspiracy theory that Saddam was behind the 1993 World Trade Towers bombing.",
+      "tags": [
+        {
+          "predicted_token": "Wolfowitz",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "contradicted",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "counter-terrorism",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "czar",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "Richard",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "Clarke",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "when",
+          "correct_tag": "ADV",
+          "predicted_tag": "SCONJ"
+        },
+        {
+          "predicted_token": "the",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "latter",
+          "correct_tag": "ADJ",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "spoke",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "of",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "the",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "al",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "-",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "Qaeda",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "threat",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": ",",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "insisting",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "that",
+          "predicted_tag": "SCONJ"
+        },
+        {
+          "predicted_token": "the",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "preeminent",
+          "predicted_tag": "ADJ"
+        },
+        {
+          "predicted_token": "threat",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "of",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "terrorism",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "against",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "the",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "US",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "came",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "from",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "Iraq",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": ",",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "and",
+          "predicted_tag": "CCONJ"
+        },
+        {
+          "predicted_token": "indicating",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "he",
+          "predicted_tag": "PRON"
+        },
+        {
+          "predicted_token": "accepted",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "Laurie",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "Mylroie",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "'s",
+          "predicted_tag": "PART"
+        },
+        {
+          "predicted_token": "crackpot",
+          "correct_tag": "NOUN",
+          "predicted_tag": "ADJ"
+        },
+        {
+          "predicted_token": "conspiracy",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "theory",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "that",
+          "predicted_tag": "SCONJ"
+        },
+        {
+          "predicted_token": "Saddam",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "was",
+          "predicted_tag": "AUX"
+        },
+        {
+          "predicted_token": "behind",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "the",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "1993",
+          "predicted_tag": "NUM"
+        },
+        {
+          "predicted_token": "World",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "Trade",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "Towers",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "bombing",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": ".",
+          "predicted_tag": "PUNCT"
+        }
+      ]
+    },
+    "explanation": [
+      {
+        "token": "when",
+        "predicted_tag": "SCONJ",
+        "correct_tag": "ADV",
+        "explanation": "The word 'when' is used here as an adverb to indicate the time of the action described in the main clause. The tagger incorrectly identified it as a subordinating conjunction, which is a common error when the word introduces a subordinate clause.",
+        "category": "Lexical Ambiguity"
+      },
+      {
+        "token": "latter",
+        "predicted_tag": "NOUN",
+        "correct_tag": "ADJ",
+        "explanation": "The word 'latter' is used here to modify the noun and describe which of the two entities is being referred to. The tagger incorrectly identified it as a noun, possibly because it can function as a noun in other contexts.",
+        "category": "Lexical Ambiguity"
+      },
+      {
+        "token": "crackpot",
+        "predicted_tag": "ADJ",
+        "correct_tag": "NOUN",
+        "explanation": "The word 'crackpot' is used here as a noun, as it is the head of the noun phrase 'crackpot conspiracy theory'. The tagger incorrectly identified it as an adjective, possibly because it can function as an adjective in other contexts.",
+        "category": "Lexical Ambiguity"
+      }
+    ]
+  },
+  {
+    "row": {
+      "sentence": "If you believe crackpot theories instead of focusing on the reality--that was an al-Qaeda operation mainly carried out by al-Gamaa al-Islamiyyah, an Egyptian terrorist component allied with Bin Laden-- then you will concentrate on the wrong threat.",
+      "tags": [
+        {
+          "predicted_token": "If",
+          "predicted_tag": "SCONJ"
+        },
+        {
+          "predicted_token": "you",
+          "predicted_tag": "PRON"
+        },
+        {
+          "predicted_token": "believe",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "crackpot",
+          "correct_tag": "NOUN",
+          "predicted_tag": "ADJ"
+        },
+        {
+          "predicted_token": "theories",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "instead",
+          "predicted_tag": "ADV"
+        },
+        {
+          "predicted_token": "of",
+          "correct_tag": "SCONJ",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "focusing",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "on",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "the",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "reality",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "--",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "that",
+          "correct_tag": "PRON",
+          "predicted_tag": "SCONJ"
+        },
+        {
+          "predicted_token": "was",
+          "predicted_tag": "AUX"
+        },
+        {
+          "predicted_token": "an",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "al",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "-",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "Qaeda",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "operation",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "mainly",
+          "predicted_tag": "ADV"
+        },
+        {
+          "predicted_token": "carried",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "out",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "by",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "al",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "-",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "Gamaa",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "al",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "-",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "Islamiyyah",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": ",",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "an",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "Egyptian",
+          "predicted_tag": "ADJ"
+        },
+        {
+          "predicted_token": "terrorist",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "component",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "allied",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "with",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "Bin",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "Laden",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "--",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "then",
+          "predicted_tag": "ADV"
+        },
+        {
+          "predicted_token": "you",
+          "predicted_tag": "PRON"
+        },
+        {
+          "predicted_token": "will",
+          "predicted_tag": "AUX"
+        },
+        {
+          "predicted_token": "concentrate",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "on",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "the",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "wrong",
+          "predicted_tag": "ADJ"
+        },
+        {
+          "predicted_token": "threat",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": ".",
+          "predicted_tag": "PUNCT"
+        }
+      ]
+    },
+    "explanation": [
+      {
+        "token": "crackpot",
+        "predicted_tag": "ADJ",
+        "correct_tag": "NOUN",
+        "explanation": "The tagger incorrectly identified 'crackpot' as an adjective. In this context, 'crackpot' functions as a noun, referring to a person with eccentric or unconventional ideas.",
+        "category": "Lexical Ambiguity"
+      },
+      {
+        "token": "of",
+        "predicted_tag": "ADP",
+        "correct_tag": "SCONJ",
+        "explanation": "The tagger incorrectly identified 'of' as an adposition. In this context, 'of' functions as a subordinating conjunction, introducing a subordinate clause.",
+        "category": "Syntactic Function"
+      },
+      {
+        "token": "that",
+        "predicted_tag": "SCONJ",
+        "correct_tag": "PRON",
+        "explanation": "The tagger incorrectly identified 'that' as a subordinating conjunction. In this context, 'that' functions as a pronoun, referring back to the reality.",
+        "category": "Syntactic Function"
+      }
+    ]
+  },
+  {
+    "row": {
+      "sentence": "The Pentagon did not even have a plan for dealing with Afghanistan or al-Qaeda that it could pull off the shelf, according to Bob Woodward.",
+      "tags": [
+        {
+          "predicted_token": "The",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "Pentagon",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "did",
+          "predicted_tag": "AUX"
+        },
+        {
+          "predicted_token": "not",
+          "predicted_tag": "PART"
+        },
+        {
+          "predicted_token": "even",
+          "predicted_tag": "ADV"
+        },
+        {
+          "predicted_token": "have",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "a",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "plan",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "for",
+          "correct_tag": "SCONJ",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "dealing",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "with",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "Afghanistan",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "or",
+          "predicted_tag": "CCONJ"
+        },
+        {
+          "predicted_token": "al",
+          "correct_tag": "PROPN",
+          "predicted_tag": "X"
+        },
+        {
+          "predicted_token": "-",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "Qaeda",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "that",
+          "correct_tag": "PRON",
+          "predicted_tag": "SCONJ"
+        },
+        {
+          "predicted_token": "it",
+          "predicted_tag": "PRON"
+        },
+        {
+          "predicted_token": "could",
+          "predicted_tag": "AUX"
+        },
+        {
+          "predicted_token": "pull",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "off",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "the",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "shelf",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": ",",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "according",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "to",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "Bob",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "Woodward",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": ".",
+          "predicted_tag": "PUNCT"
+        }
+      ]
+    },
+    "explanation": [
+      {
+        "token": "for",
+        "predicted_tag": "ADP",
+        "correct_tag": "SCONJ",
+        "explanation": "The word 'for' is used as a subordinating conjunction introducing a purpose clause ('for dealing with Afghanistan'). The tagger incorrectly identified it as an adposition.",
+        "category": "Lexical Ambiguity"
+      },
+      {
+        "token": "al",
+        "predicted_tag": "X",
+        "correct_tag": "PROPN",
+        "explanation": "The tagger incorrectly tagged 'al' as 'X' (other). 'al' is part of the proper noun 'al-Qaeda', and should be tagged as PROPN.",
+        "category": "Named Entity Recognition"
+      },
+      {
+        "token": "that",
+        "predicted_tag": "SCONJ",
+        "correct_tag": "PRON",
+        "explanation": "The word 'that' is functioning as a relative pronoun, referring back to 'plan'. The tagger incorrectly identified it as a subordinating conjunction.",
+        "category": "Syntactic Function"
+      }
+    ]
+  },
+  {
+    "row": {
+      "sentence": "I heard that more may be going up for sale in the next month or do.",
+      "tags": [
+        {
+          "predicted_token": "I",
+          "predicted_tag": "PRON"
+        },
+        {
+          "predicted_token": "heard",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "that",
+          "predicted_tag": "SCONJ"
+        },
+        {
+          "predicted_token": "more",
+          "correct_tag": "ADJ",
+          "predicted_tag": "ADV"
+        },
+        {
+          "predicted_token": "may",
+          "predicted_tag": "AUX"
+        },
+        {
+          "predicted_token": "be",
+          "predicted_tag": "AUX"
+        },
+        {
+          "predicted_token": "going",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "up",
+          "correct_tag": "ADJ",
+          "predicted_tag": "ADV"
+        },
+        {
+          "predicted_token": "for",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "sale",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "in",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "the",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "next",
+          "predicted_tag": "ADJ"
+        },
+        {
+          "predicted_token": "month",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "or",
+          "predicted_tag": "CCONJ"
+        },
+        {
+          "predicted_token": "do",
+          "correct_tag": "ADV",
+          "predicted_tag": "AUX"
+        },
+        {
+          "predicted_token": ".",
+          "predicted_tag": "PUNCT"
+        }
+      ]
+    },
+    "explanation": [
+      {
+        "token": "more",
+        "predicted_tag": "ADV",
+        "correct_tag": "ADJ",
+        "explanation": "The word \"more\" is used here to modify the noun phrase \"going up\", functioning as an adjective describing the quantity or extent of what is going up for sale. The tagger incorrectly identified it as an adverb.",
+        "category": "Lexical Ambiguity"
+      },
+      {
+        "token": "up",
+        "predicted_tag": "ADV",
+        "correct_tag": "ADJ",
+        "explanation": "The word \"up\" is used here to modify the verb \"going\", functioning as an adjective describing the direction of the action. The tagger incorrectly identified it as an adverb.",
+        "category": "Lexical Ambiguity"
+      },
+      {
+        "token": "do",
+        "predicted_tag": "AUX",
+        "correct_tag": "ADV",
+        "explanation": "The word \"do\" is used here as an adverb, likely as a filler word or a placeholder. The tagger incorrectly identified it as an auxiliary verb.",
+        "category": "Lexical Ambiguity"
+      }
+    ]
+  },
+  {
+    "row": {
+      "sentence": "Have you seen the materials from the press conference that he launched today?",
+      "tags": [
+        {
+          "predicted_token": "Have",
+          "correct_tag": "AUX",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "you",
+          "predicted_tag": "PRON"
+        },
+        {
+          "predicted_token": "seen",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "the",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "materials",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "from",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "the",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "press",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "conference",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "that",
+          "correct_tag": "PRON",
+          "predicted_tag": "SCONJ"
+        },
+        {
+          "predicted_token": "he",
+          "predicted_tag": "PRON"
+        },
+        {
+          "predicted_token": "launched",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "today",
+          "correct_tag": "NOUN",
+          "predicted_tag": "ADV"
+        },
+        {
+          "predicted_token": "?",
+          "predicted_tag": "PUNCT"
+        }
+      ]
+    },
+    "explanation": [
+      {
+        "token": "Have",
+        "predicted_tag": "VERB",
+        "correct_tag": "AUX",
+        "explanation": "The word 'Have' is used as an auxiliary verb in this sentence to form the present perfect tense. The tagger incorrectly identified it as a main verb.",
+        "category": "Auxiliary Verb Misidentification"
+      },
+      {
+        "token": "that",
+        "predicted_tag": "SCONJ",
+        "correct_tag": "PRON",
+        "explanation": "The word 'that' is functioning as a relative pronoun, referring back to 'materials'. The tagger incorrectly identified it as a subordinating conjunction.",
+        "category": "Pronoun vs. Conjunction"
+      },
+      {
+        "token": "today",
+        "predicted_tag": "ADV",
+        "correct_tag": "NOUN",
+        "explanation": "The word 'today' is used as a noun in this sentence, functioning as the object of the verb 'launched'. The tagger incorrectly identified it as an adverb.",
+        "category": "Adverb vs. Noun"
+      }
+    ]
+  },
+  {
+    "row": {
+      "sentence": "I think this is actually a good thing--makes our proposal look like a much more preferable alternative by comparison, makes our support in the process more important, and sets Harvey up as the Ralph Nader equivalent in the election to fix California's broken system---a potential spoiler.",
+      "tags": [
+        {
+          "predicted_token": "I",
+          "predicted_tag": "PRON"
+        },
+        {
+          "predicted_token": "think",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "this",
+          "correct_tag": "PRON",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "is",
+          "predicted_tag": "AUX"
+        },
+        {
+          "predicted_token": "actually",
+          "predicted_tag": "ADV"
+        },
+        {
+          "predicted_token": "a",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "good",
+          "predicted_tag": "ADJ"
+        },
+        {
+          "predicted_token": "thing",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "--",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "makes",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "our",
+          "correct_tag": "PRON",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "proposal",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "look",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "like",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "a",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "much",
+          "predicted_tag": "ADV"
+        },
+        {
+          "predicted_token": "more",
+          "predicted_tag": "ADV"
+        },
+        {
+          "predicted_token": "preferable",
+          "predicted_tag": "ADJ"
+        },
+        {
+          "predicted_token": "alternative",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "by",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "comparison",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": ",",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "makes",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "our",
+          "correct_tag": "PRON",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "support",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "in",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "the",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "process",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "more",
+          "predicted_tag": "ADV"
+        },
+        {
+          "predicted_token": "important",
+          "predicted_tag": "ADJ"
+        },
+        {
+          "predicted_token": ",",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "and",
+          "predicted_tag": "CCONJ"
+        },
+        {
+          "predicted_token": "sets",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "Harvey",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "up",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "as",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "the",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "Ralph",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "Nader",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "equivalent",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "in",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "the",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "election",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "to",
+          "predicted_tag": "PART"
+        },
+        {
+          "predicted_token": "fix",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "California",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "'s",
+          "predicted_tag": "PART"
+        },
+        {
+          "predicted_token": "broken",
+          "predicted_tag": "ADJ"
+        },
+        {
+          "predicted_token": "system",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "---",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "a",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "potential",
+          "predicted_tag": "ADJ"
+        },
+        {
+          "predicted_token": "spoiler",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": ".",
+          "predicted_tag": "PUNCT"
+        }
+      ]
+    },
+    "explanation": [
+      {
+        "token": "this",
+        "predicted_tag": "DET",
+        "correct_tag": "PRON",
+        "explanation": "The tagger incorrectly identified 'this' as a determiner. In this context, 'this' functions as a pronoun, referring to something previously mentioned.",
+        "category": "Pronoun/Determiner Misclassification"
+      },
+      {
+        "token": "our",
+        "predicted_tag": "DET",
+        "correct_tag": "PRON",
+        "explanation": "The tagger incorrectly identified 'our' as a determiner. In this context, 'our' functions as a possessive pronoun, modifying a noun.",
+        "category": "Pronoun/Determiner Misclassification"
+      },
+      {
+        "token": "our",
+        "predicted_tag": "DET",
+        "correct_tag": "PRON",
+        "explanation": "The tagger incorrectly identified 'our' as a determiner. In this context, 'our' functions as a possessive pronoun, modifying a noun.",
+        "category": "Pronoun/Determiner Misclassification"
+      }
+    ]
+  },
+  {
+    "row": {
+      "sentence": "Can one of your research staff justify a suitable 20 year volalatility number for USD/Euro.",
+      "tags": [
+        {
+          "predicted_token": "Can",
+          "predicted_tag": "AUX"
+        },
+        {
+          "predicted_token": "one",
+          "predicted_tag": "NUM"
+        },
+        {
+          "predicted_token": "of",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "your",
+          "predicted_tag": "PRON"
+        },
+        {
+          "predicted_token": "research",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "staff",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "justify",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "a",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "suitable",
+          "predicted_tag": "ADJ"
+        },
+        {
+          "predicted_token": "20",
+          "predicted_tag": "NUM"
+        },
+        {
+          "predicted_token": "year",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "volalatility",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "number",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "for",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "USD",
+          "correct_tag": "NOUN",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "/",
+          "correct_tag": "PUNCT",
+          "predicted_tag": "SYM"
+        },
+        {
+          "predicted_token": "Euro",
+          "correct_tag": "NOUN",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": ".",
+          "predicted_tag": "PUNCT"
+        }
+      ]
+    },
+    "explanation": [
+      {
+        "token": "USD",
+        "predicted_tag": "NOUN",
+        "correct_tag": "PROPN",
+        "explanation": "USD is an abbreviation for United States Dollar, which is a proper noun. The tagger incorrectly identified it as a common noun.",
+        "category": "Proper Noun vs. Common Noun"
+      },
+      {
+        "token": "/",
+        "predicted_tag": "PUNCT",
+        "correct_tag": "SYM",
+        "explanation": "The forward slash (/) is used here as a symbol to represent a ratio or division, not as punctuation to separate clauses or phrases. The tagger incorrectly identified it as punctuation.",
+        "category": "Symbol vs. Punctuation"
+      },
+      {
+        "token": "Euro",
+        "predicted_tag": "NOUN",
+        "correct_tag": "PROPN",
+        "explanation": "Euro is the name of a currency, which is a proper noun. The tagger incorrectly identified it as a common noun.",
+        "category": "Proper Noun vs. Common Noun"
+      }
+    ]
+  },
+  {
+    "row": {
+      "sentence": "Attached below is Davis Thames' presentation regarding the proposed Project Bruin.",
+      "tags": [
+        {
+          "predicted_token": "Attached",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "below",
+          "predicted_tag": "ADV"
+        },
+        {
+          "predicted_token": "is",
+          "predicted_tag": "AUX"
+        },
+        {
+          "predicted_token": "Davis",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "Thames",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "'",
+          "correct_tag": "PART",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "presentation",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "regarding",
+          "correct_tag": "VERB",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "the",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "proposed",
+          "correct_tag": "VERB",
+          "predicted_tag": "ADJ"
+        },
+        {
+          "predicted_token": "Project",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "Bruin",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": ".",
+          "predicted_tag": "PUNCT"
+        }
+      ]
+    },
+    "explanation": [
+      {
+        "token": "'",
+        "predicted_tag": "PUNCT",
+        "correct_tag": "PART",
+        "explanation": "The apostrophe is functioning as a possessive marker, which is a particle.",
+        "category": "Morphological Ambiguity"
+      },
+      {
+        "token": "regarding",
+        "predicted_tag": "ADP",
+        "correct_tag": "VERB",
+        "explanation": "The word 'regarding' is used as a deverbal preposition, which is a verb.",
+        "category": "Lexical Ambiguity"
+      },
+      {
+        "token": "proposed",
+        "predicted_tag": "ADJ",
+        "correct_tag": "VERB",
+        "explanation": "The word 'proposed' is used as a verb in this context.",
+        "category": "Lexical Ambiguity"
+      }
+    ]
+  },
+  {
+    "row": {
+      "sentence": "Caveat: subject to credit review even though there are blanks.",
+      "tags": [
+        {
+          "predicted_token": "Caveat",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": ":",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "subject",
+          "correct_tag": "ADJ",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "to",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "credit",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "review",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "even",
+          "predicted_tag": "ADV"
+        },
+        {
+          "predicted_token": "though",
+          "predicted_tag": "SCONJ"
+        },
+        {
+          "predicted_token": "there",
+          "correct_tag": "PRON",
+          "predicted_tag": "ADV"
+        },
+        {
+          "predicted_token": "are",
+          "correct_tag": "VERB",
+          "predicted_tag": "AUX"
+        },
+        {
+          "predicted_token": "blanks",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": ".",
+          "predicted_tag": "PUNCT"
+        }
+      ]
+    },
+    "explanation": [
+      {
+        "token": "subject",
+        "predicted_tag": "NOUN",
+        "correct_tag": "ADJ",
+        "explanation": "The word \"subject\" is used here to describe the nature of the credit review, functioning as an adjective modifying the noun phrase. The tagger incorrectly identified it as a noun.",
+        "category": "Lexical ambiguity"
+      },
+      {
+        "token": "there",
+        "predicted_tag": "ADV",
+        "correct_tag": "PRON",
+        "explanation": "The word \"there\" is used as an expletive pronoun, which is a pronoun that does not refer to any specific entity but serves to introduce a sentence or clause. The tagger incorrectly identified it as an adverb.",
+        "category": "Syntactic function"
+      },
+      {
+        "token": "are",
+        "predicted_tag": "AUX",
+        "correct_tag": "VERB",
+        "explanation": "The word \"are\" is the main verb in the sentence, indicating existence. The tagger incorrectly identified it as an auxiliary verb.",
+        "category": "Syntactic function"
+      }
+    ]
+  },
+  {
+    "row": {
+      "sentence": "I was wondering if it would be OK for me to sit in with you one day to get a general feel of your end of the process.",
+      "tags": [
+        {
+          "predicted_token": "I",
+          "predicted_tag": "PRON"
+        },
+        {
+          "predicted_token": "was",
+          "predicted_tag": "AUX"
+        },
+        {
+          "predicted_token": "wondering",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "if",
+          "predicted_tag": "SCONJ"
+        },
+        {
+          "predicted_token": "it",
+          "predicted_tag": "PRON"
+        },
+        {
+          "predicted_token": "would",
+          "predicted_tag": "AUX"
+        },
+        {
+          "predicted_token": "be",
+          "predicted_tag": "AUX"
+        },
+        {
+          "predicted_token": "OK",
+          "predicted_tag": "ADJ"
+        },
+        {
+          "predicted_token": "for",
+          "correct_tag": "SCONJ",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "me",
+          "predicted_tag": "PRON"
+        },
+        {
+          "predicted_token": "to",
+          "predicted_tag": "PART"
+        },
+        {
+          "predicted_token": "sit",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "in",
+          "correct_tag": "ADV",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "with",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "you",
+          "predicted_tag": "PRON"
+        },
+        {
+          "predicted_token": "one",
+          "predicted_tag": "NUM"
+        },
+        {
+          "predicted_token": "day",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "to",
+          "predicted_tag": "PART"
+        },
+        {
+          "predicted_token": "get",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "a",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "general",
+          "predicted_tag": "ADJ"
+        },
+        {
+          "predicted_token": "feel",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "of",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "your",
+          "correct_tag": "PRON",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "end",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "of",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "the",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "process",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": ".",
+          "predicted_tag": "PUNCT"
+        }
+      ]
+    },
+    "explanation": [
+      {
+        "token": "for",
+        "predicted_tag": "ADP",
+        "correct_tag": "SCONJ",
+        "explanation": "The word 'for' is used as a subordinating conjunction in this context, introducing a subordinate clause. The tagger incorrectly identified it as an adposition.",
+        "category": "Lexical Ambiguity"
+      },
+      {
+        "token": "in",
+        "predicted_tag": "ADP",
+        "correct_tag": "ADV",
+        "explanation": "The word 'in' functions as an adverb here, as part of the phrasal verb 'sit in'. The tagger incorrectly identified it as an adposition.",
+        "category": "Phrasal Verb"
+      },
+      {
+        "token": "your",
+        "predicted_tag": "DET",
+        "correct_tag": "PRON",
+        "explanation": "The word 'your' is a possessive pronoun, which functions as a determiner in this context. The tagger incorrectly identified it as a determiner.",
+        "category": "Lexical Ambiguity"
+      }
+    ]
+  },
+  {
+    "row": {
+      "sentence": "Ram Tackett, (mailto:rtackett@abacustech.net) Owner, Abacus Technologies 17611 Loring Lane, Spring, TX 77388-5746 (281)651-7106;Fax(281)528-8636 Web: http://www.abacustech.net",
+      "tags": [
+        {
+          "predicted_token": "Ram",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "Tackett",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": ",",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "(",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "mailto:rtackett@abacustech.net",
+          "correct_tag": "PROPN",
+          "predicted_tag": "X"
+        },
+        {
+          "predicted_token": ")",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "Owner",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": ",",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "Abacus",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "Technologies",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "17611",
+          "predicted_tag": "NUM"
+        },
+        {
+          "predicted_token": "Loring",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "Lane",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": ",",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "Spring",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": ",",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "TX",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "77388-5746",
+          "predicted_tag": "NUM"
+        },
+        {
+          "predicted_token": "(",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "281",
+          "predicted_tag": "NUM"
+        },
+        {
+          "predicted_token": ")",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "651-7106",
+          "predicted_tag": "NUM"
+        },
+        {
+          "predicted_token": ";",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "Fax",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "(",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "281",
+          "predicted_tag": "NUM"
+        },
+        {
+          "predicted_token": ")",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "528-8636",
+          "predicted_tag": "NUM"
+        },
+        {
+          "predicted_token": "Web",
+          "correct_tag": "NOUN",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": ":",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "http://www.abacustech.net",
+          "correct_tag": "PROPN",
+          "predicted_tag": "X"
+        }
+      ]
+    },
+    "explanation": [
+      {
+        "token": "mailto:rtackett@abacustech.net",
+        "predicted_tag": "X",
+        "correct_tag": "PROPN",
+        "explanation": "The token is an email address, which is a proper noun. The tagger incorrectly identified it as 'X' (other), likely because it is a non-standard word or a combination of characters.",
+        "category": "Named Entity Recognition"
+      },
+      {
+        "token": "Web",
+        "predicted_tag": "NOUN",
+        "correct_tag": "PROPN",
+        "explanation": "The token 'Web' is used as the name of a website, thus it is a proper noun. The tagger incorrectly identified it as a common noun.",
+        "category": "Named Entity Recognition"
+      },
+      {
+        "token": "http://www.abacustech.net",
+        "predicted_tag": "X",
+        "correct_tag": "PROPN",
+        "explanation": "The token is a URL, which is a proper noun. The tagger incorrectly identified it as 'X' (other), likely because it is a non-standard word or a combination of characters.",
+        "category": "Named Entity Recognition"
+      }
+    ]
+  },
+  {
+    "row": {
+      "sentence": "Janette Elbertson Administrative Coordinator EWS Legal, EB3326 Telephone: (713) 853-7906 Facsimile: (713) 646-2600 e-mail address: janette.elbertson@enron.com",
+      "tags": [
+        {
+          "predicted_token": "Janette",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "Elbertson",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "Administrative",
+          "predicted_tag": "ADJ"
+        },
+        {
+          "predicted_token": "Coordinator",
+          "correct_tag": "NOUN",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "EWS",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "Legal",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": ",",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "EB3326",
+          "correct_tag": "NOUN",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "Telephone",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": ":",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "(",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "713",
+          "predicted_tag": "NUM"
+        },
+        {
+          "predicted_token": ")",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "853-7906",
+          "predicted_tag": "NUM"
+        },
+        {
+          "predicted_token": "Facsimile",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": ":",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "(",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "713",
+          "predicted_tag": "NUM"
+        },
+        {
+          "predicted_token": ")",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "646-2600",
+          "predicted_tag": "NUM"
+        },
+        {
+          "predicted_token": "e-mail",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "address",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": ":",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "janette.elbertson@enron.com",
+          "correct_tag": "PROPN",
+          "predicted_tag": "X"
+        }
+      ]
+    },
+    "explanation": [
+      {
+        "token": "Coordinator",
+        "predicted_tag": "PROPN",
+        "correct_tag": "NOUN",
+        "explanation": "The tagger incorrectly identified 'Coordinator' as a proper noun. While it could be part of a proper noun phrase, in this context, it functions as a common noun describing a role.",
+        "category": "Incorrect Noun Classification"
+      },
+      {
+        "token": "EB3326",
+        "predicted_tag": "PROPN",
+        "correct_tag": "NOUN",
+        "explanation": "The tagger incorrectly identified 'EB3326' as a proper noun. It is likely a code or identifier, but in this context, it functions as a noun, possibly referring to a location or reference.",
+        "category": "Incorrect Noun Classification"
+      },
+      {
+        "token": "janette.elbertson@enron.com",
+        "predicted_tag": "X",
+        "correct_tag": "PROPN",
+        "explanation": "The tagger incorrectly tagged the email address as 'X' (other). Email addresses are often treated as proper nouns because they are unique identifiers.",
+        "category": "Incorrect Proper Noun Identification"
+      }
+    ]
+  },
+  {
+    "row": {
+      "sentence": "Opinions, conclusions and other information in this message that do not relate to the official business of my firm shall be understood as neither given nor endorsed by it.",
+      "tags": [
+        {
+          "predicted_token": "Opinions",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": ",",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "conclusions",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "and",
+          "predicted_tag": "CCONJ"
+        },
+        {
+          "predicted_token": "other",
+          "predicted_tag": "ADJ"
+        },
+        {
+          "predicted_token": "information",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "in",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "this",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "message",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "that",
+          "correct_tag": "PRON",
+          "predicted_tag": "SCONJ"
+        },
+        {
+          "predicted_token": "do",
+          "predicted_tag": "AUX"
+        },
+        {
+          "predicted_token": "not",
+          "predicted_tag": "PART"
+        },
+        {
+          "predicted_token": "relate",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "to",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "the",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "official",
+          "predicted_tag": "ADJ"
+        },
+        {
+          "predicted_token": "business",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "of",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "my",
+          "predicted_tag": "PRON"
+        },
+        {
+          "predicted_token": "firm",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "shall",
+          "predicted_tag": "AUX"
+        },
+        {
+          "predicted_token": "be",
+          "predicted_tag": "AUX"
+        },
+        {
+          "predicted_token": "understood",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "as",
+          "correct_tag": "SCONJ",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "neither",
+          "correct_tag": "CCONJ",
+          "predicted_tag": "ADV"
+        },
+        {
+          "predicted_token": "given",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "nor",
+          "predicted_tag": "CCONJ"
+        },
+        {
+          "predicted_token": "endorsed",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "by",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "it",
+          "predicted_tag": "PRON"
+        },
+        {
+          "predicted_token": ".",
+          "predicted_tag": "PUNCT"
+        }
+      ]
+    },
+    "explanation": [
+      {
+        "token": "that",
+        "predicted_tag": "SCONJ",
+        "correct_tag": "PRON",
+        "explanation": "The word 'that' is functioning as a relative pronoun, referring back to 'message'. The tagger incorrectly identified it as a subordinating conjunction, which is used to introduce subordinate clauses.",
+        "category": "Lexical Ambiguity"
+      },
+      {
+        "token": "as",
+        "predicted_tag": "ADP",
+        "correct_tag": "SCONJ",
+        "explanation": "The word 'as' is used here to introduce a subordinate clause, indicating a reason or manner. The tagger incorrectly identified it as an adposition, which typically governs a noun phrase.",
+        "category": "Lexical Ambiguity"
+      },
+      {
+        "token": "neither",
+        "predicted_tag": "ADV",
+        "correct_tag": "CCONJ",
+        "explanation": "The word 'neither' is used as a coordinating conjunction, functioning with 'nor' to connect two clauses. The tagger incorrectly identified it as an adverb.",
+        "category": "Syntactic Function"
+      }
+    ]
+  },
+  {
+    "row": {
+      "sentence": "You'll be able to use your 1-4 years of experience with Toxic Tort to complement your desire to stay with the firm.",
+      "tags": [
+        {
+          "predicted_token": "You",
+          "predicted_tag": "PRON"
+        },
+        {
+          "predicted_token": "'ll",
+          "predicted_tag": "AUX"
+        },
+        {
+          "predicted_token": "be",
+          "predicted_tag": "AUX"
+        },
+        {
+          "predicted_token": "able",
+          "predicted_tag": "ADJ"
+        },
+        {
+          "predicted_token": "to",
+          "predicted_tag": "PART"
+        },
+        {
+          "predicted_token": "use",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "your",
+          "predicted_tag": "PRON"
+        },
+        {
+          "predicted_token": "1",
+          "predicted_tag": "NUM"
+        },
+        {
+          "predicted_token": "-",
+          "correct_tag": "SYM",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "4",
+          "predicted_tag": "NUM"
+        },
+        {
+          "predicted_token": "years",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "of",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "experience",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "with",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "Toxic",
+          "correct_tag": "ADJ",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "Tort",
+          "correct_tag": "NOUN",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "to",
+          "predicted_tag": "PART"
+        },
+        {
+          "predicted_token": "complement",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "your",
+          "predicted_tag": "PRON"
+        },
+        {
+          "predicted_token": "desire",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "to",
+          "predicted_tag": "PART"
+        },
+        {
+          "predicted_token": "stay",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "with",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "the",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "firm",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": ".",
+          "predicted_tag": "PUNCT"
+        }
+      ]
+    },
+    "explanation": [
+      {
+        "token": "-",
+        "predicted_tag": "PUNCT",
+        "correct_tag": "SYM",
+        "explanation": "The hyphen is used as a separator between numbers, which is a symbol.",
+        "category": "Symbol vs. Punctuation"
+      },
+      {
+        "token": "Toxic",
+        "predicted_tag": "PROPN",
+        "correct_tag": "ADJ",
+        "explanation": "The word 'Toxic' is used as an adjective modifying the noun 'Tort'. The tagger incorrectly identified it as a proper noun.",
+        "category": "Adjective vs. Proper Noun"
+      },
+      {
+        "token": "Tort",
+        "predicted_tag": "PROPN",
+        "correct_tag": "NOUN",
+        "explanation": "The word 'Tort' is a common noun in this context, referring to a legal concept. The tagger incorrectly identified it as a proper noun.",
+        "category": "Noun vs. Proper Noun"
+      }
+    ]
+  },
+  {
+    "row": {
+      "sentence": "there will be talent and opportunity a plenty on the market soon.",
+      "tags": [
+        {
+          "predicted_token": "there",
+          "correct_tag": "PRON",
+          "predicted_tag": "ADV"
+        },
+        {
+          "predicted_token": "will",
+          "predicted_tag": "AUX"
+        },
+        {
+          "predicted_token": "be",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "talent",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "and",
+          "predicted_tag": "CCONJ"
+        },
+        {
+          "predicted_token": "opportunity",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "a",
+          "correct_tag": "ADJ",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "plenty",
+          "correct_tag": "X",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "on",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "the",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "market",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "soon",
+          "predicted_tag": "ADV"
+        },
+        {
+          "predicted_token": ".",
+          "predicted_tag": "PUNCT"
+        }
+      ]
+    },
+    "explanation": [
+      {
+        "token": "there",
+        "predicted_tag": "ADV",
+        "correct_tag": "PRON",
+        "explanation": "The word \"there\" is used as an expletive pronoun, which is a pronoun that does not refer to any specific noun. The tagger incorrectly identified it as an adverb, which typically modifies verbs, adjectives, or other adverbs.",
+        "category": "Pronoun vs. Adverb"
+      },
+      {
+        "token": "a",
+        "predicted_tag": "DET",
+        "correct_tag": "ADJ",
+        "explanation": "The word \"a\" is used as an adjective in this context, modifying the noun \"plenty\". The tagger incorrectly identified it as a determiner, which typically specifies the reference of a noun phrase.",
+        "category": "Determiner vs. Adjective"
+      },
+      {
+        "token": "plenty",
+        "predicted_tag": "NOUN",
+        "correct_tag": "X",
+        "explanation": "The word \"plenty\" is used in an unusual way here, and it is difficult to assign it to a standard part-of-speech category. The tagger incorrectly identified it as a noun.",
+        "category": "Unusual Usage"
+      }
+    ]
+  },
+  {
+    "row": {
+      "sentence": "not sure how much longer ene is going to be around and i'm checking out my options!",
+      "tags": [
+        {
+          "predicted_token": "not",
+          "predicted_tag": "PART"
+        },
+        {
+          "predicted_token": "sure",
+          "predicted_tag": "ADJ"
+        },
+        {
+          "predicted_token": "how",
+          "predicted_tag": "ADV"
+        },
+        {
+          "predicted_token": "much",
+          "correct_tag": "ADV",
+          "predicted_tag": "ADJ"
+        },
+        {
+          "predicted_token": "longer",
+          "predicted_tag": "ADV"
+        },
+        {
+          "predicted_token": "ene",
+          "correct_tag": "PROPN",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "is",
+          "predicted_tag": "AUX"
+        },
+        {
+          "predicted_token": "going",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "to",
+          "predicted_tag": "PART"
+        },
+        {
+          "predicted_token": "be",
+          "predicted_tag": "AUX"
+        },
+        {
+          "predicted_token": "around",
+          "predicted_tag": "ADV"
+        },
+        {
+          "predicted_token": "and",
+          "predicted_tag": "CCONJ"
+        },
+        {
+          "predicted_token": "i",
+          "predicted_tag": "PRON"
+        },
+        {
+          "predicted_token": "'m",
+          "predicted_tag": "AUX"
+        },
+        {
+          "predicted_token": "checking",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "out",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "my",
+          "correct_tag": "PRON",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "options",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "!",
+          "predicted_tag": "PUNCT"
+        }
+      ]
+    },
+    "explanation": [
+      {
+        "token": "much",
+        "predicted_tag": "ADJ",
+        "correct_tag": "ADV",
+        "explanation": "The word \"much\" is used to modify the verb \"longer\" in this context, indicating degree or extent, which is the function of an adverb. The tagger might have been confused by the fact that \"much\" can also function as an adjective (e.g., \"much money\").",
+        "category": "Lexical Ambiguity"
+      },
+      {
+        "token": "ene",
+        "predicted_tag": "NOUN",
+        "correct_tag": "PROPN",
+        "explanation": "The word \"ene\" appears to be a proper noun, likely an abbreviation or a name. The tagger incorrectly identified it as a common noun. The tagger may not have enough information to know that \"ene\" is a proper noun.",
+        "category": "Named Entity Recognition"
+      },
+      {
+        "token": "my",
+        "predicted_tag": "DET",
+        "correct_tag": "PRON",
+        "explanation": "The word \"my\" is a possessive determiner, which is often tagged as DET. However, in this case, the correct tag is PRON. This is because the possessive determiner is functioning as a pronoun, replacing the noun phrase. The tagger might have been confused by the fact that \"my\" can also function as a determiner.",
+        "category": "Lexical Ambiguity"
+      }
+    ]
+  },
+  {
+    "row": {
+      "sentence": "Please let me know what shape you all think the offer ought to take and we can revise accordingly.",
+      "tags": [
+        {
+          "predicted_token": "Please",
+          "predicted_tag": "INTJ"
+        },
+        {
+          "predicted_token": "let",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "me",
+          "predicted_tag": "PRON"
+        },
+        {
+          "predicted_token": "know",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "what",
+          "correct_tag": "DET",
+          "predicted_tag": "PRON"
+        },
+        {
+          "predicted_token": "shape",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "you",
+          "predicted_tag": "PRON"
+        },
+        {
+          "predicted_token": "all",
+          "correct_tag": "DET",
+          "predicted_tag": "PRON"
+        },
+        {
+          "predicted_token": "think",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "the",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "offer",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "ought",
+          "correct_tag": "AUX",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "to",
+          "predicted_tag": "PART"
+        },
+        {
+          "predicted_token": "take",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "and",
+          "predicted_tag": "CCONJ"
+        },
+        {
+          "predicted_token": "we",
+          "predicted_tag": "PRON"
+        },
+        {
+          "predicted_token": "can",
+          "predicted_tag": "AUX"
+        },
+        {
+          "predicted_token": "revise",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "accordingly",
+          "predicted_tag": "ADV"
+        },
+        {
+          "predicted_token": ".",
+          "predicted_tag": "PUNCT"
+        }
+      ]
+    },
+    "explanation": [
+      {
+        "token": "what",
+        "predicted_tag": "PRON",
+        "correct_tag": "DET",
+        "explanation": "The word \"what\" is used here as a determiner, introducing a noun phrase (\"what shape\"). The tagger incorrectly identified it as a pronoun.",
+        "category": "Determiner vs. Pronoun"
+      },
+      {
+        "token": "all",
+        "predicted_tag": "PRON",
+        "correct_tag": "DET",
+        "explanation": "The word \"all\" is used here as a determiner, modifying the noun phrase. The tagger incorrectly identified it as a pronoun.",
+        "category": "Determiner vs. Pronoun"
+      },
+      {
+        "token": "ought",
+        "predicted_tag": "VERB",
+        "correct_tag": "AUX",
+        "explanation": "The word \"ought\" functions as an auxiliary verb, expressing a modal meaning (obligation). The tagger incorrectly identified it as a main verb.",
+        "category": "Auxiliary vs. Verb"
+      }
+    ]
+  },
+  {
+    "row": {
+      "sentence": "- REDLINE GPSA Guaranty.doc",
+      "tags": [
+        {
+          "predicted_token": "-",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "REDLINE",
+          "correct_tag": "X",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "GPSA",
+          "correct_tag": "X",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "Guaranty.doc",
+          "correct_tag": "X",
+          "predicted_tag": "NOUN"
+        }
+      ]
+    },
+    "explanation": [
+      {
+        "token": "REDLINE",
+        "predicted_tag": "PROPN",
+        "correct_tag": "X",
+        "explanation": "The tagger likely identified 'REDLINE' as a proper noun, which is a common error when encountering capitalized words. However, in this context, it is part of a file name and thus tagged as 'X'.",
+        "category": "File Name/Unintelligible Material"
+      },
+      {
+        "token": "GPSA",
+        "predicted_tag": "PROPN",
+        "correct_tag": "X",
+        "explanation": "The tagger likely identified 'GPSA' as a proper noun, which is a common error when encountering capitalized words. However, in this context, it is part of a file name and thus tagged as 'X'.",
+        "category": "File Name/Unintelligible Material"
+      },
+      {
+        "token": "Guaranty.doc",
+        "predicted_tag": "NOUN",
+        "correct_tag": "X",
+        "explanation": "The tagger likely identified 'Guaranty.doc' as a noun, which is a common error when encountering words. However, in this context, it is part of a file name and thus tagged as 'X'.",
+        "category": "File Name/Unintelligible Material"
+      }
+    ]
+  },
+  {
+    "row": {
+      "sentence": "- REDLINE PPA Guaranty.doc",
+      "tags": [
+        {
+          "predicted_token": "-",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "REDLINE",
+          "correct_tag": "X",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "PPA",
+          "correct_tag": "X",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "Guaranty.doc",
+          "correct_tag": "X",
+          "predicted_tag": "NOUN"
+        }
+      ]
+    },
+    "explanation": [
+      {
+        "token": "REDLINE",
+        "predicted_tag": "PROPN",
+        "correct_tag": "X",
+        "explanation": "The tagger incorrectly identified 'REDLINE' as a proper noun. It should have been tagged as 'X' because it is part of a file name and does not fit into a standard part-of-speech category.",
+        "category": "File Name/Unclear"
+      },
+      {
+        "token": "PPA",
+        "predicted_tag": "PROPN",
+        "correct_tag": "X",
+        "explanation": "The tagger incorrectly identified 'PPA' as a proper noun. It should have been tagged as 'X' because it is part of a file name and does not fit into a standard part-of-speech category.",
+        "category": "File Name/Unclear"
+      },
+      {
+        "token": "Guaranty.doc",
+        "predicted_tag": "NOUN",
+        "correct_tag": "X",
+        "explanation": "The tagger incorrectly identified 'Guaranty.doc' as a noun. It should have been tagged as 'X' because it is part of a file name and does not fit into a standard part-of-speech category.",
+        "category": "File Name/Unclear"
+      }
+    ]
+  },
+  {
+    "row": {
+      "sentence": "Sheridan Titman Department of Finance College of Business Administration University of Texas Austin, Texas 78712-1179 512-232-2787 (phone) 512-471-5073 (fax) titman@mail.utexas.edu",
+      "tags": [
+        {
+          "predicted_token": "Sheridan",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "Titman",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "Department",
+          "correct_tag": "NOUN",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "of",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "Finance",
+          "correct_tag": "NOUN",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "College",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "of",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "Business",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "Administration",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "University",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "of",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "Texas",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "Austin",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": ",",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "Texas",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "78712-1179",
+          "predicted_tag": "NUM"
+        },
+        {
+          "predicted_token": "512-232-2787",
+          "predicted_tag": "NUM"
+        },
+        {
+          "predicted_token": "(",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "phone",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": ")",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "512-471-5073",
+          "predicted_tag": "NUM"
+        },
+        {
+          "predicted_token": "(",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "fax",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": ")",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "titman@mail.utexas.edu",
+          "correct_tag": "PROPN",
+          "predicted_tag": "X"
+        }
+      ]
+    },
+    "explanation": [
+      {
+        "token": "Department",
+        "predicted_tag": "PROPN",
+        "correct_tag": "NOUN",
+        "explanation": "The tagger incorrectly tagged \"Department\" as a proper noun (PROPN). While it is part of a proper noun phrase, the word itself is a common noun.",
+        "category": "Incorrect POS Tagging"
+      },
+      {
+        "token": "Finance",
+        "predicted_tag": "PROPN",
+        "correct_tag": "NOUN",
+        "explanation": "The tagger incorrectly tagged \"Finance\" as a proper noun (PROPN). While it is part of a proper noun phrase, the word itself is a common noun.",
+        "category": "Incorrect POS Tagging"
+      },
+      {
+        "token": "titman@mail.utexas.edu",
+        "predicted_tag": "X",
+        "correct_tag": "PROPN",
+        "explanation": "The tagger incorrectly tagged \"titman@mail.utexas.edu\" as X (other). This is an email address and should be tagged as a proper noun (PROPN).",
+        "category": "Incorrect POS Tagging"
+      }
+    ]
+  },
+  {
+    "row": {
+      "sentence": "I'll try and send one of Peter Cox' as well but may have some problems due to file size.",
+      "tags": [
+        {
+          "predicted_token": "I",
+          "predicted_tag": "PRON"
+        },
+        {
+          "predicted_token": "'ll",
+          "predicted_tag": "AUX"
+        },
+        {
+          "predicted_token": "try",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "and",
+          "predicted_tag": "CCONJ"
+        },
+        {
+          "predicted_token": "send",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "one",
+          "predicted_tag": "NUM"
+        },
+        {
+          "predicted_token": "of",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "Peter",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "Cox",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "'",
+          "correct_tag": "PART",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "as",
+          "correct_tag": "ADV",
+          "predicted_tag": "SCONJ"
+        },
+        {
+          "predicted_token": "well",
+          "predicted_tag": "ADV"
+        },
+        {
+          "predicted_token": "but",
+          "predicted_tag": "CCONJ"
+        },
+        {
+          "predicted_token": "may",
+          "predicted_tag": "AUX"
+        },
+        {
+          "predicted_token": "have",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "some",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "problems",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "due",
+          "correct_tag": "ADJ",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "to",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "file",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "size",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": ".",
+          "predicted_tag": "PUNCT"
+        }
+      ]
+    },
+    "explanation": [
+      {
+        "token": "'",
+        "predicted_tag": "PUNCT",
+        "correct_tag": "PART",
+        "explanation": "The apostrophe is functioning as a possessive marker, which is a particle.",
+        "category": "Morphological Error"
+      },
+      {
+        "token": "as",
+        "predicted_tag": "SCONJ",
+        "correct_tag": "ADV",
+        "explanation": "The word 'as' is used as an adverb in this context, modifying the verb or the clause.",
+        "category": "Syntactic Error"
+      },
+      {
+        "token": "due",
+        "predicted_tag": "ADP",
+        "correct_tag": "ADJ",
+        "explanation": "The word 'due' is functioning as an adjective modifying 'problems'.",
+        "category": "Syntactic Error"
+      }
+    ]
+  },
+  {
+    "row": {
+      "sentence": "EY4096.1 PERFORMANCE 01-Feb-02 P 6,363,217 -$ 250,393",
+      "tags": [
+        {
+          "predicted_token": "EY4096.1",
+          "correct_tag": "NOUN",
+          "predicted_tag": "X"
+        },
+        {
+          "predicted_token": "PERFORMANCE",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "01-Feb-02",
+          "correct_tag": "NOUN",
+          "predicted_tag": "X"
+        },
+        {
+          "predicted_token": "P",
+          "correct_tag": "NOUN",
+          "predicted_tag": "X"
+        },
+        {
+          "predicted_token": "6,363,217",
+          "predicted_tag": "NUM"
+        },
+        {
+          "predicted_token": "-",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "$",
+          "predicted_tag": "SYM"
+        },
+        {
+          "predicted_token": "250,393",
+          "predicted_tag": "NUM"
+        }
+      ]
+    },
+    "explanation": [
+      {
+        "token": "EY4096.1",
+        "predicted_tag": "X",
+        "correct_tag": "NOUN",
+        "explanation": "The token is a product code or identifier, which functions as a noun.",
+        "category": "Lexical Item"
+      },
+      {
+        "token": "01-Feb-02",
+        "predicted_tag": "X",
+        "correct_tag": "NOUN",
+        "explanation": "The token represents a date, which functions as a noun in this context.",
+        "category": "Lexical Item"
+      },
+      {
+        "token": "P",
+        "predicted_tag": "X",
+        "correct_tag": "NOUN",
+        "explanation": "The token likely represents a code or an abbreviation, which functions as a noun in this context.",
+        "category": "Lexical Item"
+      }
+    ]
+  },
+  {
+    "row": {
+      "sentence": "EY4096.3 PERFORMANCE 01-Feb-02 P 202,989 $ 195,610",
+      "tags": [
+        {
+          "predicted_token": "EY4096.3",
+          "correct_tag": "NOUN",
+          "predicted_tag": "X"
+        },
+        {
+          "predicted_token": "PERFORMANCE",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "01-Feb-02",
+          "correct_tag": "NOUN",
+          "predicted_tag": "X"
+        },
+        {
+          "predicted_token": "P",
+          "correct_tag": "NOUN",
+          "predicted_tag": "X"
+        },
+        {
+          "predicted_token": "202,989",
+          "predicted_tag": "NUM"
+        },
+        {
+          "predicted_token": "$",
+          "predicted_tag": "SYM"
+        },
+        {
+          "predicted_token": "195,610",
+          "predicted_tag": "NUM"
+        }
+      ]
+    },
+    "explanation": [
+      {
+        "token": "EY4096.3",
+        "predicted_tag": "X",
+        "correct_tag": "NOUN",
+        "explanation": "The token is a product code or identifier, which functions as a noun in this context.",
+        "category": "Lexical Item"
+      },
+      {
+        "token": "01-Feb-02",
+        "predicted_tag": "X",
+        "correct_tag": "NOUN",
+        "explanation": "The token represents a date, which is functioning as a noun in this context.",
+        "category": "Lexical Item"
+      },
+      {
+        "token": "P",
+        "predicted_tag": "X",
+        "correct_tag": "NOUN",
+        "explanation": "The token is likely an abbreviation or a code, which functions as a noun in this context.",
+        "category": "Lexical Item"
+      }
+    ]
+  },
+  {
+    "row": {
+      "sentence": "EY4096.4 PERFORMANCE 01-Feb-02 F 0 $ 31,180",
+      "tags": [
+        {
+          "predicted_token": "EY4096.4",
+          "correct_tag": "NOUN",
+          "predicted_tag": "X"
+        },
+        {
+          "predicted_token": "PERFORMANCE",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "01-Feb-02",
+          "correct_tag": "NOUN",
+          "predicted_tag": "X"
+        },
+        {
+          "predicted_token": "F",
+          "correct_tag": "PROPN",
+          "predicted_tag": "X"
+        },
+        {
+          "predicted_token": "0",
+          "predicted_tag": "NUM"
+        },
+        {
+          "predicted_token": "$",
+          "predicted_tag": "SYM"
+        },
+        {
+          "predicted_token": "31,180",
+          "predicted_tag": "NUM"
+        }
+      ]
+    },
+    "explanation": [
+      {
+        "token": "EY4096.4",
+        "predicted_tag": "X",
+        "correct_tag": "NOUN",
+        "explanation": "The token is likely a product code or identifier, which functions as a noun in this context. The tagger incorrectly identified it as 'X' (other), possibly because it's a combination of letters and numbers and not a common word.",
+        "category": "Lexical Item"
+      },
+      {
+        "token": "01-Feb-02",
+        "predicted_tag": "X",
+        "correct_tag": "NOUN",
+        "explanation": "The token represents a date, which functions as a noun. The tagger incorrectly identified it as 'X' (other), possibly because of the unusual format.",
+        "category": "Lexical Item"
+      },
+      {
+        "token": "F",
+        "predicted_tag": "X",
+        "correct_tag": "PROPN",
+        "explanation": "The token 'F' likely represents a specific entity or code, functioning as a proper noun. The tagger incorrectly identified it as 'X' (other), possibly because it is a single letter.",
+        "category": "Lexical Item"
+      }
+    ]
+  },
+  {
+    "row": {
+      "sentence": "EY4106.6 PERFORMANCE 01-Feb-02 P -1,993,045 -$ 32,387",
+      "tags": [
+        {
+          "predicted_token": "EY4106.6",
+          "correct_tag": "NOUN",
+          "predicted_tag": "X"
+        },
+        {
+          "predicted_token": "PERFORMANCE",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "01-Feb-02",
+          "correct_tag": "NOUN",
+          "predicted_tag": "X"
+        },
+        {
+          "predicted_token": "P",
+          "correct_tag": "PROPN",
+          "predicted_tag": "X"
+        },
+        {
+          "predicted_token": "-",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "1,993,045",
+          "predicted_tag": "NUM"
+        },
+        {
+          "predicted_token": "-",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "$",
+          "predicted_tag": "SYM"
+        },
+        {
+          "predicted_token": "32,387",
+          "predicted_tag": "NUM"
+        }
+      ]
+    },
+    "explanation": [
+      {
+        "token": "EY4106.6",
+        "predicted_tag": "X",
+        "correct_tag": "NOUN",
+        "explanation": "The token is a product code or identifier, which functions as a noun in this context.",
+        "category": "Lexical Item"
+      },
+      {
+        "token": "01-Feb-02",
+        "predicted_tag": "X",
+        "correct_tag": "NOUN",
+        "explanation": "The token represents a date, which is functioning as a noun in this context.",
+        "category": "Lexical Item"
+      },
+      {
+        "token": "P",
+        "predicted_tag": "X",
+        "correct_tag": "PROPN",
+        "explanation": "The token is likely an abbreviation or initialism that represents a proper noun, such as a company or organization.",
+        "category": "Lexical Item"
+      }
+    ]
+  },
+  {
+    "row": {
+      "sentence": "EY4106.9 PERFORMANCE 01-Feb-02 P 27,886 $ 27,361",
+      "tags": [
+        {
+          "predicted_token": "EY4106.9",
+          "correct_tag": "NOUN",
+          "predicted_tag": "X"
+        },
+        {
+          "predicted_token": "PERFORMANCE",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "01-Feb-02",
+          "correct_tag": "NOUN",
+          "predicted_tag": "X"
+        },
+        {
+          "predicted_token": "P",
+          "correct_tag": "NOUN",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "27,886",
+          "predicted_tag": "NUM"
+        },
+        {
+          "predicted_token": "$",
+          "predicted_tag": "SYM"
+        },
+        {
+          "predicted_token": "27,361",
+          "predicted_tag": "NUM"
+        }
+      ]
+    },
+    "explanation": [
+      {
+        "token": "EY4106.9",
+        "predicted_tag": "X",
+        "correct_tag": "NOUN",
+        "explanation": "The token is a product code or identifier, which functions as a noun in this context.",
+        "category": "Lexical Item"
+      },
+      {
+        "token": "01-Feb-02",
+        "predicted_tag": "X",
+        "correct_tag": "NOUN",
+        "explanation": "The token represents a date, which is functioning as a noun in this context.",
+        "category": "Lexical Item"
+      },
+      {
+        "token": "P",
+        "predicted_tag": "PROPN",
+        "correct_tag": "NOUN",
+        "explanation": "The token 'P' likely represents a category or code, functioning as a noun.",
+        "category": "Lexical Item"
+      }
+    ]
+  },
+  {
+    "row": {
+      "sentence": "EY4108.F PERFORMANCE 01-Feb-02 P 112,610 $ 110,555",
+      "tags": [
+        {
+          "predicted_token": "EY4108.F",
+          "correct_tag": "NOUN",
+          "predicted_tag": "X"
+        },
+        {
+          "predicted_token": "PERFORMANCE",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "01-Feb-02",
+          "correct_tag": "NOUN",
+          "predicted_tag": "X"
+        },
+        {
+          "predicted_token": "P",
+          "correct_tag": "NOUN",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "112,610",
+          "predicted_tag": "NUM"
+        },
+        {
+          "predicted_token": "$",
+          "predicted_tag": "SYM"
+        },
+        {
+          "predicted_token": "110,555",
+          "predicted_tag": "NUM"
+        }
+      ]
+    },
+    "explanation": [
+      {
+        "token": "EY4108.F",
+        "predicted_tag": "X",
+        "correct_tag": "NOUN",
+        "explanation": "The token likely represents a product code or identifier, which functions as a noun in this context. The tagger incorrectly labeled it as 'X' (other), possibly due to its unusual format.",
+        "category": "Token Type"
+      },
+      {
+        "token": "01-Feb-02",
+        "predicted_tag": "X",
+        "correct_tag": "NOUN",
+        "explanation": "The token represents a date, which functions as a noun in this context. The tagger incorrectly labeled it as 'X' (other), possibly due to its format.",
+        "category": "Token Type"
+      },
+      {
+        "token": "P",
+        "predicted_tag": "PROPN",
+        "correct_tag": "NOUN",
+        "explanation": "The token 'P' likely represents a code or an abbreviation, which functions as a noun in this context. The tagger incorrectly labeled it as 'PROPN' (proper noun), possibly because it is a single capital letter.",
+        "category": "Token Type"
+      }
+    ]
+  },
+  {
+    "row": {
+      "sentence": "While our established schedules of Tuesday and Friday DPR's would have us reporting tomorrow's activity on Monday, we will change that for month end.",
+      "tags": [
+        {
+          "predicted_token": "While",
+          "predicted_tag": "SCONJ"
+        },
+        {
+          "predicted_token": "our",
+          "predicted_tag": "PRON"
+        },
+        {
+          "predicted_token": "established",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "schedules",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "of",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "Tuesday",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "and",
+          "predicted_tag": "CCONJ"
+        },
+        {
+          "predicted_token": "Friday",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "DPR's",
+          "correct_tag": "NOUN",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "would",
+          "predicted_tag": "AUX"
+        },
+        {
+          "predicted_token": "have",
+          "correct_tag": "VERB",
+          "predicted_tag": "AUX"
+        },
+        {
+          "predicted_token": "us",
+          "predicted_tag": "PRON"
+        },
+        {
+          "predicted_token": "reporting",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "tomorrow",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "'s",
+          "predicted_tag": "PART"
+        },
+        {
+          "predicted_token": "activity",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "on",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "Monday",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": ",",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "we",
+          "predicted_tag": "PRON"
+        },
+        {
+          "predicted_token": "will",
+          "predicted_tag": "AUX"
+        },
+        {
+          "predicted_token": "change",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "that",
+          "correct_tag": "PRON",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "for",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "month",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "end",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": ".",
+          "predicted_tag": "PUNCT"
+        }
+      ]
+    },
+    "explanation": [
+      {
+        "token": "DPR's",
+        "predicted_tag": "PROPN",
+        "correct_tag": "NOUN",
+        "explanation": "The tagger incorrectly tagged 'DPR's' as a proper noun. The token is a plural noun, likely an abbreviation or acronym, but not a proper noun in this context.",
+        "category": "Abbreviation/Acronym Misclassification"
+      },
+      {
+        "token": "have",
+        "predicted_tag": "AUX",
+        "correct_tag": "VERB",
+        "explanation": "The tagger incorrectly tagged 'have' as an auxiliary verb. In this sentence, 'have' functions as a main verb, indicating possession or obligation.",
+        "category": "Verb vs. Auxiliary Misidentification"
+      },
+      {
+        "token": "that",
+        "predicted_tag": "DET",
+        "correct_tag": "PRON",
+        "explanation": "The tagger incorrectly tagged 'that' as a determiner. In this sentence, 'that' functions as a pronoun, referring back to a previously mentioned concept or idea.",
+        "category": "Pronoun vs. Determiner Misidentification"
+      }
+    ]
+  },
+  {
+    "row": {
+      "sentence": "** BBC Daily E-mail **",
+      "tags": [
+        {
+          "predicted_token": "**",
+          "correct_tag": "PUNCT",
+          "predicted_tag": "SYM"
+        },
+        {
+          "predicted_token": "BBC",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "Daily",
+          "correct_tag": "ADJ",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "E-mail",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "**",
+          "correct_tag": "PUNCT",
+          "predicted_tag": "SYM"
+        }
+      ]
+    },
+    "explanation": [
+      {
+        "token": "**",
+        "predicted_tag": "SYM",
+        "correct_tag": "PUNCT",
+        "explanation": "The token '**' is used to visually separate the title from the rest of the text. While it could be considered a symbol, it functions as punctuation in this context.",
+        "category": "Contextual Misinterpretation"
+      },
+      {
+        "token": "Daily",
+        "predicted_tag": "PROPN",
+        "correct_tag": "ADJ",
+        "explanation": "The tagger incorrectly identified 'Daily' as a proper noun. 'Daily' is an adjective modifying 'E-mail', describing the frequency of the email.",
+        "category": "Lexical Ambiguity"
+      },
+      {
+        "token": "**",
+        "predicted_tag": "SYM",
+        "correct_tag": "PUNCT",
+        "explanation": "The token '**' is used to visually separate the title from the rest of the text. While it could be considered a symbol, it functions as punctuation in this context.",
+        "category": "Contextual Misinterpretation"
+      }
+    ]
+  },
+  {
+    "row": {
+      "sentence": "I have Chronic Lyme disease, so I'm stuck at home.",
+      "tags": [
+        {
+          "predicted_token": "I",
+          "predicted_tag": "PRON"
+        },
+        {
+          "predicted_token": "have",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "Chronic",
+          "correct_tag": "ADJ",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "Lyme",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "disease",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": ",",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "so",
+          "correct_tag": "ADV",
+          "predicted_tag": "SCONJ"
+        },
+        {
+          "predicted_token": "I",
+          "predicted_tag": "PRON"
+        },
+        {
+          "predicted_token": "'m",
+          "predicted_tag": "AUX"
+        },
+        {
+          "predicted_token": "stuck",
+          "correct_tag": "ADJ",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "at",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "home",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": ".",
+          "predicted_tag": "PUNCT"
+        }
+      ]
+    },
+    "explanation": [
+      {
+        "token": "Chronic",
+        "predicted_tag": "PROPN",
+        "correct_tag": "ADJ",
+        "explanation": "The tagger incorrectly tagged \"Chronic\" as a proper noun. The word \"Chronic\" is used here as an adjective modifying the noun \"Lyme disease\".",
+        "category": "Lexical Ambiguity"
+      },
+      {
+        "token": "so",
+        "predicted_tag": "SCONJ",
+        "correct_tag": "ADV",
+        "explanation": "The tagger incorrectly tagged \"so\" as a subordinating conjunction. In this context, \"so\" functions as an adverb, indicating the result or consequence of the previous clause.",
+        "category": "Syntactic Function"
+      },
+      {
+        "token": "stuck",
+        "predicted_tag": "VERB",
+        "correct_tag": "ADJ",
+        "explanation": "The tagger incorrectly tagged \"stuck\" as a verb. In this context, \"stuck\" functions as an adjective describing the state of being at home.",
+        "category": "Syntactic Function"
+      }
+    ]
+  },
+  {
+    "row": {
+      "sentence": "http://www.myshutter.com Before becoming disabled, I was an AVID amateur photographer.. come and visit and sign our guestbook",
+      "tags": [
+        {
+          "predicted_token": "http://www.myshutter.com",
+          "correct_tag": "PROPN",
+          "predicted_tag": "X"
+        },
+        {
+          "predicted_token": "Before",
+          "correct_tag": "SCONJ",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "becoming",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "disabled",
+          "predicted_tag": "ADJ"
+        },
+        {
+          "predicted_token": ",",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "I",
+          "predicted_tag": "PRON"
+        },
+        {
+          "predicted_token": "was",
+          "predicted_tag": "AUX"
+        },
+        {
+          "predicted_token": "an",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "AVID",
+          "correct_tag": "ADJ",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "amateur",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "photographer",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "..",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "come",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "and",
+          "predicted_tag": "CCONJ"
+        },
+        {
+          "predicted_token": "visit",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "and",
+          "predicted_tag": "CCONJ"
+        },
+        {
+          "predicted_token": "sign",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "our",
+          "predicted_tag": "PRON"
+        },
+        {
+          "predicted_token": "guestbook",
+          "predicted_tag": "NOUN"
+        }
+      ]
+    },
+    "explanation": [
+      {
+        "token": "http://www.myshutter.com",
+        "predicted_tag": "X",
+        "correct_tag": "PROPN",
+        "explanation": "The token is a URL, which is a proper noun representing a website address. The tagger incorrectly identified it as 'X' (other), likely because it's not a standard word.",
+        "category": "Lexical Item Type"
+      },
+      {
+        "token": "Before",
+        "predicted_tag": "ADP",
+        "correct_tag": "SCONJ",
+        "explanation": "The word 'Before' is used as a subordinating conjunction introducing a subordinate clause. The tagger incorrectly tagged it as an adposition, which is used to express the grammatical relation of a noun phrase to another word.",
+        "category": "Syntactic Function"
+      },
+      {
+        "token": "AVID",
+        "predicted_tag": "PROPN",
+        "correct_tag": "ADJ",
+        "explanation": "The word 'AVID' is used as an adjective to describe the type of photographer. The tagger incorrectly tagged it as a proper noun, which is a name of a specific individual, place, or object.",
+        "category": "Lexical Meaning"
+      }
+    ]
+  },
+  {
+    "row": {
+      "sentence": "We are looking to expand our Wholesale Clients across the Nation.",
+      "tags": [
+        {
+          "predicted_token": "We",
+          "predicted_tag": "PRON"
+        },
+        {
+          "predicted_token": "are",
+          "predicted_tag": "AUX"
+        },
+        {
+          "predicted_token": "looking",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "to",
+          "predicted_tag": "PART"
+        },
+        {
+          "predicted_token": "expand",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "our",
+          "predicted_tag": "PRON"
+        },
+        {
+          "predicted_token": "Wholesale",
+          "correct_tag": "ADJ",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "Clients",
+          "correct_tag": "NOUN",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "across",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "the",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "Nation",
+          "correct_tag": "NOUN",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": ".",
+          "predicted_tag": "PUNCT"
+        }
+      ]
+    },
+    "explanation": [
+      {
+        "token": "Wholesale",
+        "predicted_tag": "PROPN",
+        "correct_tag": "ADJ",
+        "explanation": "The tagger incorrectly identified \"Wholesale\" as a proper noun. In this context, \"Wholesale\" functions as an adjective modifying \"Clients\".",
+        "category": "Lexical Ambiguity"
+      },
+      {
+        "token": "Clients",
+        "predicted_tag": "PROPN",
+        "correct_tag": "NOUN",
+        "explanation": "The tagger incorrectly identified \"Clients\" as a proper noun. In this context, \"Clients\" is a common noun.",
+        "category": "Lexical Ambiguity"
+      },
+      {
+        "token": "Nation",
+        "predicted_tag": "PROPN",
+        "correct_tag": "NOUN",
+        "explanation": "The tagger incorrectly identified \"Nation\" as a proper noun. In this context, \"Nation\" is a common noun.",
+        "category": "Lexical Ambiguity"
+      }
+    ]
+  },
+  {
+    "row": {
+      "sentence": "He is regarded as one of the leading Avant-Garde artist of modern calligraphy.",
+      "tags": [
+        {
+          "predicted_token": "He",
+          "predicted_tag": "PRON"
+        },
+        {
+          "predicted_token": "is",
+          "predicted_tag": "AUX"
+        },
+        {
+          "predicted_token": "regarded",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "as",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "one",
+          "predicted_tag": "NUM"
+        },
+        {
+          "predicted_token": "of",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "the",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "leading",
+          "correct_tag": "VERB",
+          "predicted_tag": "ADJ"
+        },
+        {
+          "predicted_token": "Avant",
+          "correct_tag": "NOUN",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "-",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "Garde",
+          "correct_tag": "NOUN",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "artist",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "of",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "modern",
+          "predicted_tag": "ADJ"
+        },
+        {
+          "predicted_token": "calligraphy",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": ".",
+          "predicted_tag": "PUNCT"
+        }
+      ]
+    },
+    "explanation": [
+      {
+        "token": "leading",
+        "predicted_tag": "ADJ",
+        "correct_tag": "VERB",
+        "explanation": "The word \"leading\" is used as a verb in this context, functioning as part of a verb phrase. The tagger incorrectly identified it as an adjective, possibly due to its adjectival form.",
+        "category": "Lexical Ambiguity"
+      },
+      {
+        "token": "Avant",
+        "predicted_tag": "PROPN",
+        "correct_tag": "NOUN",
+        "explanation": "The word \"Avant\" is part of a compound noun phrase. The tagger incorrectly tagged it as a proper noun, likely because it is the first word in the phrase and is capitalized.",
+        "category": "Phrase Boundary"
+      },
+      {
+        "token": "Garde",
+        "predicted_tag": "PROPN",
+        "correct_tag": "NOUN",
+        "explanation": "The word \"Garde\" is part of a compound noun phrase. The tagger incorrectly tagged it as a proper noun, likely because it is capitalized.",
+        "category": "Phrase Boundary"
+      }
+    ]
+  },
+  {
+    "row": {
+      "sentence": "They want to use LTS to tie into NASA's vision for Space Exploration, and seem pleased that the White House is moving in that direction.",
+      "tags": [
+        {
+          "predicted_token": "They",
+          "predicted_tag": "PRON"
+        },
+        {
+          "predicted_token": "want",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "to",
+          "predicted_tag": "PART"
+        },
+        {
+          "predicted_token": "use",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "LTS",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "to",
+          "predicted_tag": "PART"
+        },
+        {
+          "predicted_token": "tie",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "into",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "NASA",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "'s",
+          "predicted_tag": "PART"
+        },
+        {
+          "predicted_token": "vision",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "for",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "Space",
+          "correct_tag": "NOUN",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "Exploration",
+          "correct_tag": "NOUN",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": ",",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "and",
+          "predicted_tag": "CCONJ"
+        },
+        {
+          "predicted_token": "seem",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "pleased",
+          "predicted_tag": "ADJ"
+        },
+        {
+          "predicted_token": "that",
+          "predicted_tag": "SCONJ"
+        },
+        {
+          "predicted_token": "the",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "White",
+          "correct_tag": "ADJ",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "House",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "is",
+          "predicted_tag": "AUX"
+        },
+        {
+          "predicted_token": "moving",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "in",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "that",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "direction",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": ".",
+          "predicted_tag": "PUNCT"
+        }
+      ]
+    },
+    "explanation": [
+      {
+        "token": "Space",
+        "predicted_tag": "PROPN",
+        "correct_tag": "NOUN",
+        "explanation": "The tagger incorrectly tagged \"Space\" as a proper noun (PROPN). While \"Space\" can be part of a proper noun (e.g., Space Exploration), in this context, it functions as a common noun, referring to the general concept of space.",
+        "category": "Contextual Misinterpretation"
+      },
+      {
+        "token": "Exploration",
+        "predicted_tag": "PROPN",
+        "correct_tag": "NOUN",
+        "explanation": "The tagger incorrectly tagged \"Exploration\" as a proper noun (PROPN). In this context, \"Exploration\" is used as a common noun, referring to the act of exploring.",
+        "category": "Contextual Misinterpretation"
+      },
+      {
+        "token": "White",
+        "predicted_tag": "PROPN",
+        "correct_tag": "ADJ",
+        "explanation": "The tagger incorrectly tagged \"White\" as a proper noun (PROPN). In the phrase \"White House\", \"White\" functions as an adjective modifying \"House\".",
+        "category": "Syntactic Role Misidentification"
+      }
+    ]
+  },
+  {
+    "row": {
+      "sentence": "Which do you prefer Crab or Shrimp?",
+      "tags": [
+        {
+          "predicted_token": "Which",
+          "correct_tag": "PRON",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "do",
+          "predicted_tag": "AUX"
+        },
+        {
+          "predicted_token": "you",
+          "predicted_tag": "PRON"
+        },
+        {
+          "predicted_token": "prefer",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "Crab",
+          "correct_tag": "NOUN",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "or",
+          "predicted_tag": "CCONJ"
+        },
+        {
+          "predicted_token": "Shrimp",
+          "correct_tag": "NOUN",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "?",
+          "predicted_tag": "PUNCT"
+        }
+      ]
+    },
+    "explanation": [
+      {
+        "token": "Which",
+        "predicted_tag": "DET",
+        "correct_tag": "PRON",
+        "explanation": "The tagger incorrectly identified 'Which' as a determiner (DET). In this context, 'Which' is functioning as an interrogative pronoun, asking for a selection between options.",
+        "category": "Pronoun vs. Determiner"
+      },
+      {
+        "token": "Crab",
+        "predicted_tag": "PROPN",
+        "correct_tag": "NOUN",
+        "explanation": "The tagger incorrectly identified 'Crab' as a proper noun (PROPN). In this context, 'Crab' is used as a common noun, referring to a type of seafood.",
+        "category": "Proper Noun vs. Common Noun"
+      },
+      {
+        "token": "Shrimp",
+        "predicted_tag": "PROPN",
+        "correct_tag": "NOUN",
+        "explanation": "The tagger incorrectly identified 'Shrimp' as a proper noun (PROPN). In this context, 'Shrimp' is used as a common noun, referring to a type of seafood.",
+        "category": "Proper Noun vs. Common Noun"
+      }
+    ]
+  },
+  {
+    "row": {
+      "sentence": "in n out of the chicago area?",
+      "tags": [
+        {
+          "predicted_token": "in",
+          "correct_tag": "PROPN",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "n",
+          "correct_tag": "CCONJ",
+          "predicted_tag": "X"
+        },
+        {
+          "predicted_token": "out",
+          "correct_tag": "PROPN",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "of",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "the",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "chicago",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "area",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "?",
+          "predicted_tag": "PUNCT"
+        }
+      ]
+    },
+    "explanation": [
+      {
+        "token": "in",
+        "predicted_tag": "ADP",
+        "correct_tag": "PROPN",
+        "explanation": "The word \"in\" is used as part of a name or a location, which is why it should be tagged as a proper noun (PROPN). The tagger incorrectly identified it as an adposition (ADP).",
+        "category": "Lexical Ambiguity"
+      },
+      {
+        "token": "n",
+        "predicted_tag": "X",
+        "correct_tag": "CCONJ",
+        "explanation": "The token \"n\" is likely a shortened form of \"and\", which functions as a coordinating conjunction (CCONJ). The tagger incorrectly tagged it as \"X\" (other), possibly because it is an abbreviation.",
+        "category": "Abbreviation/Short Form"
+      },
+      {
+        "token": "out",
+        "predicted_tag": "ADP",
+        "correct_tag": "PROPN",
+        "explanation": "The word \"out\" is used as part of a name or a location, which is why it should be tagged as a proper noun (PROPN). The tagger incorrectly identified it as an adposition (ADP).",
+        "category": "Lexical Ambiguity"
+      }
+    ]
+  },
+  {
+    "row": {
+      "sentence": "Well, they have a variety of sports that they play like basketball, soccer, etc.",
+      "tags": [
+        {
+          "predicted_token": "Well",
+          "correct_tag": "INTJ",
+          "predicted_tag": "ADV"
+        },
+        {
+          "predicted_token": ",",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "they",
+          "predicted_tag": "PRON"
+        },
+        {
+          "predicted_token": "have",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "a",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "variety",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "of",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "sports",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "that",
+          "correct_tag": "PRON",
+          "predicted_tag": "SCONJ"
+        },
+        {
+          "predicted_token": "they",
+          "predicted_tag": "PRON"
+        },
+        {
+          "predicted_token": "play",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "like",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "basketball",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": ",",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "soccer",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": ",",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "etc",
+          "correct_tag": "NOUN",
+          "predicted_tag": "X"
+        },
+        {
+          "predicted_token": ".",
+          "predicted_tag": "PUNCT"
+        }
+      ]
+    },
+    "explanation": [
+      {
+        "token": "Well",
+        "predicted_tag": "ADV",
+        "correct_tag": "INTJ",
+        "explanation": "The word 'Well' is used as an interjection to express a reaction or comment on the previous statement. The tagger incorrectly identified it as an adverb, which typically modifies verbs, adjectives, or other adverbs.",
+        "category": "Lexical Ambiguity"
+      },
+      {
+        "token": "that",
+        "predicted_tag": "SCONJ",
+        "correct_tag": "PRON",
+        "explanation": "The word 'that' is functioning as a relative pronoun, referring back to 'sports'. The tagger incorrectly identified it as a subordinating conjunction, which introduces a subordinate clause.",
+        "category": "Syntactic Function"
+      },
+      {
+        "token": "etc",
+        "predicted_tag": "X",
+        "correct_tag": "NOUN",
+        "explanation": "The abbreviation 'etc' is short for 'et cetera', which means 'and the rest' and functions as a noun. The tagger incorrectly tagged it as 'X', which is used for words that cannot be assigned a real part-of-speech category.",
+        "category": "Abbreviation/Lexical Category"
+      }
+    ]
+  },
+  {
+    "row": {
+      "sentence": "It's okay if it's a little pricier.",
+      "tags": [
+        {
+          "predicted_token": "It",
+          "predicted_tag": "PRON"
+        },
+        {
+          "predicted_token": "'s",
+          "correct_tag": "AUX",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "okay",
+          "predicted_tag": "ADJ"
+        },
+        {
+          "predicted_token": "if",
+          "predicted_tag": "SCONJ"
+        },
+        {
+          "predicted_token": "it",
+          "predicted_tag": "PRON"
+        },
+        {
+          "predicted_token": "'s",
+          "correct_tag": "AUX",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "a",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "little",
+          "correct_tag": "ADJ",
+          "predicted_tag": "ADV"
+        },
+        {
+          "predicted_token": "pricier",
+          "predicted_tag": "ADJ"
+        },
+        {
+          "predicted_token": ".",
+          "predicted_tag": "PUNCT"
+        }
+      ]
+    },
+    "explanation": [
+      {
+        "token": "'s",
+        "predicted_tag": "VERB",
+        "correct_tag": "AUX",
+        "explanation": "The tagger incorrectly identified 's as a verb. In this context, 's is an auxiliary verb, contracting with the pronoun 'it'.",
+        "category": "Auxiliary Verb Misidentification"
+      },
+      {
+        "token": "'s",
+        "predicted_tag": "VERB",
+        "correct_tag": "AUX",
+        "explanation": "The tagger incorrectly identified 's as a verb. In this context, 's is an auxiliary verb, contracting with the pronoun 'it'.",
+        "category": "Auxiliary Verb Misidentification"
+      },
+      {
+        "token": "little",
+        "predicted_tag": "ADV",
+        "correct_tag": "ADJ",
+        "explanation": "The tagger incorrectly identified 'little' as an adverb. In this context, 'little' is modifying the adjective 'pricier', and thus functions as an adjective.",
+        "category": "Adjective vs. Adverb Misclassification"
+      }
+    ]
+  },
+  {
+    "row": {
+      "sentence": "In the Episode \"So in Louvre Are We Two\", How many diffrent painting/scupltures are their and who are the artists?",
+      "tags": [
+        {
+          "predicted_token": "In",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "the",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "Episode",
+          "correct_tag": "NOUN",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "\"",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "So",
+          "predicted_tag": "ADV"
+        },
+        {
+          "predicted_token": "in",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "Louvre",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "Are",
+          "predicted_tag": "AUX"
+        },
+        {
+          "predicted_token": "We",
+          "predicted_tag": "PRON"
+        },
+        {
+          "predicted_token": "Two",
+          "correct_tag": "PROPN",
+          "predicted_tag": "NUM"
+        },
+        {
+          "predicted_token": "\"",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": ",",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "How",
+          "predicted_tag": "ADV"
+        },
+        {
+          "predicted_token": "many",
+          "predicted_tag": "ADJ"
+        },
+        {
+          "predicted_token": "diffrent",
+          "predicted_tag": "ADJ"
+        },
+        {
+          "predicted_token": "painting",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "/",
+          "predicted_tag": "SYM"
+        },
+        {
+          "predicted_token": "scupltures",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "are",
+          "correct_tag": "VERB",
+          "predicted_tag": "AUX"
+        },
+        {
+          "predicted_token": "their",
+          "predicted_tag": "PRON"
+        },
+        {
+          "predicted_token": "and",
+          "predicted_tag": "CCONJ"
+        },
+        {
+          "predicted_token": "who",
+          "predicted_tag": "PRON"
+        },
+        {
+          "predicted_token": "are",
+          "predicted_tag": "AUX"
+        },
+        {
+          "predicted_token": "the",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "artists",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "?",
+          "predicted_tag": "PUNCT"
+        }
+      ]
+    },
+    "explanation": [
+      {
+        "token": "Episode",
+        "predicted_tag": "PROPN",
+        "correct_tag": "NOUN",
+        "explanation": "The tagger incorrectly identified \"Episode\" as a proper noun (PROPN). However, in this context, \"Episode\" is used as a common noun, referring to a specific part of a series or show.",
+        "category": "Lexical Context"
+      },
+      {
+        "token": "Two",
+        "predicted_tag": "NUM",
+        "correct_tag": "PROPN",
+        "explanation": "The tagger incorrectly tagged \"Two\" as a number (NUM). In this context, \"Two\" is part of a title or a name, and therefore it should be tagged as a proper noun (PROPN).",
+        "category": "Lexical Context"
+      },
+      {
+        "token": "are",
+        "predicted_tag": "AUX",
+        "correct_tag": "VERB",
+        "explanation": "The tagger incorrectly tagged \"are\" as an auxiliary verb (AUX). In this context, \"are\" functions as the main verb in the sentence, indicating existence or state of being.",
+        "category": "Syntactic Function"
+      }
+    ]
+  },
+  {
+    "row": {
+      "sentence": "When the French returned to Indochina at the end of WW II the Viet Minh were in control of the Red River Delta.",
+      "tags": [
+        {
+          "predicted_token": "When",
+          "correct_tag": "ADV",
+          "predicted_tag": "SCONJ"
+        },
+        {
+          "predicted_token": "the",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "French",
+          "correct_tag": "PROPN",
+          "predicted_tag": "ADJ"
+        },
+        {
+          "predicted_token": "returned",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "to",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "Indochina",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "at",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "the",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "end",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "of",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "WW",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "II",
+          "predicted_tag": "NUM"
+        },
+        {
+          "predicted_token": "the",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "Viet",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "Minh",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "were",
+          "predicted_tag": "AUX"
+        },
+        {
+          "predicted_token": "in",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "control",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "of",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "the",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "Red",
+          "correct_tag": "ADJ",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "River",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "Delta",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": ".",
+          "predicted_tag": "PUNCT"
+        }
+      ]
+    },
+    "explanation": [
+      {
+        "token": "When",
+        "predicted_tag": "SCONJ",
+        "correct_tag": "ADV",
+        "explanation": "The word 'When' is used as an adverb here, introducing a time clause, rather than a subordinating conjunction. The tagger might have been confused by the presence of a clause following the word.",
+        "category": "Lexical Ambiguity"
+      },
+      {
+        "token": "French",
+        "predicted_tag": "ADJ",
+        "correct_tag": "PROPN",
+        "explanation": "The word 'French' is used as a proper noun, referring to the French people. The tagger incorrectly identified it as an adjective, which is a common error when the word can function as both.",
+        "category": "Lexical Ambiguity"
+      },
+      {
+        "token": "Red",
+        "predicted_tag": "PROPN",
+        "correct_tag": "ADJ",
+        "explanation": "The word 'Red' is used as an adjective modifying 'River'. The tagger incorrectly identified it as a proper noun, possibly because it is part of a multi-word proper noun phrase.",
+        "category": "Contextual Error"
+      }
+    ]
+  },
+  {
+    "row": {
+      "sentence": "my lhasa apso hind legs are not working?",
+      "tags": [
+        {
+          "predicted_token": "my",
+          "correct_tag": "PRON",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "lhasa",
+          "correct_tag": "NOUN",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "apso",
+          "correct_tag": "NOUN",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "hind",
+          "predicted_tag": "ADJ"
+        },
+        {
+          "predicted_token": "legs",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "are",
+          "predicted_tag": "AUX"
+        },
+        {
+          "predicted_token": "not",
+          "predicted_tag": "PART"
+        },
+        {
+          "predicted_token": "working",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "?",
+          "predicted_tag": "PUNCT"
+        }
+      ]
+    },
+    "explanation": [
+      {
+        "token": "my",
+        "predicted_tag": "DET",
+        "correct_tag": "PRON",
+        "explanation": "The tagger incorrectly identified 'my' as a determiner. 'My' is a possessive pronoun, which functions as a determiner in this context, but is still a pronoun.",
+        "category": "Lexical Ambiguity"
+      },
+      {
+        "token": "lhasa",
+        "predicted_tag": "PROPN",
+        "correct_tag": "NOUN",
+        "explanation": "The tagger incorrectly identified 'lhasa' as a proper noun. 'Lhasa' is part of the compound noun 'lhasa apso', which refers to a breed of dog. The tagger likely recognized 'lhasa' as a proper noun because it is a name of a place, but in this context, it functions as a common noun.",
+        "category": "Contextual Misinterpretation"
+      },
+      {
+        "token": "apso",
+        "predicted_tag": "PROPN",
+        "correct_tag": "NOUN",
+        "explanation": "The tagger incorrectly identified 'apso' as a proper noun. 'Apso' is part of the compound noun 'lhasa apso', which refers to a breed of dog. The tagger likely recognized 'apso' as a proper noun because it is a name of a place, but in this context, it functions as a common noun.",
+        "category": "Contextual Misinterpretation"
+      }
+    ]
+  },
+  {
+    "row": {
+      "sentence": "Hi, i'm looking to take myself and my best friend and his girl friend and this girl i really like out to dinner for my birthday.",
+      "tags": [
+        {
+          "predicted_token": "Hi",
+          "predicted_tag": "INTJ"
+        },
+        {
+          "predicted_token": ",",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "i",
+          "predicted_tag": "PRON"
+        },
+        {
+          "predicted_token": "'m",
+          "predicted_tag": "AUX"
+        },
+        {
+          "predicted_token": "looking",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "to",
+          "predicted_tag": "PART"
+        },
+        {
+          "predicted_token": "take",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "myself",
+          "predicted_tag": "PRON"
+        },
+        {
+          "predicted_token": "and",
+          "predicted_tag": "CCONJ"
+        },
+        {
+          "predicted_token": "my",
+          "correct_tag": "PRON",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "best",
+          "predicted_tag": "ADJ"
+        },
+        {
+          "predicted_token": "friend",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "and",
+          "predicted_tag": "CCONJ"
+        },
+        {
+          "predicted_token": "his",
+          "correct_tag": "PRON",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "girl",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "friend",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "and",
+          "predicted_tag": "CCONJ"
+        },
+        {
+          "predicted_token": "this",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "girl",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "i",
+          "predicted_tag": "PRON"
+        },
+        {
+          "predicted_token": "really",
+          "predicted_tag": "ADV"
+        },
+        {
+          "predicted_token": "like",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "out",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "to",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "dinner",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "for",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "my",
+          "correct_tag": "PRON",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "birthday",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": ".",
+          "predicted_tag": "PUNCT"
+        }
+      ]
+    },
+    "explanation": [
+      {
+        "token": "my",
+        "predicted_tag": "DET",
+        "correct_tag": "PRON",
+        "explanation": "The tagger incorrectly identified 'my' as a determiner. In this context, 'my' functions as a possessive pronoun, indicating ownership.",
+        "category": "Pronoun vs. Determiner"
+      },
+      {
+        "token": "his",
+        "predicted_tag": "DET",
+        "correct_tag": "PRON",
+        "explanation": "The tagger incorrectly identified 'his' as a determiner. In this context, 'his' functions as a possessive pronoun, indicating ownership.",
+        "category": "Pronoun vs. Determiner"
+      },
+      {
+        "token": "my",
+        "predicted_tag": "DET",
+        "correct_tag": "PRON",
+        "explanation": "The tagger incorrectly identified 'my' as a determiner. In this context, 'my' functions as a possessive pronoun, indicating ownership.",
+        "category": "Pronoun vs. Determiner"
+      }
+    ]
+  },
+  {
+    "row": {
+      "sentence": "I really want to go to andiamos for my birthday and i was just wondering how much it would cost for the four of us to eat there",
+      "tags": [
+        {
+          "predicted_token": "I",
+          "predicted_tag": "PRON"
+        },
+        {
+          "predicted_token": "really",
+          "predicted_tag": "ADV"
+        },
+        {
+          "predicted_token": "want",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "to",
+          "predicted_tag": "PART"
+        },
+        {
+          "predicted_token": "go",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "to",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "andiamo",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "s",
+          "predicted_tag": "PART"
+        },
+        {
+          "predicted_token": "for",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "my",
+          "correct_tag": "PRON",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "birthday",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "and",
+          "predicted_tag": "CCONJ"
+        },
+        {
+          "predicted_token": "i",
+          "predicted_tag": "PRON"
+        },
+        {
+          "predicted_token": "was",
+          "predicted_tag": "AUX"
+        },
+        {
+          "predicted_token": "just",
+          "predicted_tag": "ADV"
+        },
+        {
+          "predicted_token": "wondering",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "how",
+          "predicted_tag": "ADV"
+        },
+        {
+          "predicted_token": "much",
+          "correct_tag": "ADJ",
+          "predicted_tag": "ADV"
+        },
+        {
+          "predicted_token": "it",
+          "predicted_tag": "PRON"
+        },
+        {
+          "predicted_token": "would",
+          "predicted_tag": "AUX"
+        },
+        {
+          "predicted_token": "cost",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "for",
+          "correct_tag": "SCONJ",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "the",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "four",
+          "predicted_tag": "NUM"
+        },
+        {
+          "predicted_token": "of",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "us",
+          "predicted_tag": "PRON"
+        },
+        {
+          "predicted_token": "to",
+          "predicted_tag": "PART"
+        },
+        {
+          "predicted_token": "eat",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "there",
+          "predicted_tag": "ADV"
+        }
+      ]
+    },
+    "explanation": [
+      {
+        "token": "my",
+        "predicted_tag": "DET",
+        "correct_tag": "PRON",
+        "explanation": "The tagger incorrectly identified 'my' as a determiner (DET). However, 'my' is a possessive pronoun, which functions as a determiner in some languages but is classified as a pronoun (PRON) in UD.",
+        "category": "Pronoun vs. Determiner"
+      },
+      {
+        "token": "much",
+        "predicted_tag": "ADV",
+        "correct_tag": "ADJ",
+        "explanation": "The tagger incorrectly tagged 'much' as an adverb (ADV). In this context, 'much' is modifying the noun phrase 'it would cost' and functions as an adjective (ADJ).",
+        "category": "Adjective vs. Adverb"
+      },
+      {
+        "token": "for",
+        "predicted_tag": "ADP",
+        "correct_tag": "SCONJ",
+        "explanation": "The tagger incorrectly tagged 'for' as an adposition (ADP). In this context, 'for' introduces a subordinate clause and functions as a subordinating conjunction (SCONJ).",
+        "category": "Adposition vs. Subordinating Conjunction"
+      }
+    ]
+  },
+  {
+    "row": {
+      "sentence": "American Food, Soul Food, Mexican, Italian, and Chinese are the options.",
+      "tags": [
+        {
+          "predicted_token": "American",
+          "predicted_tag": "ADJ"
+        },
+        {
+          "predicted_token": "Food",
+          "correct_tag": "NOUN",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": ",",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "Soul",
+          "correct_tag": "NOUN",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "Food",
+          "correct_tag": "NOUN",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": ",",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "Mexican",
+          "predicted_tag": "ADJ"
+        },
+        {
+          "predicted_token": ",",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "Italian",
+          "predicted_tag": "ADJ"
+        },
+        {
+          "predicted_token": ",",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "and",
+          "predicted_tag": "CCONJ"
+        },
+        {
+          "predicted_token": "Chinese",
+          "predicted_tag": "ADJ"
+        },
+        {
+          "predicted_token": "are",
+          "predicted_tag": "AUX"
+        },
+        {
+          "predicted_token": "the",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "options",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": ".",
+          "predicted_tag": "PUNCT"
+        }
+      ]
+    },
+    "explanation": [
+      {
+        "token": "Food",
+        "predicted_tag": "PROPN",
+        "correct_tag": "NOUN",
+        "explanation": "The tagger incorrectly tagged 'Food' as a proper noun. In this context, 'Food' is a common noun referring to a type of cuisine.",
+        "category": "Incorrect Noun Tagging"
+      },
+      {
+        "token": "Soul",
+        "predicted_tag": "PROPN",
+        "correct_tag": "NOUN",
+        "explanation": "The tagger incorrectly tagged 'Soul' as a proper noun. In this context, 'Soul' is a common noun, part of the compound noun 'Soul Food'.",
+        "category": "Incorrect Noun Tagging"
+      },
+      {
+        "token": "Food",
+        "predicted_tag": "PROPN",
+        "correct_tag": "NOUN",
+        "explanation": "The tagger incorrectly tagged 'Food' as a proper noun. In this context, 'Food' is a common noun referring to a type of cuisine.",
+        "category": "Incorrect Noun Tagging"
+      }
+    ]
+  },
+  {
+    "row": {
+      "sentence": "Know this well because I remember an 'irish' pub in the town in canada i grew up in used to advertise the cheapest pints of guinness in town, but they served them in american sized pints.",
+      "tags": [
+        {
+          "predicted_token": "Know",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "this",
+          "correct_tag": "PRON",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "well",
+          "predicted_tag": "ADV"
+        },
+        {
+          "predicted_token": "because",
+          "predicted_tag": "SCONJ"
+        },
+        {
+          "predicted_token": "I",
+          "predicted_tag": "PRON"
+        },
+        {
+          "predicted_token": "remember",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "an",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "'",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "irish",
+          "predicted_tag": "ADJ"
+        },
+        {
+          "predicted_token": "'",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "pub",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "in",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "the",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "town",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "in",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "canada",
+          "correct_tag": "PROPN",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "i",
+          "predicted_tag": "PRON"
+        },
+        {
+          "predicted_token": "grew",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "up",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "in",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "used",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "to",
+          "predicted_tag": "PART"
+        },
+        {
+          "predicted_token": "advertise",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "the",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "cheapest",
+          "predicted_tag": "ADJ"
+        },
+        {
+          "predicted_token": "pints",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "of",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "guinness",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "in",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "town",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": ",",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "but",
+          "predicted_tag": "CCONJ"
+        },
+        {
+          "predicted_token": "they",
+          "predicted_tag": "PRON"
+        },
+        {
+          "predicted_token": "served",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "them",
+          "predicted_tag": "PRON"
+        },
+        {
+          "predicted_token": "in",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "american",
+          "predicted_tag": "ADJ"
+        },
+        {
+          "predicted_token": "sized",
+          "correct_tag": "ADJ",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "pints",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": ".",
+          "predicted_tag": "PUNCT"
+        }
+      ]
+    },
+    "explanation": [
+      {
+        "token": "this",
+        "predicted_tag": "DET",
+        "correct_tag": "PRON",
+        "explanation": "The word 'this' is functioning as a pronoun, referring to something previously mentioned or understood in the context, rather than modifying a noun directly. The tagger incorrectly identified it as a determiner.",
+        "category": "Pronoun/Determiner Misclassification"
+      },
+      {
+        "token": "canada",
+        "predicted_tag": "NOUN",
+        "correct_tag": "PROPN",
+        "explanation": "The word 'canada' is a proper noun, specifically the name of a country. The tagger incorrectly identified it as a common noun.",
+        "category": "Proper Noun/Common Noun Misclassification"
+      },
+      {
+        "token": "sized",
+        "predicted_tag": "VERB",
+        "correct_tag": "ADJ",
+        "explanation": "The word 'sized' is functioning as an adjective, describing the 'pints'. The tagger incorrectly identified it as a verb.",
+        "category": "Verb/Adjective Misclassification"
+      }
+    ]
+  },
+  {
+    "row": {
+      "sentence": "i love The Script and know there from iraland.",
+      "tags": [
+        {
+          "predicted_token": "i",
+          "predicted_tag": "PRON"
+        },
+        {
+          "predicted_token": "love",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "The",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "Script",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "and",
+          "predicted_tag": "CCONJ"
+        },
+        {
+          "predicted_token": "know",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "the",
+          "correct_tag": "PRON",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "re",
+          "correct_tag": "AUX",
+          "predicted_tag": "ADV"
+        },
+        {
+          "predicted_token": "from",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "iraland",
+          "correct_tag": "PROPN",
+          "predicted_tag": "X"
+        },
+        {
+          "predicted_token": ".",
+          "predicted_tag": "PUNCT"
+        }
+      ]
+    },
+    "explanation": [
+      {
+        "token": "the",
+        "predicted_tag": "DET",
+        "correct_tag": "PRON",
+        "explanation": "The tagger incorrectly identified 'the' as a determiner (DET). The correct tag is pronoun (PRON). This could be due to the tagger misinterpreting the function of 'the' in the sentence, or the tagger might not have enough context to understand the correct tag.",
+        "category": "Lexical Ambiguity"
+      },
+      {
+        "token": "re",
+        "predicted_tag": "ADV",
+        "correct_tag": "AUX",
+        "explanation": "The tagger incorrectly identified 're' as an adverb (ADV). The correct tag is auxiliary (AUX). This could be due to the tagger misinterpreting the function of 're' in the sentence, or the tagger might not have enough context to understand the correct tag.",
+        "category": "Morphological Error"
+      },
+      {
+        "token": "iraland",
+        "predicted_tag": "X",
+        "correct_tag": "PROPN",
+        "explanation": "The tagger incorrectly identified 'iraland' as other (X). The correct tag is proper noun (PROPN). This could be due to the tagger not recognizing 'iraland' as a proper noun, or the tagger might not have enough context to understand the correct tag.",
+        "category": "Named Entity Recognition"
+      }
+    ]
+  },
+  {
+    "row": {
+      "sentence": "is there any good places to get an ice-cream sundae from in Invercargill New Zealand?",
+      "tags": [
+        {
+          "predicted_token": "is",
+          "correct_tag": "VERB",
+          "predicted_tag": "AUX"
+        },
+        {
+          "predicted_token": "there",
+          "correct_tag": "PRON",
+          "predicted_tag": "ADV"
+        },
+        {
+          "predicted_token": "any",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "good",
+          "predicted_tag": "ADJ"
+        },
+        {
+          "predicted_token": "places",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "to",
+          "predicted_tag": "PART"
+        },
+        {
+          "predicted_token": "get",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "an",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "ice",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "-",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "cream",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "sundae",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "from",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "in",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "Invercargill",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "New",
+          "correct_tag": "ADJ",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "Zealand",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "?",
+          "predicted_tag": "PUNCT"
+        }
+      ]
+    },
+    "explanation": [
+      {
+        "token": "is",
+        "predicted_tag": "AUX",
+        "correct_tag": "VERB",
+        "explanation": "The tagger incorrectly identified 'is' as an auxiliary verb (AUX). In this context, 'is' functions as the main verb in the sentence, indicating existence or being.",
+        "category": "Verb Identification"
+      },
+      {
+        "token": "there",
+        "predicted_tag": "ADV",
+        "correct_tag": "PRON",
+        "explanation": "The tagger incorrectly identified 'there' as an adverb (ADV). In this sentence, 'there' functions as an expletive pronoun, introducing the sentence and not modifying a verb, adjective, or another adverb.",
+        "category": "Pronoun vs. Adverb Misclassification"
+      },
+      {
+        "token": "New",
+        "predicted_tag": "PROPN",
+        "correct_tag": "ADJ",
+        "explanation": "The tagger incorrectly identified 'New' as a proper noun (PROPN). In this context, 'New' functions as an adjective modifying the proper noun 'Zealand'.",
+        "category": "Adjective vs. Proper Noun Misclassification"
+      }
+    ]
+  },
+  {
+    "row": {
+      "sentence": "Any of the tip-top places have great ice-cream, get them to mix it up.",
+      "tags": [
+        {
+          "predicted_token": "Any",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "of",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "the",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "tip",
+          "correct_tag": "ADJ",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "-",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "top",
+          "correct_tag": "ADJ",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "places",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "have",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "great",
+          "predicted_tag": "ADJ"
+        },
+        {
+          "predicted_token": "ice",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "-",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "cream",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": ",",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "get",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "them",
+          "predicted_tag": "PRON"
+        },
+        {
+          "predicted_token": "to",
+          "predicted_tag": "PART"
+        },
+        {
+          "predicted_token": "mix",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "it",
+          "predicted_tag": "PRON"
+        },
+        {
+          "predicted_token": "up",
+          "correct_tag": "ADP",
+          "predicted_tag": "ADV"
+        },
+        {
+          "predicted_token": ".",
+          "predicted_tag": "PUNCT"
+        }
+      ]
+    },
+    "explanation": [
+      {
+        "token": "tip",
+        "predicted_tag": "NOUN",
+        "correct_tag": "ADJ",
+        "explanation": "The word \"tip\" is used here to modify the noun \"places\", functioning as an adjective describing the type of places. The tagger incorrectly identified it as a noun.",
+        "category": "Lexical Ambiguity"
+      },
+      {
+        "token": "top",
+        "predicted_tag": "NOUN",
+        "correct_tag": "ADJ",
+        "explanation": "The word \"top\" is used here to modify the noun \"places\", functioning as an adjective describing the type of places. The tagger incorrectly identified it as a noun.",
+        "category": "Lexical Ambiguity"
+      },
+      {
+        "token": "up",
+        "predicted_tag": "ADV",
+        "correct_tag": "ADP",
+        "explanation": "The word \"up\" is used here as part of the phrasal verb \"mix up\", functioning as an adposition. The tagger incorrectly identified it as an adverb.",
+        "category": "Phrasal Verb"
+      }
+    ]
+  },
+  {
+    "row": {
+      "sentence": "different generations , the donatello is of a boy david as a young sheep Herder, the Michelangelo is the grown up man david as slayer and king",
+      "tags": [
+        {
+          "predicted_token": "different",
+          "predicted_tag": "ADJ"
+        },
+        {
+          "predicted_token": "generations",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": ",",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "the",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "donatello",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "is",
+          "predicted_tag": "AUX"
+        },
+        {
+          "predicted_token": "of",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "a",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "boy",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "david",
+          "correct_tag": "PROPN",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "as",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "a",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "young",
+          "predicted_tag": "ADJ"
+        },
+        {
+          "predicted_token": "sheep",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "Herder",
+          "correct_tag": "NOUN",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": ",",
+          "predicted_tag": "PUNCT"
+        },
+        {
+          "predicted_token": "the",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "Michelangelo",
+          "predicted_tag": "PROPN"
+        },
+        {
+          "predicted_token": "is",
+          "predicted_tag": "AUX"
+        },
+        {
+          "predicted_token": "the",
+          "predicted_tag": "DET"
+        },
+        {
+          "predicted_token": "grown",
+          "predicted_tag": "VERB"
+        },
+        {
+          "predicted_token": "up",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "man",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "david",
+          "correct_tag": "PROPN",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "as",
+          "predicted_tag": "ADP"
+        },
+        {
+          "predicted_token": "slayer",
+          "predicted_tag": "NOUN"
+        },
+        {
+          "predicted_token": "and",
+          "predicted_tag": "CCONJ"
+        },
+        {
+          "predicted_token": "king",
+          "predicted_tag": "NOUN"
+        }
+      ]
+    },
+    "explanation": [
+      {
+        "token": "david",
+        "predicted_tag": "NOUN",
+        "correct_tag": "PROPN",
+        "explanation": "The tagger incorrectly identified 'david' as a common noun (NOUN) instead of a proper noun (PROPN). This is because the tagger likely did not recognize 'david' as a name.",
+        "category": "Named Entity Recognition"
+      },
+      {
+        "token": "Herder",
+        "predicted_tag": "NOUN",
+        "correct_tag": "PROPN",
+        "explanation": "The tagger incorrectly identified 'Herder' as a common noun (NOUN) instead of a proper noun (PROPN). This is because the tagger likely did not recognize 'Herder' as a name.",
+        "category": "Named Entity Recognition"
+      },
+      {
+        "token": "david",
+        "predicted_tag": "NOUN",
+        "correct_tag": "PROPN",
+        "explanation": "The tagger incorrectly identified 'david' as a common noun (NOUN) instead of a proper noun (PROPN). This is because the tagger likely did not recognize 'david' as a name.",
+        "category": "Named Entity Recognition"
+      }
+    ]
+  }
+]
