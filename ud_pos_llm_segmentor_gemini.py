@@ -178,6 +178,11 @@ def create_sentence_token_map_from_ud(conllu_file_path: str, output_file: str, s
     # Load sentences from the UD English dataset
     tagged_sentences, original_sentences = load_ud_english_data(conllu_file_path, sample_size)
     
+    # Ensure we only process the requested number of sentences
+    if sample_size and sample_size < len(tagged_sentences):
+        tagged_sentences = tagged_sentences[:sample_size]
+        original_sentences = original_sentences[:sample_size]
+    
     sentence_map = []
     
     print(f"Processing {len(original_sentences)} sentences...")
