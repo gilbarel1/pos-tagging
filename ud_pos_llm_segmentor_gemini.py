@@ -1,74 +1,50 @@
 import os
 import json
+import sys
 import random
+import nltk
 from typing import List, Dict, Tuple
 from dotenv import load_dotenv
 from google import genai
 from tqdm import tqdm
 from ratelimit import limits, sleep_and_retry
+from prompts import create_segmentation_prompt, create_examples
 
 # Import utility functions to read the UD dataset
 from utils import read_conllu, untag
 
-# Load environment variables and configure API
 load_dotenv()
-api_key = os.environ.get("GOOGLE_API_KEY")
-if not api_key:
-    raise ValueError("API key not found in environment variables.")
+nltk.download('punkt_tab')
 
-genai.configure(api_key=api_key)
-
-# Model to use
+# gemini model id to use
 gemini_model = 'gemini-2.0-flash-lite'
 
-def create_segmentation_prompt() -> str:
-    """
-    Create a system prompt for the segmentation task.
-    """
-    return """# Universal Dependencies Tokenization
 
-Your task is to segment sentences according to Universal Dependencies (UD) tokenization guidelines.
+# --- Configure the Gemini API ---
+# Get a key https://aistudio.google.com/plan_information 
+# Use os.environ.get for production environments.
+# For Colab/AI Studio, you might use userdata.get
+# Example:
+# from google.colab import userdata
+# GOOGLE_API_KEY = userdata.get('GOOGLE_API_KEY')
+# genai.configure(api_key=GOOGLE_API_KEY)
 
-Key tokenization rules:
-1. Separate all punctuation marks as individual tokens
-2. Split contractions:
-   - "don't" → ["Do", "n't"]
-   - "I'm" → ["I", "'m"]
-   - "can't" → ["ca", "n't"]
-3. Split possessives:
-   - "John's" → ["John", "'s"]
-4. Keep hyphenated compounds as single tokens when they function as a unit
-5. Numbers with internal punctuation are typically a single token (e.g., "3.14", "$50.00")
-6. Handle special cases like URLs and email addresses as single tokens
+# Make sure to replace "YOUR_API_KEY" with your actual key if running locally
+# and not using environment variables or userdata.
+try:
+    # Attempt to get API key from environment variable
+    api_key = os.environ.get("GOOGLE_API_KEY")
+    if not api_key:
+        print("⚠️ Warning: API key not found in environment variables. Using placeholder.")
+        print("   Please set the GOOGLE_API_KEY environment variable or replace 'YOUR_API_KEY' in the code.")
+        sys.exit(1)
 
-Output a JSON array containing the segmented tokens. Follow the examples exactly.
-"""
+except Exception as e:
+    print(f"Error configuring Gemini API: {e}")
+    print("Please ensure you have a valid API key set.")
+    sys.exit(1)
 
-def create_examples() -> str:
-    """
-    Create few-shot examples for the segmentation task.
-    """
-    examples = [
-        {
-            "original": "Don't worry, I'll meet you at John's house at 3:30pm.",
-            "segmented": ["Do", "n't", "worry", ",", "I", "'ll", "meet", "you", "at", "John", "'s", "house", "at", "3:30pm", "."]
-        },
-        {
-            "original": "She said: \"I can't believe it!\" and walked away.",
-            "segmented": ["She", "said", ":", "\"", "I", "ca", "n't", "believe", "it", "!", "\"", "and", "walked", "away", "."]
-        },
-        {
-            "original": "The well-known CEO bought 2,500 shares for $47.50 each.",
-            "segmented": ["The", "well-known", "CEO", "bought", "2,500", "shares", "for", "$", "47.50", "each", "."]
-        }
-    ]
-    
-    prompt_examples = ""
-    for example in examples:
-        prompt_examples += f"Original: {example['original']}\n"
-        prompt_examples += f"Segmented: {json.dumps(example['segmented'])}\n\n"
-    
-    return prompt_examples
+
 
 @sleep_and_retry
 @limits(calls=15, period=60)
@@ -87,21 +63,21 @@ def segment_sentence(text: str) -> List[str]:
     examples = create_examples()
     
     # Build the user prompt with the sentence to segment
-    user_prompt = "Please segment this sentence according to Universal Dependencies guidelines:\n\n"
+    # Include the "system prompt" as part of the user prompt instead, It's not working with the system role format for Gemini
+    # This is a workaround to ensure the system prompt is included in the request
+    user_prompt = system_prompt + "\n\n" 
+    user_prompt += "Please segment this sentence according to Universal Dependencies guidelines:\n\n"
     user_prompt += examples
     user_prompt += f"Original: {text}\n"
     user_prompt += "Segmented: "
     
-    # Send prompt to Gemini API
+    # Send prompt to Gemini API - modified to not use system role
     client = genai.Client()
     response = client.models.generate_content(
         model=gemini_model,
-        contents=[
-            {"role": "system", "parts": [{"text": system_prompt}]},
-            {"role": "user", "parts": [{"text": user_prompt}]}
-        ],
+        contents=user_prompt, 
         config={
-            'temperature': 0.0,  # For deterministic output
+            'temperature': 0.0,
         },
     )
     
@@ -221,7 +197,7 @@ def create_sentence_token_map_from_ud(conllu_file_path: str, output_file: str, s
 if __name__ == "__main__":
     # File paths
     UD_ENGLISH_TEST = '../UD_English-EWT/en_ewt-ud-test.conllu'
-    OUTPUT_MAP_FILE = "ud_sentence_tokens_map.json"
+    OUTPUT_MAP_FILE = "ud_conll_sentences_map.json"
     
     # Optional: Sample size (set to None to process all)
     SAMPLE_SIZE = 200  # Process 200 sentences, adjust as needed
