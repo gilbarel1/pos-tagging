@@ -432,6 +432,8 @@ if __name__ == "__main__" and len(sys.argv) > 1 and sys.argv[1] == "compare-form
     SAMPLE_SIZE = int(sys.argv[2]) if len(sys.argv) > 2 else 30
     BATCH_SIZE = int(sys.argv[3]) if len(sys.argv) > 3 else 5
     OUTPUT_FILE = 'format_comparison_results.json'
+    ORIGINAL_OUTPUT_FILE = 'original_sentences_results.json'
+    TOKENIZED_OUTPUT_FILE = 'tokenized_sentences_results.json'
     
     print(f"Comparing original vs tokenized format using {SAMPLE_SIZE} samples with batch size {BATCH_SIZE}")
     results = compare_original_vs_tokenized(UD_ENGLISH_TEST, SAMPLE_SIZE, BATCH_SIZE)
@@ -447,10 +449,59 @@ if __name__ == "__main__" and len(sys.argv) > 1 and sys.argv[1] == "compare-form
     print(f"Original tokenization errors: {results['original_tokenization_errors']}")
     print(f"Tokenized tokenization errors: {results['tokenized_tokenization_errors']}")
     
-    # Save detailed results
+    # Prepare separate results for original and tokenized formats
+    original_results = {
+        'accuracy': results['original_accuracy'],
+        'tokenization_errors': results['original_tokenization_errors'],
+        'sentences': []
+    }
+    
+    tokenized_results = {
+        'accuracy': results['tokenized_accuracy'],
+        'tokenization_errors': results['tokenized_tokenization_errors'],
+        'sentences': []
+    }
+    
+    # Extract sentence-level results for each format
+    for example in results['examples']:
+        original_example = {
+            'sentence_id': example['sentence_id'],
+            'text': example['original_text'],
+            'tokens': example['gold_tokens'],
+            'predicted_tokens': example['original_tokens'],
+            'gold_tags': example['gold_tags'],
+            'predicted_tags': example['original_tags'],
+            'correct_count': example['original_correct'],
+            'total_tokens': len(example['gold_tokens']),
+            'perfect_match': example['original_correct'] == len(example['gold_tokens'])
+        }
+        original_results['sentences'].append(original_example)
+        
+        tokenized_example = {
+            'sentence_id': example['sentence_id'],
+            'text': example['tokenized_text'],
+            'tokens': example['gold_tokens'],
+            'predicted_tokens': example['tokenized_tokens'],
+            'gold_tags': example['gold_tags'],
+            'predicted_tags': example['tokenized_tags'],
+            'correct_count': example['tokenized_correct'],
+            'total_tokens': len(example['gold_tokens']),
+            'perfect_match': example['tokenized_correct'] == len(example['gold_tokens'])
+        }
+        tokenized_results['sentences'].append(tokenized_example)
+    
+    # Save all results
     with open(OUTPUT_FILE, 'w') as f:
         json.dump(results, f, indent=2)
-    print(f"Detailed results saved to {OUTPUT_FILE}")
+    print(f"Detailed comparison results saved to {OUTPUT_FILE}")
+    
+    with open(ORIGINAL_OUTPUT_FILE, 'w') as f:
+        json.dump(original_results, f, indent=2)
+    print(f"Original sentences results saved to {ORIGINAL_OUTPUT_FILE}")
+    
+    with open(TOKENIZED_OUTPUT_FILE, 'w') as f:
+        json.dump(tokenized_results, f, indent=2)
+    print(f"Tokenized sentences results saved to {TOKENIZED_OUTPUT_FILE}")
     
     # Show examples where formats differ
     print("\n=== Interesting Examples ===")
