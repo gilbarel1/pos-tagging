@@ -246,7 +246,7 @@ def test_tokenization_impact():
     OUTPUT_FILE_ORIGINAL = 'original_sentences_results.json'
     OUTPUT_FILE_TOKENIZED = 'tokenized_sentences_results.json'
     BATCH_SIZE = 5
-    MAX_SENTENCES = 50  # Adjust this to test on more or fewer sentences
+    MAX_SENTENCES = 200  # Adjust this to test on more or fewer sentences
     
     # Step 1: Load the test sentences
     print("Loading test sentences...")
