@@ -382,6 +382,92 @@ def process_sentences(input_sentences, reference_sentences, batch_size):
 
     return output
 
+
+def tag_segmented_failed_sentences():
+    """
+    Tags the segmented failed sentences and saves the results to a new JSON file.
+    Uses the segmented tokens from failed_sentences_segmented.json as input.
+    """
+    INPUT_FILE = 'failed_sentences_segmented.json'
+    OUTPUT_FILE = 'failed_sentences_tagged.json'
+    
+    # Step 1: Load the segmented sentences
+    print(f"Loading segmented sentences from {INPUT_FILE}...")
+    try:
+        with open(INPUT_FILE, 'r') as f:
+            segmented_sentences = json.load(f)
+        
+        # Check if we have valid data
+        if not isinstance(segmented_sentences, list) or not segmented_sentences:
+            raise ValueError(f"Invalid or empty data in {INPUT_FILE}")
+            
+        print(f"Successfully loaded {len(segmented_sentences)} segmented sentences")
+    except Exception as e:
+        print(f"Error loading segmented sentences: {str(e)}")
+        return
+    
+    # Step 2: Prepare the data for tagging
+    # Extract original sentences and predicted tokens
+    original_sentences = [entry["original"] for entry in segmented_sentences]
+    tokenized_sentences = [" ".join(entry["predicted_tokens"]) for entry in segmented_sentences]
+    tokens_list = [entry["predicted_tokens"] for entry in segmented_sentences]
+    
+    # Step 3: Tag the sentences using the LLM
+    results = []
+    batch_size = 1  # Process one sentence at a time due to complexity
+    
+    print(f"Tagging {len(segmented_sentences)} sentences...")
+    for i in tqdm(range(len(segmented_sentences)), desc="Tagging sentences", unit="sentence"):
+        try:
+            # Get original and tokenized data for this sentence
+            original = original_sentences[i]
+            tokens = tokens_list[i]
+            tokenized = tokenized_sentences[i]
+            
+            # Tag the tokens using LLM
+            tagged_result = tag_sentences_ud([tokenized], [tokens])
+            
+            # Extract the tags
+            if tagged_result.sentences and tagged_result.sentences[0].sentence_tags:
+                pos_tags = [
+                    {
+                        "token": tag.token,
+                        "pos_tag": tag.pos_tag
+                    } for tag in tagged_result.sentences[0].sentence_tags
+                ]
+                
+                # Create the result entry
+                result_entry = {
+                    "original": original,
+                    "tokens": tokens,
+                    "tags": pos_tags
+                }
+                results.append(result_entry)
+            else:
+                print(f"⚠️ Warning: No tags returned for sentence {i+1}: {original[:30]}...")
+                results.append({
+                    "original": original,
+                    "tokens": tokens,
+                    "error": "No tags returned by the LLM"
+                })
+                
+        except Exception as e:
+            print(f"Error processing sentence {i+1}: {str(e)}")
+            results.append({
+                "original": original_sentences[i],
+                "tokens": tokens_list[i],
+                "error": str(e)
+            })
+    
+    # Step 4: Save the results
+    print(f"Saving results to {OUTPUT_FILE}...")
+    with open(OUTPUT_FILE, 'w') as f:
+        json.dump(results, f, indent=2)
+    
+    print(f"Successfully tagged {len(results)} sentences.")
+    print(f"Results saved to {OUTPUT_FILE}")
+
 if __name__ == "__main__":
     # Uncomment the line below to run the tokenization impact test
-    test_tokenization_impact()
+    # test_tokenization_impact()
+    tag_segmented_failed_sentences()
