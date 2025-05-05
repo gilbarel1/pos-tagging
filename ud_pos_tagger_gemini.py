@@ -121,8 +121,8 @@ def tag_sentences_ud(
 # if __name__ == "__main__":
 #     UD_ENGLISH_TEST = './UD_English-EWT/en_ewt-ud-test.conllu'
 #     BATCH_SIZE = 5
-#     INPUT_FILE = 'hard_sentences.json'
-#     OUTPUT_FILE = 'hard_sentences_gemini.json'
+#     INPUT_FILE = './datasets/hard_sentences.json'
+#     OUTPUT_FILE = './datasets/hard_sentences_gemini.json'
 
 
 #     # Step 1: Load the test sentences
@@ -243,8 +243,8 @@ def test_tokenization_impact():
     Outputs two JSON files for comparison.
     """
     UD_ENGLISH_TEST = '../UD_English-EWT/en_ewt-ud-test.conllu'
-    OUTPUT_FILE_ORIGINAL = 'original_sentences_results.json'
-    OUTPUT_FILE_TOKENIZED = 'tokenized_sentences_results.json'
+    OUTPUT_FILE_ORIGINAL = './datasets/original_sentences_results.json'
+    OUTPUT_FILE_TOKENIZED = './datasets/tokenized_sentences_results.json'
     BATCH_SIZE = 5
     MAX_SENTENCES = 200  # Adjust this to test on more or fewer sentences
     
@@ -388,8 +388,8 @@ def tag_segmented_failed_sentences():
     Tags the segmented failed sentences and saves the results to a new JSON file.
     Uses the segmented tokens from failed_sentences_segmented.json as input.
     """
-    INPUT_FILE = 'failed_sentences_segmented.json'
-    OUTPUT_FILE = 'failed_sentences_tagged.json'
+    INPUT_FILE = './datasets/failed_sentences_segmented.json'
+    OUTPUT_FILE = './datasets/failed_sentences_tagged.json'
     
     # Step 1: Load the segmented sentences
     print(f"Loading segmented sentences from {INPUT_FILE}...")

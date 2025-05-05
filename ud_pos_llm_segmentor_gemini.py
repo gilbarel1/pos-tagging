@@ -196,8 +196,8 @@ def create_sentence_token_map_from_ud(conllu_file_path: str, output_file: str, s
 
 if __name__ == "__main__":
     # File paths
-    UD_ENGLISH_TEST = './failed_sentences.json'
-    OUTPUT_MAP_FILE = "./failed_sentences.json"
+    UD_ENGLISH_TEST = './datasets/failed_sentences.json'
+    OUTPUT_MAP_FILE = "./datasets/failed_sentences.json"
     
     # Optional: Sample size (set to None to process all)
     SAMPLE_SIZE = 200  # Process 200 sentences, adjust as needed

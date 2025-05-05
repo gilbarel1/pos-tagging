@@ -325,6 +325,6 @@ def process_conllu(conllu_file_path: str, output_file: str, sample_size: Optiona
 if __name__ == "__main__":
     process_conllu(
         conllu_file_path="../UD_English-EWT/en_ewt-ud-test.conllu",
-        output_file="improved_ud_sentences_tagged.json",
+        output_file="/datasets/improved_ud_sentences_tagged.json",
         sample_size=200
     )
