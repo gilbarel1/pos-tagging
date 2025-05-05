@@ -13,7 +13,7 @@ import time
 from functools import wraps
 from ratelimit import limits, sleep_and_retry
 
-from utils import read_conllu
+from utils import read_conllu, untag
 from schema import TaggedSentences, TokenPOS
 from prompts import tagger_prompt
 
@@ -237,9 +237,7 @@ if __name__ == "__main__":
 
 # --- Testing original vs tokenized sentences ---
 
-def untag(tagged_sentence):
-    """Extract just the tokens from a tagged sentence"""
-    return [token for token, _ in tagged_sentence]
+
 
 def compare_original_vs_tokenized(test_data_path: str, sample_size: int = 50, batch_size: int = 5) -> dict:
     """
