@@ -278,7 +278,7 @@ def compare_original_vs_tokenized(test_data_path: str, sample_size: int = 50, ba
     tokenized_sentences = []
     for sentence in test_sentences:
         tokens = untag(sentence)
-        tokenized_sentences.append(tokens)
+        tokenized_sentences.append(" ".join(tokens))
     
     tokenized_batches = [tokenized_sentences[i:i+batch_size] for i in range(0, len(tokenized_sentences), batch_size)]
     
