@@ -118,51 +118,209 @@ def tag_sentences_ud(
 
 
 # --- Example Usage ---
-if __name__ == "__main__":
-    UD_ENGLISH_TEST = './UD_English-EWT/en_ewt-ud-test.conllu'
+# if __name__ == "__main__":
+#     UD_ENGLISH_TEST = './UD_English-EWT/en_ewt-ud-test.conllu'
+#     BATCH_SIZE = 5
+#     INPUT_FILE = 'hard_sentences.json'
+#     OUTPUT_FILE = 'hard_sentences_gemini.json'
+
+
+#     # Step 1: Load the test sentences
+#     # test_sentences, test_original = read_conllu(UD_ENGLISH_TEST)
+#     with open(INPUT_FILE, 'r') as f:
+#         input_data = [s for s in json.load(f) if 1 <= s['errors'] <= 3]
+#     test_sentences = [inp['tags'] for inp in input_data]
+#     test_original = [inp['original'] for inp in input_data]
+
+
+#     # Step 2: Perform POS tagging
+#     output = []
+
+#     sent_tok_err_count = 0
+#     batch_mismatch = 0
+
+#     total_tok_err_count = 0
+#     missing_tok_err_count = 0
+#     fixed_tok_err_count = 0
+
+#     for i in tqdm(range(0, len(test_original), BATCH_SIZE), desc="Tagging sentences", unit="batch"):
+#         # Step 2.1: Convert batch to TaggedSentences
+#         batch = test_original[i:i + BATCH_SIZE]
+#         batch_correct = TaggedSentences.from_2d_tuples(test_sentences[i:i + BATCH_SIZE])
+#         batch_correct_tokens = [[tags.token for tags in correct.sentence_tags] for correct in batch_correct.sentences]
+        
+
+#         # Step 2.2: Tag the sentences using LLM
+#         batch_predicted = tag_sentences_ud(batch, batch_correct_tokens)
+
+
+#         # Step 2.3: Check for errors
+
+#         # Check if the number of sentences in the response matches the number of input sentences
+#         if len(batch) != len(batch_predicted.sentences):
+#             print(f"⚠️ Warning: The number of sentences in the response ({len(batch_predicted.sentences)}) does not match the number of input sentences ({len(batch)}) in batch {i}. Skipping this batch.")
+#             batch_mismatch += 1
+#             continue
+
+#         # Check LLM tokenization
+#         for sentence, correct, predicted in zip(batch, batch_correct.sentences, batch_predicted.sentences):
+#             correct_tags = [sentence_tag for sentence_tag in correct.sentence_tags]
+#             predicted_tags = [sentence_tag for sentence_tag in predicted.sentence_tags]
+
+#             correct_tokens = [ct.token for ct in correct_tags]
+#             predicted_tokens = [tt.token for tt in predicted_tags]
+
+#             if correct_tokens != predicted_tokens:
+
+#                 sent_tok_err_count += 1
+
+#                 # align the tokens
+#                 aligned_predicted_tags = []
+#                 matcher = SequenceMatcher(a=correct_tokens, b=predicted_tokens, autojunk=False)
+#                 for tag, i1, i2, j1, j2 in matcher.get_opcodes():
+#                     if tag == 'equal':
+#                         aligned_predicted_tags.extend(predicted_tags[j1:j2])
+#                     elif tag == "delete":
+#                         total_tok_err_count += i2 - i1
+#                         aligned_predicted_tags.extend([TokenPOS(token=ct.token, pos_tag=None) for ct in correct_tags[i1:i2]])
+#                         missing_tok_err_count += i2 - i1
+#                     elif tag == "replace":
+#                         total_tok_err_count += i2 - i1
+#                         for ct, pt in zip(correct_tags[i1:i2], predicted_tags[i1:i2]):
+#                             if pt.token.strip() == ct.token:
+#                                 pt.token = pt.token.strip()
+#                                 fixed_tok_err_count += 1
+#                             aligned_predicted_tags.append(pt)
+                
+#                 if [apt.token for apt in aligned_predicted_tags] != correct_tokens:
+#                     print(f"⚠️ Warning: Wrong tokenization. Trying to align predicted tokens to correct tokens.")
+#                     print(f"  Correct  : {correct_tokens}")
+#                     print(f"  Predicted: {predicted_tokens}")
+#                     print(f"  Aligned  : {[tag.token for tag in aligned_predicted_tags]}")
+                
+#                 predicted.sentence_tags = aligned_predicted_tags
+            
+
+#             # Step 2.4: add correct and predicted tags to the output where needed
+#             output.append({
+#                 "sentence": sentence,
+#                 "tags": [
+#                     {
+#                         **({"predicted_token": pt.token}),
+#                         **({"correct_token": ct.token} if ct.token != pt.token else {}),
+#                         **({"predicted_tag": pt.pos_tag}),
+#                         **({"correct_tag": ct.pos_tag} if ct.pos_tag != pt.pos_tag else {}),
+#                     }
+#                     for ct, pt in zip(correct.sentence_tags, predicted.sentence_tags)
+#                 ]
+#             })
+    
+
+#     # Step 3: Save the output to a JSON file
+#     with open(OUTPUT_FILE, 'w') as f:
+#         json.dump(output, f, indent=2)
+
+
+#     # Step 4: Print summary
+#     if sent_tok_err_count > 0:
+#         print(f"❌ Error: {sent_tok_err_count} sentences had tokenization errors.")
+#         print(f"❌ Error: {total_tok_err_count} tokens had tokenization errors: ")
+#         print(f"          ✅ {total_tok_err_count - fixed_tok_err_count} of them were not fixed") if fixed_tok_err_count > 0 else None
+#         print(f"          ❌ {missing_tok_err_count} of the tokens are not provided by the LLM.")
+#     if batch_mismatch > 0:
+#         print(f"❌ Error: {batch_mismatch} batches had a batch size mismatch (the number of response sentences was different than the number of input sentences).")
+
+#     print(f"✅ Successfully tagged {len(test_original)} sentences.")
+#     print(f"✅ Successfully saved output to {OUTPUT_FILE}.")
+    
+
+
+# --- Testing original vs tokenized sentences ---
+
+def test_tokenization_impact():
+    """
+    Test the impact of using original vs tokenized sentences on the LLM tagger's performance.
+    Outputs two JSON files for comparison.
+    """
+    UD_ENGLISH_TEST = '../UD_English-EWT/en_ewt-ud-test.conllu'
+    OUTPUT_FILE_ORIGINAL = 'original_sentences_results.json'
+    OUTPUT_FILE_TOKENIZED = 'tokenized_sentences_results.json'
     BATCH_SIZE = 5
-    INPUT_FILE = 'hard_sentences.json'
-    OUTPUT_FILE = 'hard_sentences_gemini.json'
-
-
+    MAX_SENTENCES = 50  # Adjust this to test on more or fewer sentences
+    
     # Step 1: Load the test sentences
-    # test_sentences, test_original = read_conllu(UD_ENGLISH_TEST)
-    with open(INPUT_FILE, 'r') as f:
-        input_data = [s for s in json.load(f) if 1 <= s['errors'] <= 3]
-    test_sentences = [inp['tags'] for inp in input_data]
-    test_original = [inp['original'] for inp in input_data]
+    print("Loading test sentences...")
+    test_sentences, test_original = read_conllu(UD_ENGLISH_TEST)
+    
+    # Limit the number of sentences for testing
+    test_sentences = test_sentences[:MAX_SENTENCES]
+    test_original = test_original[:MAX_SENTENCES]
+    
+    # Step 2: Create tokenized versions
+    print("Creating tokenized versions...")
+    tokenized_sentences = []
+    for sentence in test_sentences:
+        tokens = untag(sentence)
+        tokenized_text = " ".join(tokens)
+        tokenized_sentences.append(tokenized_text)
+    
+    # Step 3: Process original sentences
+    print("Processing original sentences...")
+    original_results = process_sentences(test_original, test_sentences, BATCH_SIZE)
+    
+    # Step 4: Process tokenized sentences
+    print("Processing tokenized sentences...")
+    tokenized_results = process_sentences(tokenized_sentences, test_sentences, BATCH_SIZE)
+    
+    # Step 5: Save results
+    print(f"Saving results to {OUTPUT_FILE_ORIGINAL} and {OUTPUT_FILE_TOKENIZED}")
+    with open(OUTPUT_FILE_ORIGINAL, 'w') as f:
+        json.dump(original_results, f, indent=2)
+    
+    with open(OUTPUT_FILE_TOKENIZED, 'w') as f:
+        json.dump(tokenized_results, f, indent=2)
+    
+    print("Done!")
 
-
-    # Step 2: Perform POS tagging
+def process_sentences(input_sentences, reference_sentences, batch_size):
+    """
+    Process sentences in batches and return results in the expected format.
+    
+    Args:
+        input_sentences: List of sentences to be tagged (either original or tokenized)
+        reference_sentences: Original sentences with correct tags for reference
+        batch_size: Number of sentences to process in each batch
+    
+    Returns:
+        List of dictionaries with tagged results
+    """
     output = []
-
     sent_tok_err_count = 0
     batch_mismatch = 0
-
     total_tok_err_count = 0
     missing_tok_err_count = 0
     fixed_tok_err_count = 0
 
-    for i in tqdm(range(0, len(test_original), BATCH_SIZE), desc="Tagging sentences", unit="batch"):
-        # Step 2.1: Convert batch to TaggedSentences
-        batch = test_original[i:i + BATCH_SIZE]
-        batch_correct = TaggedSentences.from_2d_tuples(test_sentences[i:i + BATCH_SIZE])
+    for i in tqdm(range(0, len(input_sentences), batch_size), desc="Tagging sentences", unit="batch"):
+        # Step 1: Prepare the batch
+        batch = input_sentences[i:i + batch_size]
+        batch_correct = TaggedSentences.from_2d_tuples(reference_sentences[i:i + batch_size])
         batch_correct_tokens = [[tags.token for tags in correct.sentence_tags] for correct in batch_correct.sentences]
         
-
-        # Step 2.2: Tag the sentences using LLM
-        batch_predicted = tag_sentences_ud(batch, batch_correct_tokens)
-
-
-        # Step 2.3: Check for errors
-
-        # Check if the number of sentences in the response matches the number of input sentences
+        # Step 2: Tag the sentences using LLM
+        try:
+            batch_predicted = tag_sentences_ud(batch, batch_correct_tokens)
+        except Exception as e:
+            print(f"Error processing batch {i}: {str(e)}")
+            continue
+            
+        # Step 3: Check if the number of sentences in the response matches the number of input sentences
         if len(batch) != len(batch_predicted.sentences):
             print(f"⚠️ Warning: The number of sentences in the response ({len(batch_predicted.sentences)}) does not match the number of input sentences ({len(batch)}) in batch {i}. Skipping this batch.")
             batch_mismatch += 1
             continue
 
-        # Check LLM tokenization
+        # Step 4: Process and align results
         for sentence, correct, predicted in zip(batch, batch_correct.sentences, batch_predicted.sentences):
             correct_tags = [sentence_tag for sentence_tag in correct.sentence_tags]
             predicted_tags = [sentence_tag for sentence_tag in predicted.sentence_tags]
@@ -171,7 +329,6 @@ if __name__ == "__main__":
             predicted_tokens = [tt.token for tt in predicted_tags]
 
             if correct_tokens != predicted_tokens:
-
                 sent_tok_err_count += 1
 
                 # align the tokens
@@ -199,9 +356,8 @@ if __name__ == "__main__":
                     print(f"  Aligned  : {[tag.token for tag in aligned_predicted_tags]}")
                 
                 predicted.sentence_tags = aligned_predicted_tags
-            
 
-            # Step 2.4: add correct and predicted tags to the output where needed
+            # Step 5: Add correct and predicted tags to the output
             output.append({
                 "sentence": sentence,
                 "tags": [
@@ -214,14 +370,8 @@ if __name__ == "__main__":
                     for ct, pt in zip(correct.sentence_tags, predicted.sentence_tags)
                 ]
             })
-    
 
-    # Step 3: Save the output to a JSON file
-    with open(OUTPUT_FILE, 'w') as f:
-        json.dump(output, f, indent=2)
-
-
-    # Step 4: Print summary
+    # Print summary
     if sent_tok_err_count > 0:
         print(f"❌ Error: {sent_tok_err_count} sentences had tokenization errors.")
         print(f"❌ Error: {total_tok_err_count} tokens had tokenization errors: ")
@@ -230,297 +380,8 @@ if __name__ == "__main__":
     if batch_mismatch > 0:
         print(f"❌ Error: {batch_mismatch} batches had a batch size mismatch (the number of response sentences was different than the number of input sentences).")
 
-    print(f"✅ Successfully tagged {len(test_original)} sentences.")
-    print(f"✅ Successfully saved output to {OUTPUT_FILE}.")
-    
+    return output
 
-
-# --- Testing original vs tokenized sentences ---
-
-
-
-def compare_original_vs_tokenized(test_data_path: str, sample_size: int = 50, batch_size: int = 5) -> dict:
-    """
-    Compare POS tagging performance between original and tokenized sentences
-    
-    Args:
-        test_data_path: Path to the test data in CoNLL format
-        sample_size: Number of sentences to sample for the test
-        batch_size: Number of sentences to process in each API call
-        
-    Returns:
-        Dictionary with comparison results
-    """
-    # Load test data
-    test_sentences, test_original = read_conllu(test_data_path)
-    
-    # Limit to sample size
-    test_sentences = test_sentences[:sample_size]
-    test_original = test_original[:sample_size]
-    
-    results = {
-        'original_accuracy': 0,
-        'tokenized_accuracy': 0,
-        'original_only_correct': 0,
-        'tokenized_only_correct': 0,
-        'both_correct': 0,
-        'both_incorrect': 0,
-        'original_tokenization_errors': 0,
-        'tokenized_tokenization_errors': 0,
-        'examples': []
-    }
-    
-    # Prepare batched inputs
-    original_batches = [test_original[i:i+batch_size] for i in range(0, len(test_original), batch_size)]
-    
-    tokenized_sentences = []
-    for sentence in test_sentences:
-        tokens = untag(sentence)
-        tokenized_sentences.append(" ".join(tokens))
-    
-    tokenized_batches = [tokenized_sentences[i:i+batch_size] for i in range(0, len(tokenized_sentences), batch_size)]
-    
-    # Process original sentences
-    original_results = []
-    for batch in tqdm(original_batches, desc="Processing original sentences"):
-        try:
-            batch_results = tag_sentences_ud(texts_to_tag=batch)
-            original_results.append(batch_results)
-        except Exception as e:
-            print(f"Error processing original batch: {e}")
-            # Add empty results to maintain order
-            original_results.append(None)
-    
-    # Process tokenized sentences
-    tokenized_results = []
-    for batch in tqdm(tokenized_batches, desc="Processing tokenized sentences"):
-        try:
-            batch_results = tag_sentences_ud(tokens_to_tag=batch)
-            tokenized_results.append(batch_results)
-        except Exception as e:
-            print(f"Error processing tokenized batch: {e}")
-            # Add empty results to maintain order
-            tokenized_results.append(None)
-    
-    # Flatten results
-    flat_original_results = []
-    for batch_result in original_results:
-        if batch_result is not None:
-            flat_original_results.extend(batch_result.sentences)
-        else:
-            # Add None placeholders to maintain alignment
-            flat_original_results.extend([None] * batch_size)
-    
-    flat_tokenized_results = []
-    for batch_result in tokenized_results:
-        if batch_result is not None:
-            flat_tokenized_results.extend(batch_result.sentences)
-        else:
-            # Add None placeholders to maintain alignment
-            flat_tokenized_results.extend([None] * batch_size)
-    
-    # Trim to actual sample size
-    flat_original_results = flat_original_results[:sample_size]
-    flat_tokenized_results = flat_tokenized_results[:sample_size]
-    
-    # Evaluate and compare
-    total_tokens = 0
-    total_original_correct = 0
-    total_tokenized_correct = 0
-    
-    for i, (gold_sentence, original_result, tokenized_result) in enumerate(zip(
-        test_sentences, flat_original_results, flat_tokenized_results)):
-        
-        # Skip if either result is None
-        if original_result is None or tokenized_result is None:
-            continue
-        
-        gold_tokens = untag(gold_sentence)
-        gold_tags = [tag for _, tag in gold_sentence]
-        
-        # Check original result
-        original_tokens = [tag.token for tag in original_result.sentence_tags]
-        original_tags = [tag.pos_tag for tag in original_result.sentence_tags]
-        
-        if len(original_tokens) != len(gold_tokens):
-            results['original_tokenization_errors'] += 1
-            # Try to align tokens for fair comparison
-            aligned_original_tags = align_tokens(gold_tokens, original_tokens, original_tags)
-        else:
-            aligned_original_tags = original_tags
-        
-        # Check tokenized result
-        tokenized_tokens = [tag.token for tag in tokenized_result.sentence_tags]
-        tokenized_tags = [tag.pos_tag for tag in tokenized_result.sentence_tags]
-        
-        if len(tokenized_tokens) != len(gold_tokens):
-            results['tokenized_tokenization_errors'] += 1
-            # Align tokens for fair comparison
-            aligned_tokenized_tags = align_tokens(gold_tokens, tokenized_tokens, tokenized_tags)
-        else:
-            aligned_tokenized_tags = tokenized_tags
-        
-        # Count correct tags
-        original_correct = sum(p == g for p, g in zip(aligned_original_tags, gold_tags))
-        tokenized_correct = sum(p == g for p, g in zip(aligned_tokenized_tags, gold_tags))
-        
-        # Update counters
-        total_tokens += len(gold_tokens)
-        total_original_correct += original_correct
-        total_tokenized_correct += tokenized_correct
-        
-        # Check sentence-level correctness
-        original_perfect = original_correct == len(gold_tokens)
-        tokenized_perfect = tokenized_correct == len(gold_tokens)
-        
-        if original_perfect and tokenized_perfect:
-            results['both_correct'] += 1
-        elif original_perfect and not tokenized_perfect:
-            results['original_only_correct'] += 1
-        elif not original_perfect and tokenized_perfect:
-            results['tokenized_only_correct'] += 1
-        else:
-            results['both_incorrect'] += 1
-        
-        # Save interesting examples
-        if original_correct != tokenized_correct:
-            results['examples'].append({
-                'sentence_id': i,
-                'original_text': test_original[i],
-                'tokenized_text': ' '.join(gold_tokens),
-                'gold_tokens': gold_tokens,
-                'gold_tags': gold_tags,
-                'original_tokens': original_tokens,
-                'original_tags': aligned_original_tags,
-                'tokenized_tokens': tokenized_tokens,
-                'tokenized_tags': aligned_tokenized_tags,
-                'original_correct': original_correct,
-                'tokenized_correct': tokenized_correct,
-                'better': 'original' if original_correct > tokenized_correct else 'tokenized'
-            })
-    
-    # Calculate overall accuracy
-    results['original_accuracy'] = total_original_correct / total_tokens if total_tokens > 0 else 0
-    results['tokenized_accuracy'] = total_tokenized_correct / total_tokens if total_tokens > 0 else 0
-    
-    return results
-
-def align_tokens(gold_tokens, pred_tokens, pred_tags):
-    """Align predicted tags with gold tokens when tokenization differs"""
-    from difflib import SequenceMatcher
-    
-    matcher = SequenceMatcher(a=gold_tokens, b=pred_tokens)
-    aligned_tags = ['UNK'] * len(gold_tokens)
-    
-    for tag, i1, i2, j1, j2 in matcher.get_opcodes():
-        if tag == 'equal':
-            for i, j in zip(range(i1, i2), range(j1, j2)):
-                if i < len(aligned_tags) and j < len(pred_tags):
-                    aligned_tags[i] = pred_tags[j]
-        elif tag == 'replace' or tag == 'delete':
-            # Use nearest available tag when possible
-            if j1 < len(pred_tags):
-                for i in range(i1, i2):
-                    if i < len(aligned_tags):
-                        aligned_tags[i] = pred_tags[min(j1, len(pred_tags)-1)]
-    
-    return aligned_tags
-
-# New command for original vs tokenized comparison
-if __name__ == "__main__" and len(sys.argv) > 1 and sys.argv[1] == "compare-formats":
-    UD_ENGLISH_TEST = './UD_English-EWT/en_ewt-ud-test.conllu'
-    SAMPLE_SIZE = int(sys.argv[2]) if len(sys.argv) > 2 else 30
-    BATCH_SIZE = int(sys.argv[3]) if len(sys.argv) > 3 else 5
-    OUTPUT_FILE = 'format_comparison_results.json'
-    ORIGINAL_OUTPUT_FILE = 'original_sentences_results.json'
-    TOKENIZED_OUTPUT_FILE = 'tokenized_sentences_results.json'
-    
-    print(f"Comparing original vs tokenized format using {SAMPLE_SIZE} samples with batch size {BATCH_SIZE}")
-    results = compare_original_vs_tokenized(UD_ENGLISH_TEST, SAMPLE_SIZE, BATCH_SIZE)
-    
-    # Print summary
-    print("\n=== Results Summary ===")
-    print(f"Original sentence accuracy: {results['original_accuracy']:.4f}")
-    print(f"Tokenized sentence accuracy: {results['tokenized_accuracy']:.4f}")
-    print(f"Sentences where only original was perfect: {results['original_only_correct']}")
-    print(f"Sentences where only tokenized was perfect: {results['tokenized_only_correct']}")
-    print(f"Sentences where both were perfect: {results['both_correct']}")
-    print(f"Sentences where both had errors: {results['both_incorrect']}")
-    print(f"Original tokenization errors: {results['original_tokenization_errors']}")
-    print(f"Tokenized tokenization errors: {results['tokenized_tokenization_errors']}")
-    
-    # Prepare separate results for original and tokenized formats
-    original_results = {
-        'accuracy': results['original_accuracy'],
-        'tokenization_errors': results['original_tokenization_errors'],
-        'sentences': []
-    }
-    
-    tokenized_results = {
-        'accuracy': results['tokenized_accuracy'],
-        'tokenization_errors': results['tokenized_tokenization_errors'],
-        'sentences': []
-    }
-    
-    # Extract sentence-level results for each format
-    for example in results['examples']:
-        original_example = {
-            'sentence_id': example['sentence_id'],
-            'text': example['original_text'],
-            'tokens': example['gold_tokens'],
-            'predicted_tokens': example['original_tokens'],
-            'gold_tags': example['gold_tags'],
-            'predicted_tags': example['original_tags'],
-            'correct_count': example['original_correct'],
-            'total_tokens': len(example['gold_tokens']),
-            'perfect_match': example['original_correct'] == len(example['gold_tokens'])
-        }
-        original_results['sentences'].append(original_example)
-        
-        tokenized_example = {
-            'sentence_id': example['sentence_id'],
-            'text': example['tokenized_text'],
-            'tokens': example['gold_tokens'],
-            'predicted_tokens': example['tokenized_tokens'],
-            'gold_tags': example['gold_tags'],
-            'predicted_tags': example['tokenized_tags'],
-            'correct_count': example['tokenized_correct'],
-            'total_tokens': len(example['gold_tokens']),
-            'perfect_match': example['tokenized_correct'] == len(example['gold_tokens'])
-        }
-        tokenized_results['sentences'].append(tokenized_example)
-    
-    # Save all results
-    with open(OUTPUT_FILE, 'w') as f:
-        json.dump(results, f, indent=2)
-    print(f"Detailed comparison results saved to {OUTPUT_FILE}")
-    
-    with open(ORIGINAL_OUTPUT_FILE, 'w') as f:
-        json.dump(original_results, f, indent=2)
-    print(f"Original sentences results saved to {ORIGINAL_OUTPUT_FILE}")
-    
-    with open(TOKENIZED_OUTPUT_FILE, 'w') as f:
-        json.dump(tokenized_results, f, indent=2)
-    print(f"Tokenized sentences results saved to {TOKENIZED_OUTPUT_FILE}")
-    
-    # Show examples where formats differ
-    print("\n=== Interesting Examples ===")
-    for i, example in enumerate(results['examples']):
-        if i >= 5:  # Limit to first 5 examples
-            print(f"... and {len(results['examples']) - 5} more examples")
-            break
-            
-        print(f"\nExample {i+1} (better: {example['better']}):")
-        print(f"Original text: {example['original_text']}")
-        print(f"Tokenized text: {example['tokenized_text']}")
-        print(f"Original correct: {example['original_correct']}/{len(example['gold_tokens'])}")
-        print(f"Tokenized correct: {example['tokenized_correct']}/{len(example['gold_tokens'])}")
-        
-        # Show mismatched tags
-        print("Tag differences:")
-        for j, (gold_token, gold_tag, orig_tag, tok_tag) in enumerate(zip(
-            example['gold_tokens'], example['gold_tags'], 
-            example['original_tags'], example['tokenized_tags'])):
-            
-            if orig_tag != tok_tag:
-                print(f"  '{gold_token}': gold={gold_tag}, original={orig_tag}, tokenized={tok_tag}")
+if __name__ == "__main__":
+    # Uncomment the line below to run the tokenization impact test
+    test_tokenization_impact()

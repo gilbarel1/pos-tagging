@@ -1,0 +1,3660 @@
+[
+  {
+    "sentence": "What if Google Morphed Into GoogleOS ?",
+    "tags": [
+      {
+        "predicted_token": "What",
+        "predicted_tag": "SCONJ",
+        "correct_tag": "PRON"
+      },
+      {
+        "predicted_token": "if",
+        "predicted_tag": "SCONJ"
+      },
+      {
+        "predicted_token": "Google",
+        "predicted_tag": "PROPN"
+      },
+      {
+        "predicted_token": "Morphed",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "Into",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "GoogleOS",
+        "predicted_tag": "PROPN"
+      },
+      {
+        "predicted_token": "?",
+        "predicted_tag": "PUNCT"
+      }
+    ]
+  },
+  {
+    "sentence": "What if Google expanded on its search - engine ( and now e-mail ) wares into a full - fledged operating system ?",
+    "tags": [
+      {
+        "predicted_token": "What",
+        "predicted_tag": "SCONJ",
+        "correct_tag": "PRON"
+      },
+      {
+        "predicted_token": "if",
+        "predicted_tag": "SCONJ"
+      },
+      {
+        "predicted_token": "Google",
+        "predicted_tag": "PROPN"
+      },
+      {
+        "predicted_token": "expanded",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "on",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "its",
+        "predicted_tag": "DET",
+        "correct_tag": "PRON"
+      },
+      {
+        "predicted_token": "search",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "-",
+        "predicted_tag": "PUNCT"
+      },
+      {
+        "predicted_token": "engine",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "(",
+        "predicted_tag": "PUNCT"
+      },
+      {
+        "predicted_token": "and",
+        "predicted_tag": "CCONJ"
+      },
+      {
+        "predicted_token": "now",
+        "predicted_tag": "ADV"
+      },
+      {
+        "predicted_token": "e-mail",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": ")",
+        "predicted_tag": "PUNCT"
+      },
+      {
+        "predicted_token": "wares",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "into",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "a",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "full",
+        "predicted_tag": "ADJ",
+        "correct_tag": "ADV"
+      },
+      {
+        "predicted_token": "-",
+        "predicted_tag": "PUNCT"
+      },
+      {
+        "predicted_token": "fledged",
+        "predicted_tag": "VERB",
+        "correct_tag": "ADJ"
+      },
+      {
+        "predicted_token": "operating",
+        "predicted_tag": "VERB",
+        "correct_tag": "NOUN"
+      },
+      {
+        "predicted_token": "system",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "?",
+        "predicted_tag": "PUNCT"
+      }
+    ]
+  },
+  {
+    "sentence": "[ via Microsoft Watch from Mary Jo Foley ]",
+    "tags": [
+      {
+        "predicted_token": "[",
+        "predicted_tag": "PUNCT"
+      },
+      {
+        "predicted_token": "via",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "Microsoft",
+        "predicted_tag": "PROPN"
+      },
+      {
+        "predicted_token": "Watch",
+        "predicted_tag": "PROPN"
+      },
+      {
+        "predicted_token": "from",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "Mary",
+        "predicted_tag": "PROPN"
+      },
+      {
+        "predicted_token": "Jo",
+        "predicted_tag": "PROPN"
+      },
+      {
+        "predicted_token": "Foley",
+        "predicted_tag": "PROPN"
+      },
+      {
+        "predicted_token": "]",
+        "predicted_tag": "PUNCT"
+      }
+    ]
+  },
+  {
+    "sentence": "( And , by the way , is anybody else just a little nostalgic for the days when that was a good thing ? )",
+    "tags": [
+      {
+        "predicted_token": "(",
+        "predicted_tag": "PUNCT"
+      },
+      {
+        "predicted_token": "And",
+        "predicted_tag": "CCONJ"
+      },
+      {
+        "predicted_token": ",",
+        "predicted_tag": "PUNCT"
+      },
+      {
+        "predicted_token": "by",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "the",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "way",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": ",",
+        "predicted_tag": "PUNCT"
+      },
+      {
+        "predicted_token": "is",
+        "predicted_tag": "AUX"
+      },
+      {
+        "predicted_token": "anybody",
+        "predicted_tag": "PRON"
+      },
+      {
+        "predicted_token": "else",
+        "predicted_tag": "ADV",
+        "correct_tag": "ADJ"
+      },
+      {
+        "predicted_token": "just",
+        "predicted_tag": "ADV"
+      },
+      {
+        "predicted_token": "a",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "little",
+        "predicted_tag": "ADJ"
+      },
+      {
+        "predicted_token": "nostalgic",
+        "predicted_tag": "ADJ"
+      },
+      {
+        "predicted_token": "for",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "the",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "days",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "when",
+        "predicted_tag": "SCONJ",
+        "correct_tag": "ADV"
+      },
+      {
+        "predicted_token": "that",
+        "predicted_tag": "DET",
+        "correct_tag": "PRON"
+      },
+      {
+        "predicted_token": "was",
+        "predicted_tag": "AUX"
+      },
+      {
+        "predicted_token": "a",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "good",
+        "predicted_tag": "ADJ"
+      },
+      {
+        "predicted_token": "thing",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "?",
+        "predicted_tag": "PUNCT"
+      },
+      {
+        "predicted_token": ")",
+        "predicted_tag": "PUNCT"
+      }
+    ]
+  },
+  {
+    "sentence": "This BuzzMachine post argues that Google 's rush toward ubiquity might backfire -- which we 've all heard before , but it 's particularly well - put in this post .",
+    "tags": [
+      {
+        "predicted_token": "This",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "BuzzMachine",
+        "predicted_tag": "PROPN"
+      },
+      {
+        "predicted_token": "post",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "argues",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "that",
+        "predicted_tag": "SCONJ"
+      },
+      {
+        "predicted_token": "Google",
+        "predicted_tag": "PROPN"
+      },
+      {
+        "predicted_token": "'s",
+        "predicted_tag": "PART"
+      },
+      {
+        "predicted_token": "rush",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "toward",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "ubiquity",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "might",
+        "predicted_tag": "AUX"
+      },
+      {
+        "predicted_token": "backfire",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "--",
+        "predicted_tag": "PUNCT"
+      },
+      {
+        "predicted_token": "which",
+        "predicted_tag": "PRON"
+      },
+      {
+        "predicted_token": "we",
+        "predicted_tag": "PRON"
+      },
+      {
+        "predicted_token": "'ve",
+        "predicted_tag": "AUX"
+      },
+      {
+        "predicted_token": "all",
+        "predicted_tag": "PRON",
+        "correct_tag": "ADV"
+      },
+      {
+        "predicted_token": "heard",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "before",
+        "predicted_tag": "ADV"
+      },
+      {
+        "predicted_token": ",",
+        "predicted_tag": "PUNCT"
+      },
+      {
+        "predicted_token": "but",
+        "predicted_tag": "CCONJ"
+      },
+      {
+        "predicted_token": "it",
+        "predicted_tag": "PRON"
+      },
+      {
+        "predicted_token": "'s",
+        "predicted_tag": "AUX"
+      },
+      {
+        "predicted_token": "particularly",
+        "predicted_tag": "ADV"
+      },
+      {
+        "predicted_token": "well",
+        "predicted_tag": "ADV"
+      },
+      {
+        "predicted_token": "-",
+        "predicted_tag": "PUNCT"
+      },
+      {
+        "predicted_token": "put",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "in",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "this",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "post",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": ".",
+        "predicted_tag": "PUNCT"
+      }
+    ]
+  },
+  {
+    "sentence": "Google is a nice search engine .",
+    "tags": [
+      {
+        "predicted_token": "Google",
+        "predicted_tag": "PROPN"
+      },
+      {
+        "predicted_token": "is",
+        "predicted_tag": "AUX"
+      },
+      {
+        "predicted_token": "a",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "nice",
+        "predicted_tag": "ADJ"
+      },
+      {
+        "predicted_token": "search",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "engine",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": ".",
+        "predicted_tag": "PUNCT"
+      }
+    ]
+  },
+  {
+    "sentence": "Does anybody use it for anything else ?",
+    "tags": [
+      {
+        "predicted_token": "Does",
+        "predicted_tag": "AUX"
+      },
+      {
+        "predicted_token": "anybody",
+        "predicted_tag": "PRON"
+      },
+      {
+        "predicted_token": "use",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "it",
+        "predicted_tag": "PRON"
+      },
+      {
+        "predicted_token": "for",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "anything",
+        "predicted_tag": "PRON"
+      },
+      {
+        "predicted_token": "else",
+        "predicted_tag": "ADV",
+        "correct_tag": "ADJ"
+      },
+      {
+        "predicted_token": "?",
+        "predicted_tag": "PUNCT"
+      }
+    ]
+  },
+  {
+    "sentence": "They own blogger , of course .",
+    "tags": [
+      {
+        "predicted_token": "They",
+        "predicted_tag": "PRON"
+      },
+      {
+        "predicted_token": "own",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "blogger",
+        "predicted_tag": "NOUN",
+        "correct_tag": "PROPN"
+      },
+      {
+        "predicted_token": ",",
+        "predicted_tag": "PUNCT"
+      },
+      {
+        "predicted_token": "of",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "course",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": ".",
+        "predicted_tag": "PUNCT"
+      }
+    ]
+  },
+  {
+    "sentence": "Is that a money maker ?",
+    "tags": [
+      {
+        "predicted_token": "Is",
+        "predicted_tag": "AUX"
+      },
+      {
+        "predicted_token": "that",
+        "predicted_tag": "DET",
+        "correct_tag": "PRON"
+      },
+      {
+        "predicted_token": "a",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "money",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "maker",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "?",
+        "predicted_tag": "PUNCT"
+      }
+    ]
+  },
+  {
+    "sentence": "I 'm staying away from the stock .",
+    "tags": [
+      {
+        "predicted_token": "I",
+        "predicted_tag": "PRON"
+      },
+      {
+        "predicted_token": "'m",
+        "predicted_tag": "AUX"
+      },
+      {
+        "predicted_token": "staying",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "away",
+        "predicted_tag": "ADV"
+      },
+      {
+        "predicted_token": "from",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "the",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "stock",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": ".",
+        "predicted_tag": "PUNCT"
+      }
+    ]
+  },
+  {
+    "sentence": "I doubt the very few who actually read my blog have not come across this yet , but I figured I would put it out there anyways .",
+    "tags": [
+      {
+        "predicted_token": "I",
+        "predicted_tag": "PRON"
+      },
+      {
+        "predicted_token": "doubt",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "the",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "very",
+        "predicted_tag": "ADV"
+      },
+      {
+        "predicted_token": "few",
+        "predicted_tag": "ADJ"
+      },
+      {
+        "predicted_token": "who",
+        "predicted_tag": "PRON"
+      },
+      {
+        "predicted_token": "actually",
+        "predicted_tag": "ADV"
+      },
+      {
+        "predicted_token": "read",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "my",
+        "predicted_tag": "DET",
+        "correct_tag": "PRON"
+      },
+      {
+        "predicted_token": "blog",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "have",
+        "predicted_tag": "AUX"
+      },
+      {
+        "predicted_token": "not",
+        "predicted_tag": "PART"
+      },
+      {
+        "predicted_token": "come",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "across",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "this",
+        "predicted_tag": "DET",
+        "correct_tag": "PRON"
+      },
+      {
+        "predicted_token": "yet",
+        "predicted_tag": "ADV"
+      },
+      {
+        "predicted_token": ",",
+        "predicted_tag": "PUNCT"
+      },
+      {
+        "predicted_token": "but",
+        "predicted_tag": "CCONJ"
+      },
+      {
+        "predicted_token": "I",
+        "predicted_tag": "PRON"
+      },
+      {
+        "predicted_token": "figured",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "I",
+        "predicted_tag": "PRON"
+      },
+      {
+        "predicted_token": "would",
+        "predicted_tag": "AUX"
+      },
+      {
+        "predicted_token": "put",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "it",
+        "predicted_tag": "PRON"
+      },
+      {
+        "predicted_token": "out",
+        "predicted_tag": "ADP",
+        "correct_tag": "ADV"
+      },
+      {
+        "predicted_token": "there",
+        "predicted_tag": "ADV"
+      },
+      {
+        "predicted_token": "anyways",
+        "predicted_tag": "ADV"
+      },
+      {
+        "predicted_token": ".",
+        "predicted_tag": "PUNCT"
+      }
+    ]
+  },
+  {
+    "sentence": "John Donovan from Argghhh! has put out a excellent slide show on what was actually found and fought for in Fallujah .",
+    "tags": [
+      {
+        "predicted_token": "John",
+        "predicted_tag": "PROPN"
+      },
+      {
+        "predicted_token": "Donovan",
+        "predicted_tag": "PROPN"
+      },
+      {
+        "predicted_token": "from",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "Argghhh!",
+        "predicted_tag": "PROPN"
+      },
+      {
+        "predicted_token": "has",
+        "predicted_tag": "AUX"
+      },
+      {
+        "predicted_token": "put",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "out",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "a",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "excellent",
+        "predicted_tag": "ADJ"
+      },
+      {
+        "predicted_token": "slide",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "show",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "on",
+        "predicted_tag": "ADP",
+        "correct_tag": "SCONJ"
+      },
+      {
+        "predicted_token": "what",
+        "predicted_tag": "PRON"
+      },
+      {
+        "predicted_token": "was",
+        "predicted_tag": "AUX"
+      },
+      {
+        "predicted_token": "actually",
+        "predicted_tag": "ADV"
+      },
+      {
+        "predicted_token": "found",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "and",
+        "predicted_tag": "CCONJ"
+      },
+      {
+        "predicted_token": "fought",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "for",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "in",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "Fallujah",
+        "predicted_tag": "PROPN"
+      },
+      {
+        "predicted_token": ".",
+        "predicted_tag": "PUNCT"
+      }
+    ]
+  },
+  {
+    "sentence": "Click here To view it .",
+    "tags": [
+      {
+        "predicted_token": "Click",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "here",
+        "predicted_tag": "ADV"
+      },
+      {
+        "predicted_token": "To",
+        "predicted_tag": "PART"
+      },
+      {
+        "predicted_token": "view",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "it",
+        "predicted_tag": "PRON"
+      },
+      {
+        "predicted_token": ".",
+        "predicted_tag": "PUNCT"
+      }
+    ]
+  },
+  {
+    "sentence": "He makes some good observations on a few of the pic's .",
+    "tags": [
+      {
+        "predicted_token": "He",
+        "predicted_tag": "PRON"
+      },
+      {
+        "predicted_token": "makes",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "some",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "good",
+        "predicted_tag": "ADJ"
+      },
+      {
+        "predicted_token": "observations",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "on",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "a",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "few",
+        "predicted_tag": "NOUN",
+        "correct_tag": "ADJ"
+      },
+      {
+        "predicted_token": "of",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "the",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "pic's",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": ".",
+        "predicted_tag": "PUNCT"
+      }
+    ]
+  },
+  {
+    "sentence": "One of the pictures shows a flag that was found in Fallujah .",
+    "tags": [
+      {
+        "predicted_token": "One",
+        "predicted_tag": "NUM"
+      },
+      {
+        "predicted_token": "of",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "the",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "pictures",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "shows",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "a",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "flag",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "that",
+        "predicted_tag": "PRON"
+      },
+      {
+        "predicted_token": "was",
+        "predicted_tag": "AUX"
+      },
+      {
+        "predicted_token": "found",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "in",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "Fallujah",
+        "predicted_tag": "PROPN"
+      },
+      {
+        "predicted_token": ".",
+        "predicted_tag": "PUNCT"
+      }
+    ]
+  },
+  {
+    "sentence": "On the next two pictures he took screenshots of two beheading video's .",
+    "tags": [
+      {
+        "predicted_token": "On",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "the",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "next",
+        "predicted_tag": "ADJ"
+      },
+      {
+        "predicted_token": "two",
+        "predicted_tag": "NUM"
+      },
+      {
+        "predicted_token": "pictures",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "he",
+        "predicted_tag": "PRON"
+      },
+      {
+        "predicted_token": "took",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "screenshots",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "of",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "two",
+        "predicted_tag": "NUM"
+      },
+      {
+        "predicted_token": "beheading",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "video's",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": ".",
+        "predicted_tag": "PUNCT"
+      }
+    ]
+  },
+  {
+    "sentence": "Compare the flags to the Fallujah one .",
+    "tags": [
+      {
+        "predicted_token": "Compare",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "the",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "flags",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "to",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "the",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "Fallujah",
+        "predicted_tag": "PROPN"
+      },
+      {
+        "predicted_token": "one",
+        "predicted_tag": "NUM",
+        "correct_tag": "NOUN"
+      },
+      {
+        "predicted_token": ".",
+        "predicted_tag": "PUNCT"
+      }
+    ]
+  },
+  {
+    "sentence": "You have to see these slides .... they are amazing .",
+    "tags": [
+      {
+        "predicted_token": "You",
+        "predicted_tag": "PRON"
+      },
+      {
+        "predicted_token": "have",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "to",
+        "predicted_tag": "PART"
+      },
+      {
+        "predicted_token": "see",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "these",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "slides",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "....",
+        "predicted_tag": "PUNCT"
+      },
+      {
+        "predicted_token": "they",
+        "predicted_tag": "PRON"
+      },
+      {
+        "predicted_token": "are",
+        "predicted_tag": "AUX"
+      },
+      {
+        "predicted_token": "amazing",
+        "predicted_tag": "ADJ"
+      },
+      {
+        "predicted_token": ".",
+        "predicted_tag": "PUNCT"
+      }
+    ]
+  },
+  {
+    "sentence": "This Fallujah operation my turn out to be the most important operation done by the US Military since the end of the war .",
+    "tags": [
+      {
+        "predicted_token": "This",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "Fallujah",
+        "predicted_tag": "PROPN"
+      },
+      {
+        "predicted_token": "operation",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "my",
+        "predicted_tag": "PRON",
+        "correct_tag": "AUX"
+      },
+      {
+        "predicted_token": "turn",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "out",
+        "predicted_tag": "PART",
+        "correct_tag": "ADP"
+      },
+      {
+        "predicted_token": "to",
+        "predicted_tag": "PART"
+      },
+      {
+        "predicted_token": "be",
+        "predicted_tag": "AUX"
+      },
+      {
+        "predicted_token": "the",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "most",
+        "predicted_tag": "ADV"
+      },
+      {
+        "predicted_token": "important",
+        "predicted_tag": "ADJ"
+      },
+      {
+        "predicted_token": "operation",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "done",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "by",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "the",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "US",
+        "predicted_tag": "PROPN"
+      },
+      {
+        "predicted_token": "Military",
+        "predicted_tag": "PROPN",
+        "correct_tag": "NOUN"
+      },
+      {
+        "predicted_token": "since",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "the",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "end",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "of",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "the",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "war",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": ".",
+        "predicted_tag": "PUNCT"
+      }
+    ]
+  },
+  {
+    "sentence": "Let me join the chorus of annoyance over Google 's new toolbar , which , as noted in the linked article , commits just about every sin an online marketer could commit , and makes up a few new ones besides .",
+    "tags": [
+      {
+        "predicted_token": "Let",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "me",
+        "predicted_tag": "PRON"
+      },
+      {
+        "predicted_token": "join",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "the",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "chorus",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "of",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "annoyance",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "over",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "Google",
+        "predicted_tag": "PROPN"
+      },
+      {
+        "predicted_token": "'s",
+        "predicted_tag": "PART"
+      },
+      {
+        "predicted_token": "new",
+        "predicted_tag": "ADJ"
+      },
+      {
+        "predicted_token": "toolbar",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": ",",
+        "predicted_tag": "PUNCT"
+      },
+      {
+        "predicted_token": "which",
+        "predicted_tag": "PRON"
+      },
+      {
+        "predicted_token": ",",
+        "predicted_tag": "PUNCT"
+      },
+      {
+        "predicted_token": "as",
+        "predicted_tag": "SCONJ"
+      },
+      {
+        "predicted_token": "noted",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "in",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "the",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "linked",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "article",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": ",",
+        "predicted_tag": "PUNCT"
+      },
+      {
+        "predicted_token": "commits",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "just",
+        "predicted_tag": "ADV"
+      },
+      {
+        "predicted_token": "about",
+        "predicted_tag": "ADV"
+      },
+      {
+        "predicted_token": "every",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "sin",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "an",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "online",
+        "predicted_tag": "ADJ"
+      },
+      {
+        "predicted_token": "marketer",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "could",
+        "predicted_tag": "AUX"
+      },
+      {
+        "predicted_token": "commit",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": ",",
+        "predicted_tag": "PUNCT"
+      },
+      {
+        "predicted_token": "and",
+        "predicted_tag": "CCONJ"
+      },
+      {
+        "predicted_token": "makes",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "up",
+        "predicted_tag": "PART",
+        "correct_tag": "ADP"
+      },
+      {
+        "predicted_token": "a",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "few",
+        "predicted_tag": "ADJ"
+      },
+      {
+        "predicted_token": "new",
+        "predicted_tag": "ADJ"
+      },
+      {
+        "predicted_token": "ones",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "besides",
+        "predicted_tag": "ADP",
+        "correct_tag": "ADV"
+      },
+      {
+        "predicted_token": ".",
+        "predicted_tag": "PUNCT"
+      }
+    ]
+  },
+  {
+    "sentence": "I 'm not fond of the Google - hates - privacy argument",
+    "tags": [
+      {
+        "predicted_token": "I",
+        "predicted_tag": "PRON"
+      },
+      {
+        "predicted_token": "'m",
+        "predicted_tag": "AUX"
+      },
+      {
+        "predicted_token": "not",
+        "predicted_tag": "ADV",
+        "correct_tag": "PART"
+      },
+      {
+        "predicted_token": "fond",
+        "predicted_tag": "ADJ"
+      },
+      {
+        "predicted_token": "of",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "the",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "Google",
+        "predicted_tag": "PROPN"
+      },
+      {
+        "predicted_token": "-",
+        "predicted_tag": "PUNCT"
+      },
+      {
+        "predicted_token": "hates",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "-",
+        "predicted_tag": "PUNCT"
+      },
+      {
+        "predicted_token": "privacy",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "argument",
+        "predicted_tag": "NOUN"
+      }
+    ]
+  },
+  {
+    "sentence": "( You do n't need to use their site , you can opt - out of sharing your information , you do n't need to send stuff to anyone with a Gmail account , and if -- wonder of wonders -- you 're worried that you might send something to someone who would forward an excerpt to someone who would then store it on a Gmail account ... you have far , far too much time on your hands ) .",
+    "tags": [
+      {
+        "predicted_token": "(",
+        "predicted_tag": "PUNCT"
+      },
+      {
+        "predicted_token": "You",
+        "predicted_tag": "PRON"
+      },
+      {
+        "predicted_token": "do",
+        "predicted_tag": "AUX"
+      },
+      {
+        "predicted_token": "n't",
+        "predicted_tag": "PART"
+      },
+      {
+        "predicted_token": "need",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "to",
+        "predicted_tag": "PART"
+      },
+      {
+        "predicted_token": "use",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "their",
+        "predicted_tag": "DET",
+        "correct_tag": "PRON"
+      },
+      {
+        "predicted_token": "site",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": ",",
+        "predicted_tag": "PUNCT"
+      },
+      {
+        "predicted_token": "you",
+        "predicted_tag": "PRON"
+      },
+      {
+        "predicted_token": "can",
+        "predicted_tag": "AUX"
+      },
+      {
+        "predicted_token": "opt",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "-",
+        "predicted_tag": "PUNCT"
+      },
+      {
+        "predicted_token": "out",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "of",
+        "predicted_tag": "ADP",
+        "correct_tag": "SCONJ"
+      },
+      {
+        "predicted_token": "sharing",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "your",
+        "predicted_tag": "DET",
+        "correct_tag": "PRON"
+      },
+      {
+        "predicted_token": "information",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": ",",
+        "predicted_tag": "PUNCT"
+      },
+      {
+        "predicted_token": "you",
+        "predicted_tag": "PRON"
+      },
+      {
+        "predicted_token": "do",
+        "predicted_tag": "AUX"
+      },
+      {
+        "predicted_token": "n't",
+        "predicted_tag": "PART"
+      },
+      {
+        "predicted_token": "need",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "to",
+        "predicted_tag": "PART"
+      },
+      {
+        "predicted_token": "send",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "stuff",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "to",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "anyone",
+        "predicted_tag": "PRON"
+      },
+      {
+        "predicted_token": "with",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "a",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "Gmail",
+        "predicted_tag": "PROPN"
+      },
+      {
+        "predicted_token": "account",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": ",",
+        "predicted_tag": "PUNCT"
+      },
+      {
+        "predicted_token": "and",
+        "predicted_tag": "CCONJ"
+      },
+      {
+        "predicted_token": "if",
+        "predicted_tag": "SCONJ"
+      },
+      {
+        "predicted_token": "--",
+        "predicted_tag": "PUNCT"
+      },
+      {
+        "predicted_token": "wonder",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "of",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "wonders",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "--",
+        "predicted_tag": "PUNCT"
+      },
+      {
+        "predicted_token": "you",
+        "predicted_tag": "PRON"
+      },
+      {
+        "predicted_token": "'re",
+        "predicted_tag": "AUX"
+      },
+      {
+        "predicted_token": "worried",
+        "predicted_tag": "ADJ"
+      },
+      {
+        "predicted_token": "that",
+        "predicted_tag": "SCONJ"
+      },
+      {
+        "predicted_token": "you",
+        "predicted_tag": "PRON"
+      },
+      {
+        "predicted_token": "might",
+        "predicted_tag": "AUX"
+      },
+      {
+        "predicted_token": "send",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "something",
+        "predicted_tag": "NOUN",
+        "correct_tag": "PRON"
+      },
+      {
+        "predicted_token": "to",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "someone",
+        "predicted_tag": "PRON"
+      },
+      {
+        "predicted_token": "who",
+        "predicted_tag": "PRON"
+      },
+      {
+        "predicted_token": "would",
+        "predicted_tag": "AUX"
+      },
+      {
+        "predicted_token": "forward",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "an",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "excerpt",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "to",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "someone",
+        "predicted_tag": "PRON"
+      },
+      {
+        "predicted_token": "who",
+        "predicted_tag": "PRON"
+      },
+      {
+        "predicted_token": "would",
+        "predicted_tag": "AUX"
+      },
+      {
+        "predicted_token": "then",
+        "predicted_tag": "ADV"
+      },
+      {
+        "predicted_token": "store",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "it",
+        "predicted_tag": "PRON"
+      },
+      {
+        "predicted_token": "on",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "a",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "Gmail",
+        "predicted_tag": "PROPN"
+      },
+      {
+        "predicted_token": "account",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "...",
+        "predicted_tag": "PUNCT"
+      },
+      {
+        "predicted_token": "you",
+        "predicted_tag": "PRON"
+      },
+      {
+        "predicted_token": "have",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "far",
+        "predicted_tag": "ADV"
+      },
+      {
+        "predicted_token": ",",
+        "predicted_tag": "PUNCT"
+      },
+      {
+        "predicted_token": "far",
+        "predicted_tag": "ADV"
+      },
+      {
+        "predicted_token": "too",
+        "predicted_tag": "ADV"
+      },
+      {
+        "predicted_token": "much",
+        "predicted_tag": "ADJ"
+      },
+      {
+        "predicted_token": "time",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "on",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "your",
+        "predicted_tag": "DET",
+        "correct_tag": "PRON"
+      },
+      {
+        "predicted_token": "hands",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": ")",
+        "predicted_tag": "PUNCT"
+      },
+      {
+        "predicted_token": ".",
+        "predicted_tag": "PUNCT"
+      }
+    ]
+  },
+  {
+    "sentence": "However , this toolbar is really bad news .",
+    "tags": [
+      {
+        "predicted_token": "However",
+        "predicted_tag": "ADV"
+      },
+      {
+        "predicted_token": ",",
+        "predicted_tag": "PUNCT"
+      },
+      {
+        "predicted_token": "this",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "toolbar",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "is",
+        "predicted_tag": "AUX"
+      },
+      {
+        "predicted_token": "really",
+        "predicted_tag": "ADV"
+      },
+      {
+        "predicted_token": "bad",
+        "predicted_tag": "ADJ"
+      },
+      {
+        "predicted_token": "news",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": ".",
+        "predicted_tag": "PUNCT"
+      }
+    ]
+  },
+  {
+    "sentence": "On the other hand , it looks pretty cool .",
+    "tags": [
+      {
+        "predicted_token": "On",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "the",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "other",
+        "predicted_tag": "ADJ"
+      },
+      {
+        "predicted_token": "hand",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": ",",
+        "predicted_tag": "PUNCT"
+      },
+      {
+        "predicted_token": "it",
+        "predicted_tag": "PRON"
+      },
+      {
+        "predicted_token": "looks",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "pretty",
+        "predicted_tag": "ADV"
+      },
+      {
+        "predicted_token": "cool",
+        "predicted_tag": "ADJ"
+      },
+      {
+        "predicted_token": ".",
+        "predicted_tag": "PUNCT"
+      }
+    ]
+  },
+  {
+    "sentence": "Iran says it is creating nuclear energy without wanting nuclear weapons .",
+    "tags": [
+      {
+        "predicted_token": "Iran",
+        "predicted_tag": "PROPN"
+      },
+      {
+        "predicted_token": "says",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "it",
+        "predicted_tag": "PRON"
+      },
+      {
+        "predicted_token": "is",
+        "predicted_tag": "AUX"
+      },
+      {
+        "predicted_token": "creating",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "nuclear",
+        "predicted_tag": "ADJ"
+      },
+      {
+        "predicted_token": "energy",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "without",
+        "predicted_tag": "ADP",
+        "correct_tag": "SCONJ"
+      },
+      {
+        "predicted_token": "wanting",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "nuclear",
+        "predicted_tag": "ADJ"
+      },
+      {
+        "predicted_token": "weapons",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": ".",
+        "predicted_tag": "PUNCT"
+      }
+    ]
+  },
+  {
+    "sentence": "The United States does n't believe the Iranian Government .",
+    "tags": [
+      {
+        "predicted_token": "The",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "United",
+        "predicted_tag": "PROPN",
+        "correct_tag": "ADJ"
+      },
+      {
+        "predicted_token": "States",
+        "predicted_tag": "PROPN"
+      },
+      {
+        "predicted_token": "does",
+        "predicted_tag": "AUX"
+      },
+      {
+        "predicted_token": "n't",
+        "predicted_tag": "PART"
+      },
+      {
+        "predicted_token": "believe",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "the",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "Iranian",
+        "predicted_tag": "PROPN",
+        "correct_tag": "ADJ"
+      },
+      {
+        "predicted_token": "Government",
+        "predicted_tag": "PROPN",
+        "correct_tag": "NOUN"
+      },
+      {
+        "predicted_token": ".",
+        "predicted_tag": "PUNCT"
+      }
+    ]
+  },
+  {
+    "sentence": "One can suspect the Iranian Government .",
+    "tags": [
+      {
+        "predicted_token": "One",
+        "predicted_tag": "NUM",
+        "correct_tag": "PRON"
+      },
+      {
+        "predicted_token": "can",
+        "predicted_tag": "AUX"
+      },
+      {
+        "predicted_token": "suspect",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "the",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "Iranian",
+        "predicted_tag": "PROPN",
+        "correct_tag": "ADJ"
+      },
+      {
+        "predicted_token": "Government",
+        "predicted_tag": "PROPN",
+        "correct_tag": "NOUN"
+      },
+      {
+        "predicted_token": ".",
+        "predicted_tag": "PUNCT"
+      }
+    ]
+  },
+  {
+    "sentence": "But there is no proof .",
+    "tags": [
+      {
+        "predicted_token": "But",
+        "predicted_tag": "CCONJ"
+      },
+      {
+        "predicted_token": "there",
+        "predicted_tag": "ADV",
+        "correct_tag": "PRON"
+      },
+      {
+        "predicted_token": "is",
+        "predicted_tag": "AUX",
+        "correct_tag": "VERB"
+      },
+      {
+        "predicted_token": "no",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "proof",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": ".",
+        "predicted_tag": "PUNCT"
+      }
+    ]
+  },
+  {
+    "sentence": "I read an Article in Time magazine accusing the Iranian Government of being willing to start a nuclear war and I sympathise with the Article .",
+    "tags": [
+      {
+        "predicted_token": "I",
+        "predicted_tag": "PRON"
+      },
+      {
+        "predicted_token": "read",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "an",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "Article",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "in",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "Time",
+        "predicted_tag": "PROPN"
+      },
+      {
+        "predicted_token": "magazine",
+        "predicted_tag": "NOUN",
+        "correct_tag": "PROPN"
+      },
+      {
+        "predicted_token": "accusing",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "the",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "Iranian",
+        "predicted_tag": "PROPN",
+        "correct_tag": "ADJ"
+      },
+      {
+        "predicted_token": "Government",
+        "predicted_tag": "PROPN",
+        "correct_tag": "NOUN"
+      },
+      {
+        "predicted_token": "of",
+        "predicted_tag": "ADP",
+        "correct_tag": "SCONJ"
+      },
+      {
+        "predicted_token": "being",
+        "predicted_tag": "AUX"
+      },
+      {
+        "predicted_token": "willing",
+        "predicted_tag": "ADJ"
+      },
+      {
+        "predicted_token": "to",
+        "predicted_tag": "PART"
+      },
+      {
+        "predicted_token": "start",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "a",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "nuclear",
+        "predicted_tag": "ADJ"
+      },
+      {
+        "predicted_token": "war",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "and",
+        "predicted_tag": "CCONJ"
+      },
+      {
+        "predicted_token": "I",
+        "predicted_tag": "PRON"
+      },
+      {
+        "predicted_token": "sympathise",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "with",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "the",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "Article",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": ".",
+        "predicted_tag": "PUNCT"
+      }
+    ]
+  },
+  {
+    "sentence": "They are certainly being nasty to the United Nations Security Council in connection with the anti-proliferation treaty .",
+    "tags": [
+      {
+        "predicted_token": "They",
+        "predicted_tag": "PRON"
+      },
+      {
+        "predicted_token": "are",
+        "predicted_tag": "AUX"
+      },
+      {
+        "predicted_token": "certainly",
+        "predicted_tag": "ADV"
+      },
+      {
+        "predicted_token": "being",
+        "predicted_tag": "AUX"
+      },
+      {
+        "predicted_token": "nasty",
+        "predicted_tag": "ADJ"
+      },
+      {
+        "predicted_token": "to",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "the",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "United",
+        "predicted_tag": "PROPN",
+        "correct_tag": "ADJ"
+      },
+      {
+        "predicted_token": "Nations",
+        "predicted_tag": "PROPN"
+      },
+      {
+        "predicted_token": "Security",
+        "predicted_tag": "PROPN"
+      },
+      {
+        "predicted_token": "Council",
+        "predicted_tag": "PROPN"
+      },
+      {
+        "predicted_token": "in",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "connection",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "with",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "the",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "anti-proliferation",
+        "predicted_tag": "ADJ",
+        "correct_tag": "NOUN"
+      },
+      {
+        "predicted_token": "treaty",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": ".",
+        "predicted_tag": "PUNCT"
+      }
+    ]
+  },
+  {
+    "sentence": "The President has also said he would like to see Israel wiped off the map which he could n't even begin to try without nuclear weapons .",
+    "tags": [
+      {
+        "predicted_token": "The",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "President",
+        "predicted_tag": "PROPN"
+      },
+      {
+        "predicted_token": "has",
+        "predicted_tag": "AUX"
+      },
+      {
+        "predicted_token": "also",
+        "predicted_tag": "ADV"
+      },
+      {
+        "predicted_token": "said",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "he",
+        "predicted_tag": "PRON"
+      },
+      {
+        "predicted_token": "would",
+        "predicted_tag": "AUX"
+      },
+      {
+        "predicted_token": "like",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "to",
+        "predicted_tag": "PART"
+      },
+      {
+        "predicted_token": "see",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "Israel",
+        "predicted_tag": "PROPN"
+      },
+      {
+        "predicted_token": "wiped",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "off",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "the",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "map",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "which",
+        "predicted_tag": "DET",
+        "correct_tag": "PRON"
+      },
+      {
+        "predicted_token": "he",
+        "predicted_tag": "PRON"
+      },
+      {
+        "predicted_token": "could",
+        "predicted_tag": "AUX"
+      },
+      {
+        "predicted_token": "n't",
+        "predicted_tag": "PART"
+      },
+      {
+        "predicted_token": "even",
+        "predicted_tag": "ADV"
+      },
+      {
+        "predicted_token": "begin",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "to",
+        "predicted_tag": "PART"
+      },
+      {
+        "predicted_token": "try",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "without",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "nuclear",
+        "predicted_tag": "ADJ"
+      },
+      {
+        "predicted_token": "weapons",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": ".",
+        "predicted_tag": "PUNCT"
+      }
+    ]
+  },
+  {
+    "sentence": "But he has insisted that he wants nuclear power for peaceful purposes .",
+    "tags": [
+      {
+        "predicted_token": "But",
+        "predicted_tag": "CCONJ"
+      },
+      {
+        "predicted_token": "he",
+        "predicted_tag": "PRON"
+      },
+      {
+        "predicted_token": "has",
+        "predicted_tag": "AUX"
+      },
+      {
+        "predicted_token": "insisted",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "that",
+        "predicted_tag": "SCONJ"
+      },
+      {
+        "predicted_token": "he",
+        "predicted_tag": "PRON"
+      },
+      {
+        "predicted_token": "wants",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "nuclear",
+        "predicted_tag": "ADJ"
+      },
+      {
+        "predicted_token": "power",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "for",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "peaceful",
+        "predicted_tag": "ADJ"
+      },
+      {
+        "predicted_token": "purposes",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": ".",
+        "predicted_tag": "PUNCT"
+      }
+    ]
+  },
+  {
+    "sentence": "Many people want to use diplomacy with Iran rather than military pressure .",
+    "tags": [
+      {
+        "predicted_token": "Many",
+        "predicted_tag": "ADJ"
+      },
+      {
+        "predicted_token": "people",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "want",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "to",
+        "predicted_tag": "PART"
+      },
+      {
+        "predicted_token": "use",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "diplomacy",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "with",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "Iran",
+        "predicted_tag": "PROPN"
+      },
+      {
+        "predicted_token": "rather",
+        "predicted_tag": "ADV",
+        "correct_tag": "ADP"
+      },
+      {
+        "predicted_token": "than",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "military",
+        "predicted_tag": "ADJ"
+      },
+      {
+        "predicted_token": "pressure",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": ".",
+        "predicted_tag": "PUNCT"
+      }
+    ]
+  },
+  {
+    "sentence": "But will diplomacy work ?",
+    "tags": [
+      {
+        "predicted_token": "But",
+        "predicted_tag": "CCONJ"
+      },
+      {
+        "predicted_token": "will",
+        "predicted_tag": "AUX"
+      },
+      {
+        "predicted_token": "diplomacy",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "work",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "?",
+        "predicted_tag": "PUNCT"
+      }
+    ]
+  },
+  {
+    "sentence": "And can anyone use military pressure without proof ?",
+    "tags": [
+      {
+        "predicted_token": "And",
+        "predicted_tag": "CCONJ"
+      },
+      {
+        "predicted_token": "can",
+        "predicted_tag": "AUX"
+      },
+      {
+        "predicted_token": "anyone",
+        "predicted_tag": "PRON"
+      },
+      {
+        "predicted_token": "use",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "military",
+        "predicted_tag": "ADJ"
+      },
+      {
+        "predicted_token": "pressure",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "without",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "proof",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "?",
+        "predicted_tag": "PUNCT"
+      }
+    ]
+  },
+  {
+    "sentence": "Angry crowds chanted anti-American slogans in the western city of Falluja ( pop. 256,000 ) as the security police killed in a friendly fire incident by US troops were buried on Saturday .",
+    "tags": [
+      {
+        "predicted_token": "Angry",
+        "predicted_tag": "ADJ"
+      },
+      {
+        "predicted_token": "crowds",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "chanted",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "anti-American",
+        "predicted_tag": "ADJ"
+      },
+      {
+        "predicted_token": "slogans",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "in",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "the",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "western",
+        "predicted_tag": "ADJ"
+      },
+      {
+        "predicted_token": "city",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "of",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "Falluja",
+        "predicted_tag": "PROPN"
+      },
+      {
+        "predicted_token": "(",
+        "predicted_tag": "PUNCT"
+      },
+      {
+        "predicted_token": "pop.",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "256,000",
+        "predicted_tag": "NUM"
+      },
+      {
+        "predicted_token": ")",
+        "predicted_tag": "PUNCT"
+      },
+      {
+        "predicted_token": "as",
+        "predicted_tag": "SCONJ"
+      },
+      {
+        "predicted_token": "the",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "security",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "police",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "killed",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "in",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "a",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "friendly",
+        "predicted_tag": "ADJ"
+      },
+      {
+        "predicted_token": "fire",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "incident",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "by",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "US",
+        "predicted_tag": "PROPN"
+      },
+      {
+        "predicted_token": "troops",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "were",
+        "predicted_tag": "AUX"
+      },
+      {
+        "predicted_token": "buried",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "on",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "Saturday",
+        "predicted_tag": "PROPN"
+      },
+      {
+        "predicted_token": ".",
+        "predicted_tag": "PUNCT"
+      }
+    ]
+  },
+  {
+    "sentence": "Reuters reported that \" Sunni clerics in the town issued a ' Declaration by the people of Fallujah ' condemning the deaths of the security guards and police , announcing three days of mourning , and calling for a general strike today . \"",
+    "tags": [
+      {
+        "predicted_token": "Reuters",
+        "predicted_tag": "PROPN"
+      },
+      {
+        "predicted_token": "reported",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "that",
+        "predicted_tag": "SCONJ"
+      },
+      {
+        "predicted_token": "\"",
+        "predicted_tag": "PUNCT"
+      },
+      {
+        "predicted_token": "Sunni",
+        "predicted_tag": "PROPN",
+        "correct_tag": "ADJ"
+      },
+      {
+        "predicted_token": "clerics",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "in",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "the",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "town",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "issued",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "a",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "'",
+        "predicted_tag": "PUNCT"
+      },
+      {
+        "predicted_token": "Declaration",
+        "predicted_tag": "PROPN",
+        "correct_tag": "NOUN"
+      },
+      {
+        "predicted_token": "by",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "the",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "people",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "of",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "Fallujah",
+        "predicted_tag": "PROPN"
+      },
+      {
+        "predicted_token": "'",
+        "predicted_tag": "PUNCT"
+      },
+      {
+        "predicted_token": "condemning",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "the",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "deaths",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "of",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "the",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "security",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "guards",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "and",
+        "predicted_tag": "CCONJ"
+      },
+      {
+        "predicted_token": "police",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": ",",
+        "predicted_tag": "PUNCT"
+      },
+      {
+        "predicted_token": "announcing",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "three",
+        "predicted_tag": "NUM"
+      },
+      {
+        "predicted_token": "days",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "of",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "mourning",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": ",",
+        "predicted_tag": "PUNCT"
+      },
+      {
+        "predicted_token": "and",
+        "predicted_tag": "CCONJ"
+      },
+      {
+        "predicted_token": "calling",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "for",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "a",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "general",
+        "predicted_tag": "ADJ"
+      },
+      {
+        "predicted_token": "strike",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "today",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": ".",
+        "predicted_tag": "PUNCT"
+      },
+      {
+        "predicted_token": "\"",
+        "predicted_tag": "PUNCT"
+      }
+    ]
+  },
+  {
+    "sentence": "It read , \" The people of Fallujah condemn the massacre which was committed on Friday against people dedicated to the protection of Fallujah .",
+    "tags": [
+      {
+        "predicted_token": "It",
+        "predicted_tag": "PRON"
+      },
+      {
+        "predicted_token": "read",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": ",",
+        "predicted_tag": "PUNCT"
+      },
+      {
+        "predicted_token": "\"",
+        "predicted_tag": "PUNCT"
+      },
+      {
+        "predicted_token": "The",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "people",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "of",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "Fallujah",
+        "predicted_tag": "PROPN"
+      },
+      {
+        "predicted_token": "condemn",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "the",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "massacre",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "which",
+        "predicted_tag": "PRON"
+      },
+      {
+        "predicted_token": "was",
+        "predicted_tag": "AUX"
+      },
+      {
+        "predicted_token": "committed",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "on",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "Friday",
+        "predicted_tag": "PROPN"
+      },
+      {
+        "predicted_token": "against",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "people",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "dedicated",
+        "predicted_tag": "VERB",
+        "correct_tag": "ADJ"
+      },
+      {
+        "predicted_token": "to",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "the",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "protection",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "of",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "Fallujah",
+        "predicted_tag": "PROPN"
+      },
+      {
+        "predicted_token": ".",
+        "predicted_tag": "PUNCT"
+      }
+    ]
+  },
+  {
+    "sentence": "Let aggressive ( American ) leaders and soldiers know that we are capable of protecting the city 's security and safety , and ask them to lift their hands from the city . \"",
+    "tags": [
+      {
+        "predicted_token": "Let",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "aggressive",
+        "predicted_tag": "ADJ"
+      },
+      {
+        "predicted_token": "(",
+        "predicted_tag": "PUNCT"
+      },
+      {
+        "predicted_token": "American",
+        "predicted_tag": "ADJ"
+      },
+      {
+        "predicted_token": ")",
+        "predicted_tag": "PUNCT"
+      },
+      {
+        "predicted_token": "leaders",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "and",
+        "predicted_tag": "CCONJ"
+      },
+      {
+        "predicted_token": "soldiers",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "know",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "that",
+        "predicted_tag": "SCONJ"
+      },
+      {
+        "predicted_token": "we",
+        "predicted_tag": "PRON"
+      },
+      {
+        "predicted_token": "are",
+        "predicted_tag": "AUX"
+      },
+      {
+        "predicted_token": "capable",
+        "predicted_tag": "ADJ"
+      },
+      {
+        "predicted_token": "of",
+        "predicted_tag": "ADP",
+        "correct_tag": "SCONJ"
+      },
+      {
+        "predicted_token": "protecting",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "the",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "city",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "'s",
+        "predicted_tag": "PART"
+      },
+      {
+        "predicted_token": "security",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "and",
+        "predicted_tag": "CCONJ"
+      },
+      {
+        "predicted_token": "safety",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": ",",
+        "predicted_tag": "PUNCT"
+      },
+      {
+        "predicted_token": "and",
+        "predicted_tag": "CCONJ"
+      },
+      {
+        "predicted_token": "ask",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "them",
+        "predicted_tag": "PRON"
+      },
+      {
+        "predicted_token": "to",
+        "predicted_tag": "PART"
+      },
+      {
+        "predicted_token": "lift",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "their",
+        "predicted_tag": "DET",
+        "correct_tag": "PRON"
+      },
+      {
+        "predicted_token": "hands",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "from",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "the",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "city",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": ".",
+        "predicted_tag": "PUNCT"
+      },
+      {
+        "predicted_token": "\"",
+        "predicted_tag": "PUNCT"
+      }
+    ]
+  },
+  {
+    "sentence": "The clerics demanded talks with local US commanders .",
+    "tags": [
+      {
+        "predicted_token": "The",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "clerics",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "demanded",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "talks",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "with",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "local",
+        "predicted_tag": "ADJ"
+      },
+      {
+        "predicted_token": "US",
+        "predicted_tag": "PROPN"
+      },
+      {
+        "predicted_token": "commanders",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": ".",
+        "predicted_tag": "PUNCT"
+      }
+    ]
+  },
+  {
+    "sentence": "Falluja has long been roiled by tense relations with the US soldiers there , since local Sunnis either remain committed to Arab nationalism or have become Sunni fundamentalists or even radicals .",
+    "tags": [
+      {
+        "predicted_token": "Falluja",
+        "predicted_tag": "PROPN"
+      },
+      {
+        "predicted_token": "has",
+        "predicted_tag": "AUX"
+      },
+      {
+        "predicted_token": "long",
+        "predicted_tag": "ADV"
+      },
+      {
+        "predicted_token": "been",
+        "predicted_tag": "AUX"
+      },
+      {
+        "predicted_token": "roiled",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "by",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "tense",
+        "predicted_tag": "ADJ"
+      },
+      {
+        "predicted_token": "relations",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "with",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "the",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "US",
+        "predicted_tag": "PROPN"
+      },
+      {
+        "predicted_token": "soldiers",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "there",
+        "predicted_tag": "ADV"
+      },
+      {
+        "predicted_token": ",",
+        "predicted_tag": "PUNCT"
+      },
+      {
+        "predicted_token": "since",
+        "predicted_tag": "SCONJ"
+      },
+      {
+        "predicted_token": "local",
+        "predicted_tag": "ADJ"
+      },
+      {
+        "predicted_token": "Sunnis",
+        "predicted_tag": "PROPN"
+      },
+      {
+        "predicted_token": "either",
+        "predicted_tag": "CCONJ"
+      },
+      {
+        "predicted_token": "remain",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "committed",
+        "predicted_tag": "ADJ"
+      },
+      {
+        "predicted_token": "to",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "Arab",
+        "predicted_tag": "PROPN",
+        "correct_tag": "ADJ"
+      },
+      {
+        "predicted_token": "nationalism",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "or",
+        "predicted_tag": "CCONJ"
+      },
+      {
+        "predicted_token": "have",
+        "predicted_tag": "AUX"
+      },
+      {
+        "predicted_token": "become",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "Sunni",
+        "predicted_tag": "PROPN",
+        "correct_tag": "ADJ"
+      },
+      {
+        "predicted_token": "fundamentalists",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "or",
+        "predicted_tag": "CCONJ"
+      },
+      {
+        "predicted_token": "even",
+        "predicted_tag": "ADV"
+      },
+      {
+        "predicted_token": "radicals",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": ".",
+        "predicted_tag": "PUNCT"
+      }
+    ]
+  },
+  {
+    "sentence": "Cities such as Falluja received special treatment from Saddam and enjoyed a disproportionate share of the country 's wealth and power .",
+    "tags": [
+      {
+        "predicted_token": "Cities",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "such",
+        "predicted_tag": "ADJ"
+      },
+      {
+        "predicted_token": "as",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "Falluja",
+        "predicted_tag": "PROPN"
+      },
+      {
+        "predicted_token": "received",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "special",
+        "predicted_tag": "ADJ"
+      },
+      {
+        "predicted_token": "treatment",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "from",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "Saddam",
+        "predicted_tag": "PROPN"
+      },
+      {
+        "predicted_token": "and",
+        "predicted_tag": "CCONJ"
+      },
+      {
+        "predicted_token": "enjoyed",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "a",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "disproportionate",
+        "predicted_tag": "ADJ"
+      },
+      {
+        "predicted_token": "share",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "of",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "the",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "country",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "'s",
+        "predicted_tag": "PART"
+      },
+      {
+        "predicted_token": "wealth",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "and",
+        "predicted_tag": "CCONJ"
+      },
+      {
+        "predicted_token": "power",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": ".",
+        "predicted_tag": "PUNCT"
+      }
+    ]
+  },
+  {
+    "sentence": "They know that the American advent implies for them a demotion , and an elevation of the Shiites and Kurds , and they refuse to go quietly .",
+    "tags": [
+      {
+        "predicted_token": "They",
+        "predicted_tag": "PRON"
+      },
+      {
+        "predicted_token": "know",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "that",
+        "predicted_tag": "SCONJ"
+      },
+      {
+        "predicted_token": "the",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "American",
+        "predicted_tag": "ADJ"
+      },
+      {
+        "predicted_token": "advent",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "implies",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "for",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "them",
+        "predicted_tag": "PRON"
+      },
+      {
+        "predicted_token": "a",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "demotion",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": ",",
+        "predicted_tag": "PUNCT"
+      },
+      {
+        "predicted_token": "and",
+        "predicted_tag": "CCONJ"
+      },
+      {
+        "predicted_token": "an",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "elevation",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "of",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "the",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "Shiites",
+        "predicted_tag": "PROPN"
+      },
+      {
+        "predicted_token": "and",
+        "predicted_tag": "CCONJ"
+      },
+      {
+        "predicted_token": "Kurds",
+        "predicted_tag": "PROPN"
+      },
+      {
+        "predicted_token": ",",
+        "predicted_tag": "PUNCT"
+      },
+      {
+        "predicted_token": "and",
+        "predicted_tag": "CCONJ"
+      },
+      {
+        "predicted_token": "they",
+        "predicted_tag": "PRON"
+      },
+      {
+        "predicted_token": "refuse",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "to",
+        "predicted_tag": "PART"
+      },
+      {
+        "predicted_token": "go",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "quietly",
+        "predicted_tag": "ADV"
+      },
+      {
+        "predicted_token": ".",
+        "predicted_tag": "PUNCT"
+      }
+    ]
+  },
+  {
+    "sentence": "See http://www.gulf-news.com/Articles/news.asp?ArticleID=97508",
+    "tags": [
+      {
+        "predicted_token": "See",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "http://www.gulf-news.com/Articles/news.asp?ArticleID=97508",
+        "predicted_tag": "X",
+        "correct_tag": "PROPN"
+      }
+    ]
+  },
+  {
+    "sentence": "The Supreme Court announced its ruling today in Hamdan v. Rumsfeld divided along idelogical lines with John Roberts abstaining due to his involvement at the D.C. Circuit level and Anthony Kennedy joining the liberals in a 5 - 3 decision that is 185 pages long .",
+    "tags": [
+      {
+        "predicted_token": "The",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "Supreme",
+        "predicted_tag": "PROPN",
+        "correct_tag": "ADJ"
+      },
+      {
+        "predicted_token": "Court",
+        "predicted_tag": "PROPN"
+      },
+      {
+        "predicted_token": "announced",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "its",
+        "predicted_tag": "PRON"
+      },
+      {
+        "predicted_token": "ruling",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "today",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "in",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "Hamdan",
+        "predicted_tag": "PROPN"
+      },
+      {
+        "predicted_token": "v.",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "Rumsfeld",
+        "predicted_tag": "PROPN"
+      },
+      {
+        "predicted_token": "divided",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "along",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "ideological",
+        "correct_token": "idelogical",
+        "predicted_tag": "ADJ"
+      },
+      {
+        "predicted_token": "lines",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "with",
+        "predicted_tag": "ADP",
+        "correct_tag": "SCONJ"
+      },
+      {
+        "predicted_token": "John",
+        "predicted_tag": "PROPN"
+      },
+      {
+        "predicted_token": "Roberts",
+        "predicted_tag": "PROPN"
+      },
+      {
+        "predicted_token": "abstaining",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "due",
+        "predicted_tag": "ADP",
+        "correct_tag": "ADJ"
+      },
+      {
+        "predicted_token": "to",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "his",
+        "predicted_tag": "PRON"
+      },
+      {
+        "predicted_token": "involvement",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "at",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "the",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "D.C.",
+        "predicted_tag": "PROPN"
+      },
+      {
+        "predicted_token": "Circuit",
+        "predicted_tag": "PROPN"
+      },
+      {
+        "predicted_token": "level",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "and",
+        "predicted_tag": "CCONJ"
+      },
+      {
+        "predicted_token": "Anthony",
+        "predicted_tag": "PROPN"
+      },
+      {
+        "predicted_token": "Kennedy",
+        "predicted_tag": "PROPN"
+      },
+      {
+        "predicted_token": "joining",
+        "predicted_tag": "VERB"
+      },
+      {
+        "predicted_token": "the",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "liberals",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "in",
+        "predicted_tag": "ADP"
+      },
+      {
+        "predicted_token": "a",
+        "predicted_tag": "DET"
+      },
+      {
+        "predicted_token": "5",
+        "predicted_tag": "NUM"
+      },
+      {
+        "predicted_token": "-",
+        "predicted_tag": "PUNCT",
+        "correct_tag": "SYM"
+      },
+      {
+        "predicted_token": "3",
+        "predicted_tag": "NUM"
+      },
+      {
+        "predicted_token": "decision",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "that",
+        "predicted_tag": "SCONJ",
+        "correct_tag": "PRON"
+      },
+      {
+        "predicted_token": "is",
+        "predicted_tag": "AUX"
+      },
+      {
+        "predicted_token": "185",
+        "predicted_tag": "NUM"
+      },
+      {
+        "predicted_token": "pages",
+        "predicted_tag": "NOUN"
+      },
+      {
+        "predicted_token": "long",
+        "predicted_tag": "ADJ"
+      },
+      {
+        "predicted_token": ".",
+        "predicted_tag": "PUNCT"
+      }
+    ]
+  }
+]
