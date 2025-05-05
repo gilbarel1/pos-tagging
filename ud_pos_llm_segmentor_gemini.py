@@ -142,30 +142,30 @@ def load_ud_english_data(conllu_file_path: str, sample_size: int = None, random_
     
     return tagged_sentences, original_sentences
 
-def create_sentence_token_map_from_failed_sentences(input_file: str, output_file: str):
+def create_sentence_token_map_from_ud(conllu_file_path: str, output_file: str, sample_size: int = None):
     """
-    Create a JSON file mapping sentences from the failed sentences file to their tokenized versions.
+    Create a JSON file mapping UD English sentences to their tokenized versions.
     
     Args:
-        input_file: Path to the failed sentences JSON file
+        conllu_file_path: Path to the CoNLL-U format file
         output_file: Path to save the mapping
+        sample_size: Optional number of sentences to sample
     """
-    # Load sentences from the failed sentences file
-    with open(input_file, 'r') as f:
-        data = json.load(f)
+    # Load sentences from the UD English dataset
+    tagged_sentences, original_sentences = load_ud_english_data(conllu_file_path, sample_size)
     
-    # Extract original sentences - handle both formats (object with "original" key or direct string)
-    original_sentences = []
-    for item in data:
-        if isinstance(item, dict) and 'original' in item:
-            original_sentences.append(item['original'])
-        elif isinstance(item, str):
-            original_sentences.append(item)
+    # Ensure we only process the requested number of sentences
+    if sample_size and sample_size < len(tagged_sentences):
+        tagged_sentences = tagged_sentences[:sample_size]
+        original_sentences = original_sentences[:sample_size]
     
     sentence_map = []
     
     print(f"Processing {len(original_sentences)} sentences...")
-    for original_sentence in tqdm(original_sentences):
+    for i, original_sentence in enumerate(tqdm(original_sentences)):
+        # Extract gold tokens from the tagged sentences
+        gold_tokens = untag(tagged_sentences[i])
+        
         try:
             # Get segmented tokens from the LLM
             predicted_tokens = segment_sentence(original_sentence)
@@ -173,14 +173,16 @@ def create_sentence_token_map_from_failed_sentences(input_file: str, output_file
             # Add to the mapping
             sentence_map.append({
                 "original": original_sentence,
+                "gold_tokens": gold_tokens,
                 "predicted_tokens": predicted_tokens
             })
             
         except Exception as e:
             print(f"Error processing sentence: {original_sentence[:30]}... - {str(e)}")
-            # Add the error case to the map
+            # Add the error case to the map with gold tokens
             sentence_map.append({
                 "original": original_sentence,
+                "gold_tokens": gold_tokens,
                 "error": str(e)
             })
     
@@ -194,11 +196,15 @@ def create_sentence_token_map_from_failed_sentences(input_file: str, output_file
 
 if __name__ == "__main__":
     # File paths
-    FAILED_SENTENCES_FILE = './failed_sentences.json'
-    OUTPUT_MAP_FILE = "./failed_sentences_segmented.json"  # Changed output file to avoid overwriting input
+    UD_ENGLISH_TEST = './failed_sentences.json'
+    OUTPUT_MAP_FILE = "./failed_sentences.json"
     
-    # Create the sentence-to-token mapping using the failed sentences file
-    create_sentence_token_map_from_failed_sentences(
-        input_file=FAILED_SENTENCES_FILE,
-        output_file=OUTPUT_MAP_FILE
+    # Optional: Sample size (set to None to process all)
+    SAMPLE_SIZE = 200  # Process 200 sentences, adjust as needed
+    
+    # Create the sentence-to-token mapping using the UD English dataset
+    create_sentence_token_map_from_ud(
+        conllu_file_path=UD_ENGLISH_TEST,
+        output_file=OUTPUT_MAP_FILE,
+        sample_size=SAMPLE_SIZE
     )
