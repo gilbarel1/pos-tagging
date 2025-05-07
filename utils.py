@@ -15,3 +15,7 @@ def read_conllu(path):
                 tagged_sentence.append((token.form if token.form else '*None*', token.upos))
         tagged_sentences.append(tagged_sentence)
     return tagged_sentences, original_sentences
+
+def untag(tagged_sentence):
+    """Extract just the tokens from a tagged sentence"""
+    return [token for token, _ in tagged_sentence]

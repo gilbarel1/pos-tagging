@@ -1,0 +1,947 @@
+[
+  {
+    "original": "The consolidation of smaller local radical fundamentalist groups with al-Qaeda can also be seen in the case of the Fizazi group in Tangiers that morphed into the Moroccan Islamic Combatant Group, had members who met with September 11 ringleader Muhammad Atta, and ultimately was in part responsible for the Madrid train bombings.",
+    "tokens": [
+      "The",
+      "consolidation",
+      "of",
+      "smaller",
+      "local",
+      "radical",
+      "fundamentalist",
+      "groups",
+      "with",
+      "al-Qaeda",
+      "can",
+      "also",
+      "be",
+      "seen",
+      "in",
+      "the",
+      "case",
+      "of",
+      "the",
+      "Fizazi",
+      "group",
+      "in",
+      "Tangiers",
+      "that",
+      "morphed",
+      "into",
+      "the",
+      "Moroccan",
+      "Islamic",
+      "Combatant",
+      "Group",
+      ",",
+      "had",
+      "members",
+      "who",
+      "met",
+      "with",
+      "September",
+      "11",
+      "ringleader",
+      "Muhammad",
+      "Atta",
+      ",",
+      "and",
+      "ultimately",
+      "was",
+      "in",
+      "part",
+      "responsible",
+      "for",
+      "the",
+      "Madrid",
+      "train",
+      "bombings",
+      "."
+    ],
+    "tags": [
+      {
+        "token": "The",
+        "pos_tag": "DET"
+      },
+      {
+        "token": "consolidation",
+        "pos_tag": "NOUN"
+      },
+      {
+        "token": "of",
+        "pos_tag": "ADP"
+      },
+      {
+        "token": "smaller",
+        "pos_tag": "ADJ"
+      },
+      {
+        "token": "local",
+        "pos_tag": "ADJ"
+      },
+      {
+        "token": "radical",
+        "pos_tag": "ADJ"
+      },
+      {
+        "token": "fundamentalist",
+        "pos_tag": "ADJ"
+      },
+      {
+        "token": "groups",
+        "pos_tag": "NOUN"
+      },
+      {
+        "token": "with",
+        "pos_tag": "ADP"
+      },
+      {
+        "token": "al-Qaeda",
+        "pos_tag": "PROPN"
+      },
+      {
+        "token": "can",
+        "pos_tag": "AUX"
+      },
+      {
+        "token": "also",
+        "pos_tag": "ADV"
+      },
+      {
+        "token": "be",
+        "pos_tag": "AUX"
+      },
+      {
+        "token": "seen",
+        "pos_tag": "VERB"
+      },
+      {
+        "token": "in",
+        "pos_tag": "ADP"
+      },
+      {
+        "token": "the",
+        "pos_tag": "DET"
+      },
+      {
+        "token": "case",
+        "pos_tag": "NOUN"
+      },
+      {
+        "token": "of",
+        "pos_tag": "ADP"
+      },
+      {
+        "token": "the",
+        "pos_tag": "DET"
+      },
+      {
+        "token": "Fizazi",
+        "pos_tag": "PROPN"
+      },
+      {
+        "token": "group",
+        "pos_tag": "NOUN"
+      },
+      {
+        "token": "in",
+        "pos_tag": "ADP"
+      },
+      {
+        "token": "Tangiers",
+        "pos_tag": "PROPN"
+      },
+      {
+        "token": "that",
+        "pos_tag": "SCONJ"
+      },
+      {
+        "token": "morphed",
+        "pos_tag": "VERB"
+      },
+      {
+        "token": "into",
+        "pos_tag": "ADP"
+      },
+      {
+        "token": "the",
+        "pos_tag": "DET"
+      },
+      {
+        "token": "Moroccan",
+        "pos_tag": "ADJ"
+      },
+      {
+        "token": "Islamic",
+        "pos_tag": "ADJ"
+      },
+      {
+        "token": "Combatant",
+        "pos_tag": "PROPN"
+      },
+      {
+        "token": "Group",
+        "pos_tag": "PROPN"
+      },
+      {
+        "token": ",",
+        "pos_tag": "PUNCT"
+      },
+      {
+        "token": "had",
+        "pos_tag": "VERB"
+      },
+      {
+        "token": "members",
+        "pos_tag": "NOUN"
+      },
+      {
+        "token": "who",
+        "pos_tag": "PRON"
+      },
+      {
+        "token": "met",
+        "pos_tag": "VERB"
+      },
+      {
+        "token": "with",
+        "pos_tag": "ADP"
+      },
+      {
+        "token": "September",
+        "pos_tag": "PROPN"
+      },
+      {
+        "token": "11",
+        "pos_tag": "NUM"
+      },
+      {
+        "token": "ringleader",
+        "pos_tag": "NOUN"
+      },
+      {
+        "token": "Muhammad",
+        "pos_tag": "PROPN"
+      },
+      {
+        "token": "Atta",
+        "pos_tag": "PROPN"
+      },
+      {
+        "token": ",",
+        "pos_tag": "PUNCT"
+      },
+      {
+        "token": "and",
+        "pos_tag": "CCONJ"
+      },
+      {
+        "token": "ultimately",
+        "pos_tag": "ADV"
+      },
+      {
+        "token": "was",
+        "pos_tag": "AUX"
+      },
+      {
+        "token": "in",
+        "pos_tag": "ADP"
+      },
+      {
+        "token": "part",
+        "pos_tag": "NOUN"
+      },
+      {
+        "token": "responsible",
+        "pos_tag": "ADJ"
+      },
+      {
+        "token": "for",
+        "pos_tag": "ADP"
+      },
+      {
+        "token": "the",
+        "pos_tag": "DET"
+      },
+      {
+        "token": "Madrid",
+        "pos_tag": "PROPN"
+      },
+      {
+        "token": "train",
+        "pos_tag": "NOUN"
+      },
+      {
+        "token": "bombings",
+        "pos_tag": "NOUN"
+      },
+      {
+        "token": ".",
+        "pos_tag": "PUNCT"
+      }
+    ]
+  },
+  {
+    "original": "I doubt the very few who actually read my blog have not come across this yet, but I figured I would put it out there anyways.",
+    "tokens": [
+      "I",
+      "doubt",
+      "the",
+      "very",
+      "few",
+      "who",
+      "actually",
+      "read",
+      "my",
+      "blog",
+      "have",
+      "not",
+      "come",
+      "across",
+      "this",
+      "yet",
+      ",",
+      "but",
+      "I",
+      "figured",
+      "I",
+      "would",
+      "put",
+      "it",
+      "out",
+      "there",
+      "anyways",
+      "."
+    ],
+    "tags": [
+      {
+        "token": "I",
+        "pos_tag": "PRON"
+      },
+      {
+        "token": "doubt",
+        "pos_tag": "VERB"
+      },
+      {
+        "token": "the",
+        "pos_tag": "DET"
+      },
+      {
+        "token": "very",
+        "pos_tag": "ADV"
+      },
+      {
+        "token": "few",
+        "pos_tag": "ADJ"
+      },
+      {
+        "token": "who",
+        "pos_tag": "PRON"
+      },
+      {
+        "token": "actually",
+        "pos_tag": "ADV"
+      },
+      {
+        "token": "read",
+        "pos_tag": "VERB"
+      },
+      {
+        "token": "my",
+        "pos_tag": "PRON"
+      },
+      {
+        "token": "blog",
+        "pos_tag": "NOUN"
+      },
+      {
+        "token": "have",
+        "pos_tag": "AUX"
+      },
+      {
+        "token": "not",
+        "pos_tag": "PART"
+      },
+      {
+        "token": "come",
+        "pos_tag": "VERB"
+      },
+      {
+        "token": "across",
+        "pos_tag": "ADP"
+      },
+      {
+        "token": "this",
+        "pos_tag": "DET"
+      },
+      {
+        "token": "yet",
+        "pos_tag": "ADV"
+      },
+      {
+        "token": ",",
+        "pos_tag": "PUNCT"
+      },
+      {
+        "token": "but",
+        "pos_tag": "CCONJ"
+      },
+      {
+        "token": "I",
+        "pos_tag": "PRON"
+      },
+      {
+        "token": "figured",
+        "pos_tag": "VERB"
+      },
+      {
+        "token": "I",
+        "pos_tag": "PRON"
+      },
+      {
+        "token": "would",
+        "pos_tag": "AUX"
+      },
+      {
+        "token": "put",
+        "pos_tag": "VERB"
+      },
+      {
+        "token": "it",
+        "pos_tag": "PRON"
+      },
+      {
+        "token": "out",
+        "pos_tag": "ADP"
+      },
+      {
+        "token": "there",
+        "pos_tag": "ADV"
+      },
+      {
+        "token": "anyways",
+        "pos_tag": "ADV"
+      },
+      {
+        "token": ".",
+        "pos_tag": "PUNCT"
+      }
+    ]
+  },
+  {
+    "original": "This Fallujah operation my turn out to be the most important operation done by the US Military since the end of the war.",
+    "tokens": [
+      "This",
+      "Fallujah",
+      "operation",
+      "my",
+      "turn",
+      "out",
+      "to",
+      "be",
+      "the",
+      "most",
+      "important",
+      "operation",
+      "done",
+      "by",
+      "the",
+      "US",
+      "Military",
+      "since",
+      "the",
+      "end",
+      "of",
+      "the",
+      "war",
+      "."
+    ],
+    "tags": [
+      {
+        "token": "This",
+        "pos_tag": "DET"
+      },
+      {
+        "token": "Fallujah",
+        "pos_tag": "PROPN"
+      },
+      {
+        "token": "operation",
+        "pos_tag": "NOUN"
+      },
+      {
+        "token": "my",
+        "pos_tag": "PRON"
+      },
+      {
+        "token": "turn",
+        "pos_tag": "VERB"
+      },
+      {
+        "token": "out",
+        "pos_tag": "ADP"
+      },
+      {
+        "token": "to",
+        "pos_tag": "PART"
+      },
+      {
+        "token": "be",
+        "pos_tag": "AUX"
+      },
+      {
+        "token": "the",
+        "pos_tag": "DET"
+      },
+      {
+        "token": "most",
+        "pos_tag": "ADV"
+      },
+      {
+        "token": "important",
+        "pos_tag": "ADJ"
+      },
+      {
+        "token": "operation",
+        "pos_tag": "NOUN"
+      },
+      {
+        "token": "done",
+        "pos_tag": "VERB"
+      },
+      {
+        "token": "by",
+        "pos_tag": "ADP"
+      },
+      {
+        "token": "the",
+        "pos_tag": "DET"
+      },
+      {
+        "token": "US",
+        "pos_tag": "PROPN"
+      },
+      {
+        "token": "Military",
+        "pos_tag": "PROPN"
+      },
+      {
+        "token": "since",
+        "pos_tag": "ADP"
+      },
+      {
+        "token": "the",
+        "pos_tag": "DET"
+      },
+      {
+        "token": "end",
+        "pos_tag": "NOUN"
+      },
+      {
+        "token": "of",
+        "pos_tag": "ADP"
+      },
+      {
+        "token": "the",
+        "pos_tag": "DET"
+      },
+      {
+        "token": "war",
+        "pos_tag": "NOUN"
+      },
+      {
+        "token": ".",
+        "pos_tag": "PUNCT"
+      }
+    ]
+  },
+  {
+    "original": "The convergence of views among the more militant Sunni Muslim clerics of AMS and the radical Shiites of the Sadr movement has been seen before, last spring during the initial US assault on Fallujah and during the US attack on Mahdi Army militiamen in Najaf.",
+    "tokens": [
+      "The",
+      "convergence",
+      "of",
+      "views",
+      "among",
+      "the",
+      "more",
+      "militant",
+      "Sunni",
+      "Muslim",
+      "clerics",
+      "of",
+      "AMS",
+      "and",
+      "the",
+      "radical",
+      "Shiites",
+      "of",
+      "the",
+      "Sadr",
+      "movement",
+      "has",
+      "been",
+      "seen",
+      "before",
+      ",",
+      "last",
+      "spring",
+      "during",
+      "the",
+      "initial",
+      "US",
+      "assault",
+      "on",
+      "Fallujah",
+      "and",
+      "during",
+      "the",
+      "US",
+      "attack",
+      "on",
+      "Mahdi",
+      "Army",
+      "militiamen",
+      "in",
+      "Najaf",
+      "."
+    ],
+    "tags": [
+      {
+        "token": "The",
+        "pos_tag": "DET"
+      },
+      {
+        "token": "convergence",
+        "pos_tag": "NOUN"
+      },
+      {
+        "token": "of",
+        "pos_tag": "ADP"
+      },
+      {
+        "token": "views",
+        "pos_tag": "NOUN"
+      },
+      {
+        "token": "among",
+        "pos_tag": "ADP"
+      },
+      {
+        "token": "the",
+        "pos_tag": "DET"
+      },
+      {
+        "token": "more",
+        "pos_tag": "ADV"
+      },
+      {
+        "token": "militant",
+        "pos_tag": "ADJ"
+      },
+      {
+        "token": "Sunni",
+        "pos_tag": "PROPN"
+      },
+      {
+        "token": "Muslim",
+        "pos_tag": "PROPN"
+      },
+      {
+        "token": "clerics",
+        "pos_tag": "NOUN"
+      },
+      {
+        "token": "of",
+        "pos_tag": "ADP"
+      },
+      {
+        "token": "AMS",
+        "pos_tag": "PROPN"
+      },
+      {
+        "token": "and",
+        "pos_tag": "CCONJ"
+      },
+      {
+        "token": "the",
+        "pos_tag": "DET"
+      },
+      {
+        "token": "radical",
+        "pos_tag": "ADJ"
+      },
+      {
+        "token": "Shiites",
+        "pos_tag": "PROPN"
+      },
+      {
+        "token": "of",
+        "pos_tag": "ADP"
+      },
+      {
+        "token": "the",
+        "pos_tag": "DET"
+      },
+      {
+        "token": "Sadr",
+        "pos_tag": "PROPN"
+      },
+      {
+        "token": "movement",
+        "pos_tag": "NOUN"
+      },
+      {
+        "token": "has",
+        "pos_tag": "AUX"
+      },
+      {
+        "token": "been",
+        "pos_tag": "AUX"
+      },
+      {
+        "token": "seen",
+        "pos_tag": "VERB"
+      },
+      {
+        "token": "before",
+        "pos_tag": "ADV"
+      },
+      {
+        "token": ",",
+        "pos_tag": "PUNCT"
+      },
+      {
+        "token": "last",
+        "pos_tag": "ADJ"
+      },
+      {
+        "token": "spring",
+        "pos_tag": "NOUN"
+      },
+      {
+        "token": "during",
+        "pos_tag": "ADP"
+      },
+      {
+        "token": "the",
+        "pos_tag": "DET"
+      },
+      {
+        "token": "initial",
+        "pos_tag": "ADJ"
+      },
+      {
+        "token": "US",
+        "pos_tag": "PROPN"
+      },
+      {
+        "token": "assault",
+        "pos_tag": "NOUN"
+      },
+      {
+        "token": "on",
+        "pos_tag": "ADP"
+      },
+      {
+        "token": "Fallujah",
+        "pos_tag": "PROPN"
+      },
+      {
+        "token": "and",
+        "pos_tag": "CCONJ"
+      },
+      {
+        "token": "during",
+        "pos_tag": "ADP"
+      },
+      {
+        "token": "the",
+        "pos_tag": "DET"
+      },
+      {
+        "token": "US",
+        "pos_tag": "PROPN"
+      },
+      {
+        "token": "attack",
+        "pos_tag": "NOUN"
+      },
+      {
+        "token": "on",
+        "pos_tag": "ADP"
+      },
+      {
+        "token": "Mahdi",
+        "pos_tag": "PROPN"
+      },
+      {
+        "token": "Army",
+        "pos_tag": "PROPN"
+      },
+      {
+        "token": "militiamen",
+        "pos_tag": "NOUN"
+      },
+      {
+        "token": "in",
+        "pos_tag": "ADP"
+      },
+      {
+        "token": "Najaf",
+        "pos_tag": "PROPN"
+      },
+      {
+        "token": ".",
+        "pos_tag": "PUNCT"
+      }
+    ]
+  },
+  {
+    "original": "U.S. officials have said the plot, thwarted by Britain, to blow up several aircraft over the Atlantic bore many of the hallmarks of al Qaeda.",
+    "tokens": [
+      "U.S.",
+      "officials",
+      "have",
+      "said",
+      "the",
+      "plot",
+      ",",
+      "thwarted",
+      "by",
+      "Britain",
+      ",",
+      "to",
+      "blow",
+      "up",
+      "several",
+      "aircraft",
+      "over",
+      "the",
+      "Atlantic",
+      "bore",
+      "many",
+      "of",
+      "the",
+      "hallmarks",
+      "of",
+      "al",
+      "Qaeda",
+      "."
+    ],
+    "tags": [
+      {
+        "token": "U.S.",
+        "pos_tag": "PROPN"
+      },
+      {
+        "token": "officials",
+        "pos_tag": "NOUN"
+      },
+      {
+        "token": "have",
+        "pos_tag": "AUX"
+      },
+      {
+        "token": "said",
+        "pos_tag": "VERB"
+      },
+      {
+        "token": "the",
+        "pos_tag": "DET"
+      },
+      {
+        "token": "plot",
+        "pos_tag": "NOUN"
+      },
+      {
+        "token": ",",
+        "pos_tag": "PUNCT"
+      },
+      {
+        "token": "thwarted",
+        "pos_tag": "VERB"
+      },
+      {
+        "token": "by",
+        "pos_tag": "ADP"
+      },
+      {
+        "token": "Britain",
+        "pos_tag": "PROPN"
+      },
+      {
+        "token": ",",
+        "pos_tag": "PUNCT"
+      },
+      {
+        "token": "to",
+        "pos_tag": "PART"
+      },
+      {
+        "token": "blow",
+        "pos_tag": "VERB"
+      },
+      {
+        "token": "up",
+        "pos_tag": "ADP"
+      },
+      {
+        "token": "several",
+        "pos_tag": "ADJ"
+      },
+      {
+        "token": "aircraft",
+        "pos_tag": "NOUN"
+      },
+      {
+        "token": "over",
+        "pos_tag": "ADP"
+      },
+      {
+        "token": "the",
+        "pos_tag": "DET"
+      },
+      {
+        "token": "Atlantic",
+        "pos_tag": "PROPN"
+      },
+      {
+        "token": "bore",
+        "pos_tag": "VERB"
+      },
+      {
+        "token": "many",
+        "pos_tag": "ADJ"
+      },
+      {
+        "token": "of",
+        "pos_tag": "ADP"
+      },
+      {
+        "token": "the",
+        "pos_tag": "DET"
+      },
+      {
+        "token": "hallmarks",
+        "pos_tag": "NOUN"
+      },
+      {
+        "token": "of",
+        "pos_tag": "ADP"
+      },
+      {
+        "token": "al",
+        "pos_tag": "PROPN"
+      },
+      {
+        "token": "Qaeda",
+        "pos_tag": "PROPN"
+      },
+      {
+        "token": ".",
+        "pos_tag": "PUNCT"
+      }
+    ]
+  }
+]

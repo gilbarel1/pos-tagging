@@ -71,3 +71,52 @@ The output should be in a **JSON list** such that each item corresponds to the f
 ```json
 {json.dumps(TaggerErrorExplanation.model_json_schema(), indent=2)}
 ```"""
+
+def create_segmentation_prompt() -> str:
+    """
+    Create a system prompt for the segmentation task.
+    """
+    return """# Universal Dependencies Tokenization
+
+Your task is to segment sentences according to Universal Dependencies (UD) tokenization guidelines.
+
+Key tokenization rules:
+1. Separate all punctuation marks as individual tokens
+2. Split contractions:
+   - "don't" → ["Do", "n't"]
+   - "I'm" → ["I", "'m"]
+   - "can't" → ["ca", "n't"]
+3. Split possessives:
+   - "John's" → ["John", "'s"]
+4. Keep hyphenated compounds as single tokens when they function as a unit
+5. Numbers with internal punctuation are typically a single token (e.g., "3.14", "$50.00")
+6. Handle special cases like URLs and email addresses as single tokens
+
+Output a JSON array containing the segmented tokens. Follow the examples exactly.
+"""
+
+def create_examples() -> str:
+    """
+    Create few-shot examples for the segmentation task.
+    """
+    examples = [
+        {
+            "original": "Don't worry, I'll meet you at John's house at 3:30pm.",
+            "segmented": ["Do", "n't", "worry", ",", "I", "'ll", "meet", "you", "at", "John", "'s", "house", "at", "3:30pm", "."]
+        },
+        {
+            "original": "She said: \"I can't believe it!\" and walked away.",
+            "segmented": ["She", "said", ":", "\"", "I", "ca", "n't", "believe", "it", "!", "\"", "and", "walked", "away", "."]
+        },
+        {
+            "original": "The well-known CEO bought 2,500 shares for $47.50 each.",
+            "segmented": ["The", "well-known", "CEO", "bought", "2,500", "shares", "for", "$", "47.50", "each", "."]
+        }
+    ]
+    
+    prompt_examples = ""
+    for example in examples:
+        prompt_examples += f"Original: {example['original']}\n"
+        prompt_examples += f"Segmented: {json.dumps(example['segmented'])}\n\n"
+    
+    return prompt_examples
